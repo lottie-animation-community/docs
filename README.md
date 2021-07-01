@@ -3,4 +3,4 @@
 This repository is for the development of the Lottie Animation Format.
 
 All work here is guided by the
-[Community Specification License](0._CS_Contributor_License_Agreement.md).
+[Community Specification License](1._Community_Specification_License-v1.md).
