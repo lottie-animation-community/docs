@@ -7,12 +7,19 @@
 # Contents
 
 [Abstract](#abstract)
+
 [Rendering Model](#rendering-model)
+
 [Animation](#animation)
+
 [Property Types](#property-types)
+
 [Animatable properties](#animatable-properties)
+
 [Assets](#assets)
+
 [Text Data](#text-data)
+
 [Layers](#layers)
 
 # Abstract
