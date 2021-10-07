@@ -68,7 +68,7 @@ elements will be rendered on the canvas.
 This is the list of conditions that need to be met for an element to be included
 on the render tree:
 
-* **In Point and Out Point**. Any element whose time bounds don’t contain the
+* **In Point and Out Point.** Any element whose time bounds don’t contain the
   current position of the time cursor need to be excluded from the render tree.
   This condition also applies if the element is a child of a PreComp. A
   necessary condition for the element to be rendered is that the containing
@@ -77,12 +77,12 @@ on the render tree:
   remapping or time stretching, the In Point and Out Point of the element might
   end up shifted, excluding the element from the render tree. 
 
-* **Spatial boundaries. **If an element’s bounding box doesn’t overlap with the
+* **Spatial boundaries.** If an element’s bounding box doesn’t overlap with the
   boundaries of the animation canvas, it will be excluded from the tree. When an
   element is rendered within a PreComp, only the overlapping area of the
   PreComp, the rendered element and the PreComp’s container should be rendered.
 
-* **Paint modifiers. **Some layers have a fixed explicit paint modifier like
+* **Paint modifiers.** Some layers have a fixed explicit paint modifier like
   Solid Layers. Those layers are always defined with a specified color. On the
   other hand, some layers can have nested definitions and even multiple painting
   rules applied to them. On the contrary, some other layers or shapes defined
@@ -91,17 +91,17 @@ on the render tree:
   be text layers with no fill color or stroke color defined, or shape elements
   defined within a group that have no fills or stroke.
 
-* **Clipping Masks. **When a layer has a clipping mask or any kind of track
+* **Clipping Masks.** When a layer has a clipping mask or any kind of track
   matte mask linked to them, if their boundaries don’t overlap with the rendered
   element, they should be excluded from the render tree.
 
-* **Repeaters. **Shape layers can include in their stack of modifiers, a
+* **Repeaters.** Shape layers can include in their stack of modifiers, a
   repeater that will affect any shape in that stack above them. If the amount of
   copies defined by the repeater is 0, no elements should be added to the render
   tree. On the contrary, if more than one copy is set, those same elements will
   be added multiple times to the stack.
 
-* **Opacity**. Elements might have their opacity set to 0 because of a direct
+* **Opacity.** Elements might have their opacity set to 0 because of a direct
   effect of their opacity property, or as a consequence of the nested containers
   that can affect it. Although this means that visually, the element will have
   no effect on the final output, it is recommended to keep the element in the
