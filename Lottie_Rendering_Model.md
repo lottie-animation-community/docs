@@ -120,7 +120,7 @@ Layers that belong to a precomp should be treated as a separate painting stack.
 They should be drawn on a temporary canvas and once the stack is traversed, the
 final canvas should be painted on the containing canvas.
 
-This allows to apply blend modes, clipping or any other type of effect to the
+This allows application of blend modes, clipping or any other type of effect to the
 resulting temporary canvas before painting on the containing canvas.
 
 Since precomps can be nested within precomps, this should be a recursive
