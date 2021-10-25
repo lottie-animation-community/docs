@@ -131,6 +131,44 @@ this stacking context should respect the width and height of the layer and clip
 out anything that exceeds it; even if the containing canvas is larger and could
 display the exceeding texture.
 
+### Shape Layers
+
+Shape layers define a collection of four different types of objects: Groups,
+Shapes, Shape Modifiers and Paint Operations. The order by which the collection
+should be read starting at the end of the stack and traversed upwards.
+
+#### Groups
+
+Each group can contain any number of children belonging to the four types of
+objects. The children stack includes as the last child a transform object that
+is applied to the full set of its siblings of type Shapes and Groups. Any Paint
+Operation or Shape Modifier defined within a group has no effect on sibling
+Shapes, regardless of them being defined before or after in the containing
+stack.
+
+#### Shapes
+
+Shapes are types of objects that define a paintable surface. They can be
+parametric, like rectangles, or a collection or vertices. They must be painted
+following the inverse stack order, starting from the last.
+
+#### Shape Modifiers
+
+Shape Modifiers, like trim path, or rounded corners, are not part of the render
+tree but modify any Shape that is declared before them on the element stack. The
+order of those modifiers should be applied from last to first in the stack, and
+should be chained such as the output of the previous one becomes the input of
+the following one. They affect both sibling Shapes and Shapes defined within a
+Group, as long as it is located on the stack before them.
+
+#### Paint Operations
+Paint Operations, like stroke and fill, are not part of the render tree but
+define the types of paints that should be applied to Shapes. The order of those
+paints should be applied frop last to first and they affect both sibling Shapes
+and Shapes defined within a Group, as long as it is located on the stack before
+them.
+
+
 ### Track matte layers
 
 Track matte layers are pairs of layers where one acts as a mask for the other.
