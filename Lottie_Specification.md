@@ -1389,6 +1389,47 @@ composite operations on layers. Multiple masks with different properties can be
 applied to the same layer where, depending on the mask mode, different rules of
 stacking apply.
 
+### Matte Masks
+
+Matte masks are pairs of layers where one acts as a mask for the other. Those
+layers are indicated by a tt property on the masked layer and a td on the
+masking one. They are always stacked one after to the other on the stacking
+order.
+
+#### Masked Layer
+
+**Property name:** *tt*
+
+**Property type**: Enum[Number]
+
+**Optional (Required if previous layer has a td property)**
+
+This property only accepts four values and describes the type of mask that
+should be applied.
+
+Its values are
+
+* 1 for Alpha Mask
+
+* 2 for Inverted Alpha Mask
+
+* 3 for Luminance Mask
+
+* 4 for Inverted Luminance Mask
+
+#### Masking Layer
+
+**Property name:** *td*
+
+**Property type**: Number
+
+**Property value**: 1
+
+**Optional (Required if next layer has a tt property)** 
+
+This property only accepts one value that indicates it should be used as a
+masking layer
+
 ### Mask elements
 
 A mask can be considered as a clipping shape or a composite operation depending
