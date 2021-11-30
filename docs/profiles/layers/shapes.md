@@ -1,4 +1,4 @@
-??? info "Shapes"
+???+ info "Shape Layers"
 
     Property | lottie-web | Skottie | Android | iOS | Wearable
     --| -- | -- | -- | -- | --

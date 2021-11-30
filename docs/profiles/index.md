@@ -1,2 +1,3 @@
 
-{!profiles/shapes.md!}
+{!profiles/layers/shapes.md!}
+{!profiles/layers/solids.md!}
