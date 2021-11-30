@@ -1,0 +1,1208 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+    
+    
+      
+        <title>Property types - Test Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.a57b2b03.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+          
+          
+          <meta name="theme-color" content="">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="#00ff00" data-md-color-accent="#00ff00">
+  
+    
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#property-types" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Test Docs" class="md-header__button md-logo" aria-label="Test Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Test Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Property types
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Test Docs" class="md-nav__button md-logo" aria-label="Test Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Test Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../profiles/" class="md-nav__link">
+        Profiles
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Specs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Specs" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Specs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../animation/" class="md-nav__link">
+        Animation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          Properties
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Properties" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Properties
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Property types
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Property types
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#number" class="md-nav__link">
+    Number
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#array" class="md-nav__link">
+    Array
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string" class="md-nav__link">
+    String
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean" class="md-nav__link">
+    Boolean
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shape" class="md-nav__link">
+    Shape
+  </a>
+  
+    <nav class="md-nav" aria-label="Shape">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertices" class="md-nav__link">
+    Vertices
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-points" class="md-nav__link">
+    In Points
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#out-points" class="md-nav__link">
+    Out Points
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-closed" class="md-nav__link">
+    Is Closed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#color" class="md-nav__link">
+    Color
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gradient" class="md-nav__link">
+    Gradient
+  </a>
+  
+    <nav class="md-nav" aria-label="Gradient">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#points" class="md-nav__link">
+    Points
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colors" class="md-nav__link">
+    Colors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-document" class="md-nav__link">
+    Text Document
+  </a>
+  
+    <nav class="md-nav" aria-label="Text Document">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#font-family" class="md-nav__link">
+    Font Family
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#font-size" class="md-nav__link">
+    Font Size
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#font-caps" class="md-nav__link">
+    Font Caps
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paragraph-justification" class="md-nav__link">
+    Paragraph Justification
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-tracking" class="md-nav__link">
+    Text Tracking
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paragraph-line-height" class="md-nav__link">
+    Paragraph Line Height
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#baseline-shift" class="md-nav__link">
+    Baseline Shift
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fill-color" class="md-nav__link">
+    Fill Color
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stroke-color" class="md-nav__link">
+    Stroke Color
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stroke-width" class="md-nav__link">
+    Stroke Width
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#box-size" class="md-nav__link">
+    Box size
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#box-position" class="md-nav__link">
+    Box position
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../animatable-properties/" class="md-nav__link">
+        Animatable properties
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chars/" class="md-nav__link">
+        Text Data
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../assets/" class="md-nav__link">
+        Assets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_5">
+          Layers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Layers" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Layers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layers/common/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layers/solid/" class="md-nav__link">
+        Solid Layer Type
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layers/shapes/" class="md-nav__link">
+        Shape Layer Type
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layers/text/" class="md-nav__link">
+        Text Layer Type
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layers/image/" class="md-nav__link">
+        Image Layer Type
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layers/null/" class="md-nav__link">
+        Null Layer Type
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layers/precomp/" class="md-nav__link">
+        Precomp Layer Type
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#number" class="md-nav__link">
+    Number
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#array" class="md-nav__link">
+    Array
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string" class="md-nav__link">
+    String
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean" class="md-nav__link">
+    Boolean
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shape" class="md-nav__link">
+    Shape
+  </a>
+  
+    <nav class="md-nav" aria-label="Shape">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertices" class="md-nav__link">
+    Vertices
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-points" class="md-nav__link">
+    In Points
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#out-points" class="md-nav__link">
+    Out Points
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-closed" class="md-nav__link">
+    Is Closed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#color" class="md-nav__link">
+    Color
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gradient" class="md-nav__link">
+    Gradient
+  </a>
+  
+    <nav class="md-nav" aria-label="Gradient">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#points" class="md-nav__link">
+    Points
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colors" class="md-nav__link">
+    Colors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-document" class="md-nav__link">
+    Text Document
+  </a>
+  
+    <nav class="md-nav" aria-label="Text Document">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#font-family" class="md-nav__link">
+    Font Family
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#font-size" class="md-nav__link">
+    Font Size
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#font-caps" class="md-nav__link">
+    Font Caps
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paragraph-justification" class="md-nav__link">
+    Paragraph Justification
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-tracking" class="md-nav__link">
+    Text Tracking
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paragraph-line-height" class="md-nav__link">
+    Paragraph Line Height
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#baseline-shift" class="md-nav__link">
+    Baseline Shift
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fill-color" class="md-nav__link">
+    Fill Color
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stroke-color" class="md-nav__link">
+    Stroke Color
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stroke-width" class="md-nav__link">
+    Stroke Width
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#box-size" class="md-nav__link">
+    Box size
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#box-position" class="md-nav__link">
+    Box position
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="property-types">Property types</h1>
+<p>Lottie has multiple properties depending on what type of layer, content and
+attribute they are targeting. Below is the list of different types.</p>
+<h2 id="number">Number</h2>
+<p><strong>Type</strong>: number</p>
+<p>A number property is a single floating point value. Depending on the attribute,
+they can have valid ranges that will be specified when necessary.</p>
+<h2 id="array">Array</h2>
+<p><strong>Type: </strong>array[Number]</p>
+<p>Some properties can have a single dimensional array containing the corresponding
+value.</p>
+<h2 id="string">String</h2>
+<p><strong>Type: </strong>string</p>
+<h2 id="boolean">Boolean</h2>
+<p><strong>Type: </strong>boolean</p>
+<h2 id="shape">Shape</h2>
+<p><strong>Type: </strong>object</p>
+<p>Shapes are defined by four properties that describe the collection of bezier
+curves that represent each path segment of the shape.</p>
+<h3 id="vertices">Vertices</h3>
+<p><strong>Property Name</strong>: <em>v</em></p>
+<p><strong>Property Type</strong>: Array of Tuples of length 2 and type Number</p>
+<p><strong>Required</strong></p>
+<p>Vertices describe the collection of vertices needed to draw the bezier curves.</p>
+<h3 id="in-points">In Points</h3>
+<p><strong>Property Name</strong>: <em>i</em></p>
+<p><strong>Property Type</strong>: Array of Tuples of length 2 and type Number</p>
+<p><strong>Required</strong></p>
+<p>In Points describe the collection of incoming control points needed to draw the
+bezier curve. The number of in points should match the number of vertices of the
+shape.</p>
+<h3 id="out-points">Out Points</h3>
+<p><strong>Property Name</strong>: <em>o</em></p>
+<p><strong>Property Type</strong>: Array of Tuples of length 2 and type Number</p>
+<p><strong>Required</strong></p>
+<p>Out Points describe the collection of outgoing control points needed to draw the
+bezier curve.  The number of out points should match the number of vertices of
+the shape.</p>
+<h3 id="is-closed">Is Closed</h3>
+<p><strong>Property Name</strong>: <em>c</em></p>
+<p><strong>Property Type</strong>: Boolean</p>
+<p>If true, the last vertex should connect to the first vertex of the list using
+the out points of the last vertex and in points of the first  to draw a bezier
+curve that closes the shape.</p>
+<p>If false, the shape stroke between the first and last vertex should not be drawn
+and the shape fill should describe a straight line between them.</p>
+<h2 id="color">Color</h2>
+<p><strong>Type: </strong>Tuples of length 3 and type Number</p>
+<p>A Color is expressed as a 3-dimensional tuple where the first index is the red
+component, the second is blue, and the third is green. All three values range
+from 0 to 1.</p>
+<p>Color is a special case of an Array.</p>
+<h2 id="gradient">Gradient</h2>
+<p><strong>Type: </strong>object</p>
+<p>In order to express gradients in a concise way, gradients are described by two
+properties.</p>
+<h3 id="points">Points</h3>
+<p><strong>Property Name</strong>: <em>p</em></p>
+<p><strong>Property Type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>Points describe the number of stops the gradient has.</p>
+<h3 id="colors">Colors</h3>
+<p><strong>Required</strong></p>
+<p><strong>Property Name</strong>: <em>k</em></p>
+<p><strong>Property Type</strong>: Array[Number]</p>
+<p>Each color stop has 4 values (color stop location, red, green, blue), and they
+are all appended to the same array sequentially.</p>
+<p>If the gradient has opacity, since opacity stops can differ from color stops,
+they will be appended to the same array. All opacity values will be grouped at
+the end of the array expressed as a pair of floating point numbers (opacity
+color stop, opacity value).</p>
+<p>Although opacity can have different color stop values, the total number of
+opacity stops should be equal to the number of color stops.</p>
+<p>In order to identify whether the array is representing only color values or also
+opacity values, the Points property must be used.</p>
+<h2 id="text-document">Text Document</h2>
+<h3 id="font-family">Font Family</h3>
+<p><strong>Property name:</strong> <em>f</em></p>
+<p><strong>Property type</strong>: string</p>
+<p><strong>Required</strong></p>
+<p>The font family of the rendered text</p>
+<h3 id="font-size">Font Size</h3>
+<p><strong>Property name:</strong> <em>s</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>The font size of the text</p>
+<h3 id="font-caps">Font Caps</h3>
+<p><strong>Property name:</strong> <em>ca</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>Caps accepts 3 values. </p>
+<ul>
+<li>
+<p>0 for regular, </p>
+</li>
+<li>
+<p>1 for All Caps, </p>
+</li>
+<li>
+<p>2 for Small Caps</p>
+</li>
+</ul>
+<h3 id="paragraph-justification">Paragraph Justification</h3>
+<p><strong>Property name:</strong> <em>j</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>Justification accepts 6 values.</p>
+<ul>
+<li>
+<p>0 for left justification</p>
+</li>
+<li>
+<p>1 for right justification</p>
+</li>
+<li>
+<p>2 for center justification</p>
+</li>
+<li>
+<p>3 for full justification with last line aligned left</p>
+</li>
+<li>
+<p>4 for full justification with last line aligned right</p>
+</li>
+<li>
+<p>5 for full justification with last line aligned center</p>
+</li>
+<li>
+<p>6 for full justification</p>
+</li>
+</ul>
+<h3 id="text-tracking">Text Tracking</h3>
+<p><strong>Property name:</strong> <em>tr</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>Tracking of the text</p>
+<h3 id="paragraph-line-height">Paragraph Line Height</h3>
+<p><strong>Property name:</strong> <em>lh</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>Line height of each text line</p>
+<h3 id="baseline-shift">Baseline Shift</h3>
+<p><strong>Property name:</strong> <em>ls</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>Distance from the text to its baseline. It can be a positive or negative value.</p>
+<h3 id="fill-color">Fill Color</h3>
+<p><strong>Property name:</strong> <em>fc</em></p>
+<p><strong>Property type</strong>: Color</p>
+<p><strong>Optional</strong></p>
+<p>Fill color of the text</p>
+<h3 id="stroke-color">Stroke Color</h3>
+<p><strong>Property name:</strong> <em>sc</em></p>
+<p><strong>Property type</strong>: Color</p>
+<p><strong>Optional</strong></p>
+<p>Stroke color of the text</p>
+<h3 id="stroke-width">Stroke Width</h3>
+<p><strong>Property name:</strong> <em>sw</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Optional</strong></p>
+<p>Stroke width of the text</p>
+<h3 id="box-size">Box size</h3>
+<p><strong>Property name:</strong> <em>sz</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Optional</strong></p>
+<p>Text layers can have a text box that defines the boundaries of the container
+where text would be rendered. Text lines should wrap around the box. If text
+exceeds the box, it should clip it.</p>
+<h3 id="box-position">Box position</h3>
+<p><strong>Property name:</strong> <em>ps</em></p>
+<p><strong>Property type</strong>: Coordinate</p>
+<p><strong>Optional</strong></p>
+<p>If the text layer has a box size defined, this property defines the position of
+the box relative to the layer.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../animation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Animation" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Animation
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../animatable-properties/" class="md-footer__link md-footer__link--next" aria-label="Next: Animatable properties" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Animatable properties
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.b1047164.min.js"></script>
+      
+    
+  </body>
+</html>

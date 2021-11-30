@@ -1,0 +1,1016 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+    
+    
+      
+        <title>Animation - Test Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a57b2b03.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+          
+          
+          <meta name="theme-color" content="">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="#00ff00" data-md-color-accent="#00ff00">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#animation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Test Docs" class="md-header__button md-logo" aria-label="Test Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Test Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Animation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Test Docs" class="md-nav__button md-logo" aria-label="Test Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Test Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../profiles/" class="md-nav__link">
+        Profiles
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Specs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Specs" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Specs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Animation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Animation
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-considerations" class="md-nav__link">
+    General Considerations
+  </a>
+  
+    <nav class="md-nav" aria-label="General Considerations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#floating-point-coordinates" class="md-nav__link">
+    Floating-point coordinates
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#required-properties" class="md-nav__link">
+    Required properties
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#width-and-height" class="md-nav__link">
+    Width and Height
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#duration" class="md-nav__link">
+    Duration
+  </a>
+  
+    <nav class="md-nav" aria-label="Duration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#in-point" class="md-nav__link">
+    In point
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#out-point" class="md-nav__link">
+    Out point
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frame-rate" class="md-nav__link">
+    Frame Rate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#refresh-rate" class="md-nav__link">
+    Refresh Rate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playback-speed" class="md-nav__link">
+    Playback speed
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#direction" class="md-nav__link">
+    Direction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loop" class="md-nav__link">
+    Loop
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          Properties
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Properties" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Properties
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../properties/prop-types/" class="md-nav__link">
+        Property types
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../properties/animatable-properties/" class="md-nav__link">
+        Animatable properties
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chars/" class="md-nav__link">
+        Text Data
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assets/" class="md-nav__link">
+        Assets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_5">
+          Layers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Layers" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Layers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layers/common/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layers/solid/" class="md-nav__link">
+        Solid Layer Type
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layers/shapes/" class="md-nav__link">
+        Shape Layer Type
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layers/text/" class="md-nav__link">
+        Text Layer Type
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layers/image/" class="md-nav__link">
+        Image Layer Type
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layers/null/" class="md-nav__link">
+        Null Layer Type
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layers/precomp/" class="md-nav__link">
+        Precomp Layer Type
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-considerations" class="md-nav__link">
+    General Considerations
+  </a>
+  
+    <nav class="md-nav" aria-label="General Considerations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#floating-point-coordinates" class="md-nav__link">
+    Floating-point coordinates
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#required-properties" class="md-nav__link">
+    Required properties
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#width-and-height" class="md-nav__link">
+    Width and Height
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#duration" class="md-nav__link">
+    Duration
+  </a>
+  
+    <nav class="md-nav" aria-label="Duration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#in-point" class="md-nav__link">
+    In point
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#out-point" class="md-nav__link">
+    Out point
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frame-rate" class="md-nav__link">
+    Frame Rate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#refresh-rate" class="md-nav__link">
+    Refresh Rate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playback-speed" class="md-nav__link">
+    Playback speed
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#direction" class="md-nav__link">
+    Direction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loop" class="md-nav__link">
+    Loop
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="animation">Animation</h1>
+<h2 id="general-considerations">General Considerations</h2>
+<h3 id="floating-point-coordinates">Floating-point coordinates</h3>
+<p>All values (both time and spatial) are defined as floating point numbers unless
+otherwise specified. Values do not have units to accommodate for different
+programming language capabilities, format preferences, and varying pixel density
+devices.</p>
+<h3 id="required-properties">Required properties</h3>
+<p>It is recommended that any required property that is not defined in the format
+should throw an exception and the animation should refuse to play. Although in
+some cases a default value could fill the missing property, or an element could
+be ejected from the animation, to preserve consistency and fidelity to the
+original animation it is better to reject the animation altogether.</p>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Definition</th>
+<th align="center">Name</th>
+<th align="center">Type</th>
+<th align="center">Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#width-and-height">Width</a></td>
+<td align="center">w</td>
+<td align="center">Number</td>
+<td align="center">✅</td>
+</tr>
+<tr>
+<td><a href="#width-and-height">Height</a></td>
+<td align="center">h</td>
+<td align="center">Number</td>
+<td align="center">✅</td>
+</tr>
+<tr>
+<td><a href="#in-point">In Point</a></td>
+<td align="center">ip</td>
+<td align="center">Number</td>
+<td align="center">✅</td>
+</tr>
+<tr>
+<td><a href="#out-point">Out Point</a></td>
+<td align="center">op</td>
+<td align="center">Number</td>
+<td align="center">✅</td>
+</tr>
+<tr>
+<td><a href="#frame-rate">Frame Rate</a></td>
+<td align="center">fr</td>
+<td align="center">Number</td>
+<td align="center">✅</td>
+</tr>
+</tbody>
+</table>
+<h2 id="width-and-height">Width and Height</h2>
+<p><strong>Property names:</strong> <em>w / h</em></p>
+<p><strong>Property type:</strong> Number</p>
+<p><strong>Required</strong></p>
+<p>An animation has a defined width and height. These two values will define the
+visible drawing area. The (0,0) coordinate is positioned at the top, left corner
+of the resulting rectangle.</p>
+<p>All coordinates both positive and negative are valid. The width and height will
+work as a visible frame of all the drawn scene.</p>
+<h2 id="duration">Duration</h2>
+<p>An animation must have a duration set in the number of frames. Its value is
+expressed as a pair of properties: In point and Out point.</p>
+<p>By definition the Out point should be larger or equal to the In point.</p>
+<p>If this condition is not met, the player should refuse to play and throw an
+exception.</p>
+<p>Since these properties indicate a segment of an implicit timeline that goes from
+<em>-Infinity</em> to <em>Infinity</em>, any keyframe that is out of bounds won’t be rendered
+and only the parts that are within the segment will. Segments can nonetheless
+have keyframes defined outside the time segment; but only the overlapping part
+of the segment with the animation time boundaries will be rendered.</p>
+<p>Exposing an API to adjust the segment at runtime could be helpful, for example
+to animate various states responding to an interaction, or simply to allow for
+multiple animations to be in a single file.</p>
+<h3 id="in-point">In point</h3>
+<p><strong>Property name:</strong> <em>ip</em></p>
+<p><strong>Property type:</strong> Number</p>
+<p><strong>Required</strong></p>
+<p>The In point can be any number, positive or negative, and indicates the initial
+frame of the animation that should be rendered.</p>
+<h3 id="out-point">Out point</h3>
+<p><strong>Property name:</strong> <em>op</em></p>
+<p><strong>Property type:</strong> Number</p>
+<p>The Out point can be any number, positive or negative, and indicates the final
+frame (not included) of the animation that should be rendered.</p>
+<h2 id="frame-rate">Frame Rate</h2>
+<p><strong>Property name:</strong> <em>fr</em></p>
+<p><strong>Property type:</strong> Number</p>
+<p><strong>Required</strong></p>
+<p>An animation has a defined framerate. It represents the number of frames per
+second that should be used to calculate time interpolations. Its value can range
+from 0 (not included) to any positive number.</p>
+<p>The larger the frame rate, the more time-based resolution the animation will
+have. This allows for more fine grained interpolations, specially useful for
+heavy based discrete effects.</p>
+<p>On the other hand, a large frame rate will need an equally large refresh rate,
+which will be covered in the next section.</p>
+<h2 id="refresh-rate">Refresh Rate</h2>
+<p>The refresh rate of an animation is not explicitly defined in the animation
+definition. It can depend on platform capabilities, engine preferences, and
+could change during the course of an animation. </p>
+<p>It describes the number of times per second the engine should compute new values
+and redraw the canvas. The larger its value, the smoother the animation will
+look, but it will also require more computational power to calculate values and
+redraw the result.</p>
+<p>In general, devices have a refresh rate of 60Hz or 120Hz which means that
+animations have a 16ms or 8ms budget, respectively, to redraw. A 60Hz default
+refresh rate should be enough to render a smooth looking animation.</p>
+<p>It is encouraged to develop an API to modify this value. This API can be used
+for different scenarios:</p>
+<ul>
+<li>
+<p>When performance issues can be detected and signaled, modifying the refresh
+  rate should reduce per frame calculations and hence free computing cycles for
+  other requirements.</p>
+</li>
+<li>
+<p>When the animation is not the most relevant element in the view, a lower
+  refresh rate should be enough and it can be modified when the animation is
+  front and center.</p>
+</li>
+<li>
+<p>When a user has reduced motion settings enabled.</p>
+</li>
+<li>
+<p>When a specific refresh rate reflects a particular design decision to convey a
+  message, effect or experience.</p>
+</li>
+</ul>
+<p>Note: If the refresh rate differs from the defined original frame rate, it can
+have unexpected values when interpolating between keyframes. Particularly when
+two keyframes are positioned on consecutive frames, with different values, and
+its easing expects an interpolation between them.</p>
+<p>Relying on how the animation looks in the authoring tool is not enough, since it
+can have a fixed refresh rate that doesn’t match the default one used inthe
+runtime environment.</p>
+<p>This issue can be solved in two ways. The first is to make sure that when
+designing the animation, frames that should not interpolate are correctly set to
+behave that way by using the hold type interpolation.</p>
+<p>The second is to match refresh rate and frame rate. This should guarantee parity
+between authoring tools and runtimes, but it can be a limitation to take
+advantage of the full display rate of the device. The animation might look
+degraded compared to other transitions. Nevertheless, this feature can be
+especially useful for testing purposes where one set of stills has to match
+another set.</p>
+<h2 id="playback-speed">Playback speed</h2>
+<p>Playback speed is a value that describes the ratio between the total duration of
+the original animation and the duration at which the animation is playing. </p>
+<p>This value is not part of the animation format but it should be an implicit or
+explicit value of the runtime engine. Default playback speed is 1 which means
+that the animation duration and playback duration are equal.</p>
+<p>Negative values are supported, and they describe an animation that is played in
+a reverse direction. (See direction as another option to reverse animation
+playback.)</p>
+<p>It is encouraged to expose an API to modify this value, but there is no
+specification on how that API should be implemented.</p>
+<p>This capability, combined with the previous refresh rate, allows for effects
+like slow motion or high rate animations.</p>
+<h2 id="direction">Direction</h2>
+<p>Playback direction describes the direction at which the animation is
+progressing. This value is not part of the animation format, but it is part of
+the runtime engine. Its value can be either 1 or -1. Implicitly it has a default
+value of 1, which means that the animation is running in its original direction.</p>
+<p>It is encouraged to expose an API to modify this value, but there is no
+specification on how that API should be implemented.</p>
+<h2 id="loop">Loop</h2>
+<p>Loop describes if the animation should restart once it reaches the end. This
+value is not part of the animation format, but it is part of the runtime engine.
+Its value can be either a boolean or a natural number including the 0 value. If
+the value is 1, the animation should loop one time after it reaches the end,
+totalling a number of 2 full cycles.</p>
+<p>The true value should mean infinite loops, and false should mean 0 loops.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../profiles/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Profiles" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Profiles
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../properties/prop-types/" class="md-footer__link md-footer__link--next" aria-label="Next: Property types" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Property types
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
+      
+    
+  </body>
+</html>

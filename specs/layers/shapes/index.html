@@ -1,0 +1,2308 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+    
+    
+      
+        <title>Shape Layer Type - Test Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.a57b2b03.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+          
+          
+          <meta name="theme-color" content="">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="#00ff00" data-md-color-accent="#00ff00">
+  
+    
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#shape-layer-type" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Test Docs" class="md-header__button md-logo" aria-label="Test Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Test Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Shape Layer Type
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Test Docs" class="md-nav__button md-logo" aria-label="Test Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Test Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../profiles/" class="md-nav__link">
+        Profiles
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Specs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Specs" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Specs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../animation/" class="md-nav__link">
+        Animation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          Properties
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Properties" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Properties
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/prop-types/" class="md-nav__link">
+        Property types
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/animatable-properties/" class="md-nav__link">
+        Animatable properties
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chars/" class="md-nav__link">
+        Text Data
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../assets/" class="md-nav__link">
+        Assets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_5">
+          Layers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Layers" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Layers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../solid/" class="md-nav__link">
+        Solid Layer Type
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Shape Layer Type
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Shape Layer Type
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#type-property" class="md-nav__link">
+    Type Property
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shapes-property" class="md-nav__link">
+    Shapes Property
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#group-element" class="md-nav__link">
+    Group Element
+  </a>
+  
+    <nav class="md-nav" aria-label="Group Element">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#items-property" class="md-nav__link">
+    Items Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transform-element" class="md-nav__link">
+    Transform Element
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rectangle-element" class="md-nav__link">
+    Rectangle Element
+  </a>
+  
+    <nav class="md-nav" aria-label="Rectangle Element">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#size-property" class="md-nav__link">
+    Size Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#position-property" class="md-nav__link">
+    Position Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#roundness-property" class="md-nav__link">
+    Roundness Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ellipse-element" class="md-nav__link">
+    Ellipse Element
+  </a>
+  
+    <nav class="md-nav" aria-label="Ellipse Element">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#size-property_1" class="md-nav__link">
+    Size Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#position-property_1" class="md-nav__link">
+    Position Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#polystar-element" class="md-nav__link">
+    Polystar Element
+  </a>
+  
+    <nav class="md-nav" aria-label="Polystar Element">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subtype-property" class="md-nav__link">
+    Subtype Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#points-property" class="md-nav__link">
+    Points Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#position-property_2" class="md-nav__link">
+    Position Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotation-property" class="md-nav__link">
+    Rotation Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outer-radius-property" class="md-nav__link">
+    Outer Radius Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outer-roundness-property" class="md-nav__link">
+    Outer Roundness Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inner-radius-property" class="md-nav__link">
+    Inner Radius Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inner-roundness-property" class="md-nav__link">
+    Inner Roundness Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shape-element" class="md-nav__link">
+    Shape Element
+  </a>
+  
+    <nav class="md-nav" aria-label="Shape Element">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#path-property" class="md-nav__link">
+    Path Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fill-property" class="md-nav__link">
+    Fill Property
+  </a>
+  
+    <nav class="md-nav" aria-label="Fill Property">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#color-property" class="md-nav__link">
+    Color Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opacity-property" class="md-nav__link">
+    Opacity Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gradient-fill-property" class="md-nav__link">
+    Gradient Fill Property
+  </a>
+  
+    <nav class="md-nav" aria-label="Gradient Fill Property">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-property_1" class="md-nav__link">
+    Type Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-point-property" class="md-nav__link">
+    Start Point Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#end-point-property" class="md-nav__link">
+    End Point Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#highlight-length-property" class="md-nav__link">
+    Highlight Length Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#highlight-angle-property" class="md-nav__link">
+    Highlight Angle Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color-property_1" class="md-nav__link">
+    Color Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opacity-property_1" class="md-nav__link">
+    Opacity Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stroke-property" class="md-nav__link">
+    Stroke Property
+  </a>
+  
+    <nav class="md-nav" aria-label="Stroke Property">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#color-property_2" class="md-nav__link">
+    Color Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opacity-property_2" class="md-nav__link">
+    Opacity Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stroke-width-property" class="md-nav__link">
+    Stroke Width Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#line-cap-property" class="md-nav__link">
+    Line Cap Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#line-join-property" class="md-nav__link">
+    Line Join Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miter-limit-property" class="md-nav__link">
+    Miter Limit Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gradient-stroke-property" class="md-nav__link">
+    Gradient Stroke Property
+  </a>
+  
+    <nav class="md-nav" aria-label="Gradient Stroke Property">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#color-property_3" class="md-nav__link">
+    Color Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opacity-property_3" class="md-nav__link">
+    Opacity Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stroke-width-property_1" class="md-nav__link">
+    Stroke Width Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#line-cap-property_1" class="md-nav__link">
+    Line Cap Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#line-join-property_1" class="md-nav__link">
+    Line Join Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miter-limit-property_1" class="md-nav__link">
+    Miter Limit Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-property_2" class="md-nav__link">
+    Type Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-point-property_1" class="md-nav__link">
+    Start Point Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#end-point-property_1" class="md-nav__link">
+    End Point Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#highlight-length-property_1" class="md-nav__link">
+    Highlight Length Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#highlight-angle-property_1" class="md-nav__link">
+    Highlight Angle Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#merge-paths-property" class="md-nav__link">
+    Merge Paths Property
+  </a>
+  
+    <nav class="md-nav" aria-label="Merge Paths Property">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#merge-mode-property" class="md-nav__link">
+    Merge Mode Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#offset-paths-property" class="md-nav__link">
+    Offset Paths Property
+  </a>
+  
+    <nav class="md-nav" aria-label="Offset Paths Property">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#amount-property" class="md-nav__link">
+    Amount Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#line-join-property_2" class="md-nav__link">
+    Line Join Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miter-limit-property_2" class="md-nav__link">
+    Miter Limit Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repeater-property" class="md-nav__link">
+    Repeater Property
+  </a>
+  
+    <nav class="md-nav" aria-label="Repeater Property">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#copies-property" class="md-nav__link">
+    Copies Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offset-property" class="md-nav__link">
+    Offset Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transform-property" class="md-nav__link">
+    Transform Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#round-corners-property" class="md-nav__link">
+    Round Corners Property
+  </a>
+  
+    <nav class="md-nav" aria-label="Round Corners Property">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#copies-property_1" class="md-nav__link">
+    Copies Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trim-paths-property" class="md-nav__link">
+    Trim Paths Property
+  </a>
+  
+    <nav class="md-nav" aria-label="Trim Paths Property">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start-property" class="md-nav__link">
+    Start Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#end-property" class="md-nav__link">
+    End Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offset-property_1" class="md-nav__link">
+    Offset Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trim-multiple-shapes-property" class="md-nav__link">
+    Trim Multiple Shapes Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../text/" class="md-nav__link">
+        Text Layer Type
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../image/" class="md-nav__link">
+        Image Layer Type
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../null/" class="md-nav__link">
+        Null Layer Type
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../precomp/" class="md-nav__link">
+        Precomp Layer Type
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#type-property" class="md-nav__link">
+    Type Property
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shapes-property" class="md-nav__link">
+    Shapes Property
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#group-element" class="md-nav__link">
+    Group Element
+  </a>
+  
+    <nav class="md-nav" aria-label="Group Element">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#items-property" class="md-nav__link">
+    Items Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transform-element" class="md-nav__link">
+    Transform Element
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rectangle-element" class="md-nav__link">
+    Rectangle Element
+  </a>
+  
+    <nav class="md-nav" aria-label="Rectangle Element">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#size-property" class="md-nav__link">
+    Size Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#position-property" class="md-nav__link">
+    Position Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#roundness-property" class="md-nav__link">
+    Roundness Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ellipse-element" class="md-nav__link">
+    Ellipse Element
+  </a>
+  
+    <nav class="md-nav" aria-label="Ellipse Element">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#size-property_1" class="md-nav__link">
+    Size Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#position-property_1" class="md-nav__link">
+    Position Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#polystar-element" class="md-nav__link">
+    Polystar Element
+  </a>
+  
+    <nav class="md-nav" aria-label="Polystar Element">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subtype-property" class="md-nav__link">
+    Subtype Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#points-property" class="md-nav__link">
+    Points Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#position-property_2" class="md-nav__link">
+    Position Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotation-property" class="md-nav__link">
+    Rotation Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outer-radius-property" class="md-nav__link">
+    Outer Radius Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outer-roundness-property" class="md-nav__link">
+    Outer Roundness Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inner-radius-property" class="md-nav__link">
+    Inner Radius Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inner-roundness-property" class="md-nav__link">
+    Inner Roundness Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shape-element" class="md-nav__link">
+    Shape Element
+  </a>
+  
+    <nav class="md-nav" aria-label="Shape Element">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#path-property" class="md-nav__link">
+    Path Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fill-property" class="md-nav__link">
+    Fill Property
+  </a>
+  
+    <nav class="md-nav" aria-label="Fill Property">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#color-property" class="md-nav__link">
+    Color Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opacity-property" class="md-nav__link">
+    Opacity Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gradient-fill-property" class="md-nav__link">
+    Gradient Fill Property
+  </a>
+  
+    <nav class="md-nav" aria-label="Gradient Fill Property">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-property_1" class="md-nav__link">
+    Type Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-point-property" class="md-nav__link">
+    Start Point Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#end-point-property" class="md-nav__link">
+    End Point Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#highlight-length-property" class="md-nav__link">
+    Highlight Length Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#highlight-angle-property" class="md-nav__link">
+    Highlight Angle Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color-property_1" class="md-nav__link">
+    Color Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opacity-property_1" class="md-nav__link">
+    Opacity Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stroke-property" class="md-nav__link">
+    Stroke Property
+  </a>
+  
+    <nav class="md-nav" aria-label="Stroke Property">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#color-property_2" class="md-nav__link">
+    Color Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opacity-property_2" class="md-nav__link">
+    Opacity Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stroke-width-property" class="md-nav__link">
+    Stroke Width Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#line-cap-property" class="md-nav__link">
+    Line Cap Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#line-join-property" class="md-nav__link">
+    Line Join Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miter-limit-property" class="md-nav__link">
+    Miter Limit Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gradient-stroke-property" class="md-nav__link">
+    Gradient Stroke Property
+  </a>
+  
+    <nav class="md-nav" aria-label="Gradient Stroke Property">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#color-property_3" class="md-nav__link">
+    Color Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opacity-property_3" class="md-nav__link">
+    Opacity Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stroke-width-property_1" class="md-nav__link">
+    Stroke Width Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#line-cap-property_1" class="md-nav__link">
+    Line Cap Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#line-join-property_1" class="md-nav__link">
+    Line Join Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miter-limit-property_1" class="md-nav__link">
+    Miter Limit Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-property_2" class="md-nav__link">
+    Type Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-point-property_1" class="md-nav__link">
+    Start Point Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#end-point-property_1" class="md-nav__link">
+    End Point Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#highlight-length-property_1" class="md-nav__link">
+    Highlight Length Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#highlight-angle-property_1" class="md-nav__link">
+    Highlight Angle Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#merge-paths-property" class="md-nav__link">
+    Merge Paths Property
+  </a>
+  
+    <nav class="md-nav" aria-label="Merge Paths Property">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#merge-mode-property" class="md-nav__link">
+    Merge Mode Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#offset-paths-property" class="md-nav__link">
+    Offset Paths Property
+  </a>
+  
+    <nav class="md-nav" aria-label="Offset Paths Property">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#amount-property" class="md-nav__link">
+    Amount Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#line-join-property_2" class="md-nav__link">
+    Line Join Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miter-limit-property_2" class="md-nav__link">
+    Miter Limit Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repeater-property" class="md-nav__link">
+    Repeater Property
+  </a>
+  
+    <nav class="md-nav" aria-label="Repeater Property">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#copies-property" class="md-nav__link">
+    Copies Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offset-property" class="md-nav__link">
+    Offset Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transform-property" class="md-nav__link">
+    Transform Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#round-corners-property" class="md-nav__link">
+    Round Corners Property
+  </a>
+  
+    <nav class="md-nav" aria-label="Round Corners Property">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#copies-property_1" class="md-nav__link">
+    Copies Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trim-paths-property" class="md-nav__link">
+    Trim Paths Property
+  </a>
+  
+    <nav class="md-nav" aria-label="Trim Paths Property">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start-property" class="md-nav__link">
+    Start Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#end-property" class="md-nav__link">
+    End Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offset-property_1" class="md-nav__link">
+    Offset Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trim-multiple-shapes-property" class="md-nav__link">
+    Trim Multiple Shapes Property
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="shape-layer-type">Shape Layer Type</h1>
+<p>Shape layers define a set of shapes and shape modifiers grouped together. It has
+a single specific property (shapes) and others shared with other layer types
+(transform, masks, effects, layer styles).</p>
+<table>
+<thead>
+<tr>
+<th>Definition</th>
+<th align="center">Name</th>
+<th align="center">Type</th>
+<th align="center">Required</th>
+<th align="center">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#type-property">Type</a></td>
+<td align="center">ty</td>
+<td align="center"><a href="../../properties/layer-types">Layer Types</a></td>
+<td align="center">✅</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td><a href="#shapes-property">Shapes</a></td>
+<td align="center">shapes</td>
+<td align="center">Array[<a href="#shapes-property">Shape Properties</a>]</td>
+<td align="center">✅</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="type-property">Type Property</h2>
+<p><strong>Property name:</strong> <em>ty</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p><strong>Property value</strong>: 4</p>
+<h2 id="shapes-property">Shapes Property</h2>
+<p><strong>Property name:</strong> <em>shapes</em></p>
+<p><strong>Property type</strong>: Array[Shape Properties]</p>
+<p>Shapes is a collection of paths and path modifiers like fills, colors, groups,
+trim paths. Each property has a type defined by the "ty" prop.</p>
+<h2 id="group-element">Group Element</h2>
+<p><strong>type</strong>: <em>gr</em></p>
+<p>A group contains a list of shape properties that are rendered as part of that
+group. Any modifiers defined within the group will only apply to the stack
+preceding the modifier but only scoped inside the group.</p>
+<h3 id="items-property">Items Property</h3>
+<p><strong>Property name:</strong> <em>it</em></p>
+<p><strong>Property type</strong>: Array[Shape Properties]</p>
+<p><strong>Required</strong></p>
+<p>The list of items defined within the group</p>
+<h2 id="transform-element">Transform Element</h2>
+<p><strong>Property name</strong>: <em>tr</em></p>
+<p><strong>Property type:</strong> Transform</p>
+<p><strong>Required</strong></p>
+<p>A transform property that is applied to the stack of elements preceding it</p>
+<h2 id="rectangle-element">Rectangle Element</h2>
+<p><strong>type</strong>: <em>rc</em></p>
+<p>A rectangle is a parametric shape defined by its size, position and roundness.</p>
+<h3 id="size-property">Size Property</h3>
+<p><strong>Property name:</strong> <em>s</em></p>
+<p><strong>Property type</strong>: Non Animated Array | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>Size is a two dimensional array that represents the width and height of the
+rectangle.</p>
+<h3 id="position-property">Position Property</h3>
+<p><strong>Property name:</strong> <em>p</em></p>
+<p><strong>Property type</strong>: Non Animated Array | Multi Dimensional Animated Property</p>
+<p>Position is a two-dimensional array that represents the coordinates of the
+rectangle relative to its containing group. </p>
+<h3 id="roundness-property">Roundness Property</h3>
+<p><strong>Property name:</strong> <em>r</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p>Roundness is a one-dimensional value that represents the roundness of the
+rectangle corners.</p>
+<h2 id="ellipse-element">Ellipse Element</h2>
+<p><strong>type</strong>: <em>el</em></p>
+<p>An ellipse is a parametric shape defined by its size and position</p>
+<h3 id="size-property_1">Size Property</h3>
+<p><strong>Property name:</strong> <em>s</em></p>
+<p><strong>Property type</strong>:Non Animated Array | Multi Dimensional Animated Property</p>
+<p>Size is a two-dimensional array that represents the width and height of the
+rectangle.</p>
+<h3 id="position-property_1">Position Property</h3>
+<p><strong>Property name:</strong> <em>p</em></p>
+<p><strong>Property type</strong>: Non Animated Array | Multi Dimensional Animated Property</p>
+<p>Position is a two-dimensional array that represents the coordinates of the
+rectangle relative to its containing group.</p>
+<h2 id="polystar-element">Polystar Element</h2>
+<p><strong>type</strong>: <em>sr</em></p>
+<p>This element has two different subtypes that define a Star or a Polygon.</p>
+<p>Its points, position, rotation, outer radius and outer roundness define a
+polygon.</p>
+<p>A star is defined by all the same properties as a polygon, and it includes an
+inner roundness and inner radius.</p>
+<h3 id="subtype-property">Subtype Property</h3>
+<p><strong>Property name:</strong> <em>sy</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<ul>
+<li>
+<p>1 for Star</p>
+</li>
+<li>
+<p>2 for Polygon</p>
+</li>
+</ul>
+<p><strong>Required</strong></p>
+<h3 id="points-property">Points Property</h3>
+<p><strong>Property name:</strong> <em>pt</em></p>
+<p><strong>Property type</strong>: Non Animated Shape | Shape Animated Property</p>
+<p><strong>Required</strong></p>
+<p>Points is a one-dimensional number that defines the number of outer corners the
+parametric shape has.</p>
+<p>For a polygon, it also equals the total number of corners.</p>
+<p>For a star, the number of corners is double, since every segment is subdivided
+by an outer circle and an inner circle.</p>
+<h3 id="position-property_2">Position Property</h3>
+<p><strong>Property name:</strong> <em>p</em></p>
+<p><strong>Property type</strong>: Non Animated Array | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>Position is a two-dimensional array that represents the coordinates of the
+rectangle relative to its containing group. </p>
+<h3 id="rotation-property">Rotation Property</h3>
+<p><strong>Property name:</strong> <em>r</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>Position is a one-dimensional number that represents the rotation angle in
+degrees of the shape.</p>
+<h3 id="outer-radius-property">Outer Radius Property</h3>
+<p><strong>Property name:</strong> <em>or</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>Outer radius is a one-dimensional number that represents the radius of a circle
+where the outer points of the shape should be inscribed.</p>
+<h3 id="outer-roundness-property">Outer Roundness Property</h3>
+<p><strong>Property name:</strong> <em>os</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>Outer roundness is a one-dimensional number that represents the length of the
+control points of a bezier curve by which the corners of the shape should be
+drawn. Those control points should be tangent to the circle defined by the outer
+radius property.</p>
+<h3 id="inner-radius-property">Inner Radius Property</h3>
+<p><strong>Property name:</strong> <em>ir</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Conditional</strong></p>
+<p>Inner radius is a one-dimensional number that represents the radius of a circle
+where the inner points of the star should be inscribed.</p>
+<h3 id="inner-roundness-property">Inner Roundness Property</h3>
+<p><strong>Property name:</strong> <em>is</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Conditional</strong></p>
+<p>Inner roundness is a one-dimensional number that represents the length of the
+control points of a bezier curve by which the corners of the inner points of the
+star should be drawn. Those control points should be tangent to the circle
+defined by the inner radius property.</p>
+<h2 id="shape-element">Shape Element</h2>
+<p><strong>type</strong>: <em>sh</em></p>
+<p>This element has a single property defining the path of the shape</p>
+<h3 id="path-property">Path Property</h3>
+<p><strong>Property name:</strong> <em>ks</em></p>
+<p><strong>Property type</strong>: Non Animated Shape | Shape Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The shape described by the collection of bezier curves.</p>
+<h2 id="fill-property">Fill Property</h2>
+<p><strong>type</strong>: <em>fl</em></p>
+<p><strong>Required</strong></p>
+<p>This property defines the fill color that should be applied to the stack of
+elements preceding it. It has two inner properties, color and opacity</p>
+<h3 id="color-property">Color Property</h3>
+<p><strong>Property name:</strong> <em>c</em></p>
+<p><strong>Property type</strong>: Color | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The color of the fill</p>
+<h3 id="opacity-property">Opacity Property</h3>
+<p><strong>Property name:</strong> <em>o</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The opacity of the fill</p>
+<h2 id="gradient-fill-property">Gradient Fill Property</h2>
+<p><strong>type</strong>: <em>gf</em></p>
+<p>This property defines the gradient fill color that should be applied to the
+stack of elements preceding it. It has seven properties: Type, Start Point, End
+Point, Highlight Angle, Highlight Length, Colors, Opacity.</p>
+<h3 id="type-property_1">Type Property</h3>
+<p><strong>Property name:</strong> <em>t</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p><strong>Required</strong></p>
+<p>This property only accepts two values and describes the type of gradient that
+should be applied.</p>
+<ul>
+<li>
+<p>1 for Linear</p>
+</li>
+<li>
+<p>2 for Radial</p>
+</li>
+</ul>
+<h3 id="start-point-property">Start Point Property</h3>
+<p><strong>Property name:</strong> <em>s</em></p>
+<p><strong>Property type</strong>: Non Animated Array | Spatial Animated Property</p>
+<p><strong>Required</strong></p>
+<p>A two-dimensional array that represents the coordinates of the starting point of
+the gradient interpolation.</p>
+<h3 id="end-point-property">End Point Property</h3>
+<p><strong>Property name:</strong> <em>e</em></p>
+<p><strong>Property type</strong>: Non Animated Array | Spatial Animated Property</p>
+<p><strong>Required</strong></p>
+<p>A two-dimensional array that represents the coordinates of the end point of the
+gradient interpolation.</p>
+<h3 id="highlight-length-property">Highlight Length Property</h3>
+<p><strong>Property name:</strong> <em>h</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Conditional</strong></p>
+<p>A value that offsets the starting point of the gradient.</p>
+<h3 id="highlight-angle-property">Highlight Angle Property</h3>
+<p><strong>Property name:</strong> <em>a</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Conditional</strong></p>
+<p>A value that defines the angle by which the starting point of the gradient will
+be offset.</p>
+<h3 id="color-property_1">Color Property</h3>
+<p><strong>Property name:</strong> <em>g</em></p>
+<p><strong>Property type</strong>: Gradient | Gradient Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The set of colors that define the gradient</p>
+<h3 id="opacity-property_1">Opacity Property</h3>
+<p><strong>Property name:</strong> <em>o</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The opacity of the gradient fill</p>
+<h2 id="stroke-property">Stroke Property</h2>
+<p><strong>type</strong>: <em>st</em></p>
+<p>This property defines the stroke color and width that should be applied to the
+stack of elements preceding it. It has six inner properties, color, opacity,
+stroke width, line cap, line join, miter limit.</p>
+<h3 id="color-property_2">Color Property</h3>
+<p><strong>Property name:</strong> <em>c</em></p>
+<p><strong>Property type</strong>: Color | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The color of the fill</p>
+<h3 id="opacity-property_2">Opacity Property</h3>
+<p><strong>Property name:</strong> <em>o</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The opacity of the fill</p>
+<h3 id="stroke-width-property">Stroke Width Property</h3>
+<p><strong>Property name:</strong> <em>w</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The width of the stroke applied to the shapes. It does not accept negative
+numbers.</p>
+<h3 id="line-cap-property">Line Cap Property</h3>
+<p><strong>Property name:</strong> <em>lc</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p><strong>Required</strong></p>
+<p>The line cap of the stroke</p>
+<p>Its values are </p>
+<ul>
+<li>
+<p>1 for Butt Cap</p>
+</li>
+<li>
+<p>2 for Round Cap</p>
+</li>
+<li>
+<p>3 for Projecting Cap</p>
+</li>
+</ul>
+<h3 id="line-join-property">Line Join Property</h3>
+<p><strong>Property name:</strong> <em>lj</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p><strong>Required</strong></p>
+<p>The line join of the stroke</p>
+<p>Its values are </p>
+<ul>
+<li>
+<p>1 for Miter Join</p>
+</li>
+<li>
+<p>2 for Round Join</p>
+</li>
+<li>
+<p>3 for Bevel Join</p>
+</li>
+</ul>
+<h3 id="miter-limit-property">Miter Limit Property</h3>
+<p><strong>Property name:</strong> <em>ml</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p>The miter limit is a one-dimensional value that applies only if the line join
+value of the stroke is Miter Join.</p>
+<h2 id="gradient-stroke-property">Gradient Stroke Property</h2>
+<p><strong>type</strong>: <em>st</em></p>
+<p>Defines the gradient stroke color and width that should be applied to the stack
+of elements preceding it. It has eleven inner properties, color, opacity, stroke
+width, line cap, line join, miter limit.</p>
+<h3 id="color-property_3">Color Property</h3>
+<p><strong>Property name:</strong> <em>g</em></p>
+<p><strong>Property type</strong>: Gradient | Gradient Animated Property </p>
+<p><strong>Required</strong></p>
+<p>Describes the set of colors that define the gradient</p>
+<h3 id="opacity-property_3">Opacity Property</h3>
+<p><strong>Property name:</strong> <em>o</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The opacity of the fill</p>
+<h3 id="stroke-width-property_1">Stroke Width Property</h3>
+<p><strong>Property name:</strong> <em>w</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The width of the stroke applied to the shapes</p>
+<h3 id="line-cap-property_1">Line Cap Property</h3>
+<p><strong>Property name:</strong> <em>lc</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>The line cap of the stroke</p>
+<p>Its values are </p>
+<ul>
+<li>
+<p>1 for Butt Cap</p>
+</li>
+<li>
+<p>2 for Round Cap</p>
+</li>
+<li>
+<p>3 for Projecting Cap</p>
+</li>
+</ul>
+<h3 id="line-join-property_1">Line Join Property</h3>
+<p><strong>Property name:</strong> <em>lj</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>The line join of the stroke</p>
+<p>Its values are </p>
+<ul>
+<li>
+<p>1 for Miter Join</p>
+</li>
+<li>
+<p>2 for Round Join</p>
+</li>
+<li>
+<p>3 for Bevel Join</p>
+</li>
+</ul>
+<h3 id="miter-limit-property_1">Miter Limit Property</h3>
+<p><strong>Property name:</strong> <em>ml</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The miter limit is a value that applies only if the line join value of the
+stroke is Miter Join.</p>
+<h3 id="type-property_2">Type Property</h3>
+<p><strong>Property name:</strong> <em>t</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p><strong>Required</strong></p>
+<p>This property only accepts two values and describes the type of gradient that
+should be applied.</p>
+<p>Its values are</p>
+<ul>
+<li>
+<p>1 for Linear</p>
+</li>
+<li>
+<p>2 for Radial</p>
+</li>
+</ul>
+<h3 id="start-point-property_1">Start Point Property</h3>
+<p><strong>Property name:</strong> <em>s</em></p>
+<p><strong>Property type</strong>: Non Animated Array | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>A two dimensional array that represents the coordinates of the starting point of
+the gradient interpolation.</p>
+<h3 id="end-point-property_1">End Point Property</h3>
+<p><strong>Property name:</strong> <em>e</em></p>
+<p><strong>Property type</strong>: Non Animated Array | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>A two-dimensional array that represents the coordinates of the end point of the
+gradient interpolation.</p>
+<h3 id="highlight-length-property_1">Highlight Length Property</h3>
+<p><strong>Property name:</strong> <em>h</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<h3 id="highlight-angle-property_1">Highlight Angle Property</h3>
+<p><strong>Property name:</strong> <em>a</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<h2 id="merge-paths-property">Merge Paths Property</h2>
+<p><strong>type</strong>: <em>mm</em></p>
+<p>A merge path acts as a shape boolean operation applied to the set of shapes
+preceding it. It contains a single property, the merge mode.</p>
+<h3 id="merge-mode-property">Merge Mode Property</h3>
+<p><strong>Property name:</strong> <em>mm</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p><strong>Required</strong></p>
+<p>The merge mode defines the type of operation that should be applied to shapes.</p>
+<p>Its values are:</p>
+<ul>
+<li>
+<p>1 for Merge</p>
+</li>
+<li>
+<p>2 for Add</p>
+</li>
+<li>
+<p>3 for Subtract</p>
+</li>
+<li>
+<p>4 for Intersect</p>
+</li>
+<li>
+<p>5 for Exclude Intersections</p>
+</li>
+</ul>
+<h2 id="offset-paths-property">Offset Paths Property</h2>
+<p><strong>type</strong>: <em>op</em></p>
+<p>The offset path modifier should grow or shrink the set of shapes preceding it.
+It is defined by three properties: amount, line join and miter limit.</p>
+<h3 id="amount-property">Amount Property</h3>
+<p><strong>Property name:</strong> <em>a</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p>A one-dimensional value that defines how much the shape should grow or shrink</p>
+<h3 id="line-join-property_2">Line Join Property</h3>
+<p><strong>Property name:</strong> <em>lj</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p>The line join of the stroke</p>
+<p>Its Values are </p>
+<ul>
+<li>
+<p>1 for Miter Join</p>
+</li>
+<li>
+<p>2 for Round Join</p>
+</li>
+<li>
+<p>3 for Bevel Join</p>
+</li>
+</ul>
+<h3 id="miter-limit-property_2">Miter Limit Property</h3>
+<p><strong>Property name:</strong> <em>ml</em></p>
+<p><strong>Property type</strong>: object</p>
+<p>A one-dimensional value that applies only if the line join value of the stroke
+is Miter Join</p>
+<h2 id="repeater-property">Repeater Property</h2>
+<p><strong>type</strong>: <em>rp</em></p>
+<p>The repeater modifier creates copies of the set of shapes preceding it. It is
+defined by three properties: copies, offset, transform.</p>
+<h3 id="copies-property">Copies Property</h3>
+<p><strong>Property name:</strong> <em>c</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>A one-dimensional value that defines how many copies (including the original
+shape) of the shapes should be drawn </p>
+<h3 id="offset-property">Offset Property</h3>
+<p><strong>Property name:</strong> <em>o</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>A one-dimensional value that defines how many copies should be skipped before
+starting the count of shapes to be drawn.</p>
+<p>This value should be accounted for in order to calculate the following
+<em>transform</em> property.</p>
+<h3 id="transform-property">Transform Property</h3>
+<p><strong>Property name:</strong> <em>tr</em></p>
+<p><strong>Property type</strong>: Transform</p>
+<p><strong>Required</strong></p>
+<p>For each copy of a repeater, this transform operation is applied before the
+drawing operation is applied. This allows to generate copies of the original
+drawing with a combination of regular transform operations between them.</p>
+<p>When the offset property is different from 0, these transform operations should
+accumulate by the amount that the offset value defines before being applied to
+the first copy.</p>
+<h2 id="round-corners-property">Round Corners Property</h2>
+<p><strong>type</strong>: <em>rd</em></p>
+<p>This modifier affects any vertex of a shape whose bezier control points are 0.
+It has a single property that defines the radius of the effect.</p>
+<h3 id="copies-property_1">Copies Property</h3>
+<p><strong>Property name:</strong> <em>r</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p>A one-dimensional value that defines the length of the control points of the
+bezier curve that should be applied to the vertex. The direction of the control
+point should be tangent to the vertex itself.</p>
+<h2 id="trim-paths-property">Trim Paths Property</h2>
+<p><strong>type</strong>: <em>tm</em></p>
+<p>This modifier changes the shape of the set of elements preceding it. Although in
+general, trim paths are expected to only affect the stroke of a shape, this
+modifier should affect both how strokes and fills are applied.</p>
+<p>The way the new shape is calculated should measure the full perimeter of the
+shape individually (or the full set of shapes if Trim Multiple Shapes property
+is set to Individually) and regenerate the new set of paths as a percentage of
+the original set.</p>
+<p>It is defined by four properties: Start, End, Offset and Trim Multiple Shapes.</p>
+<h3 id="start-property">Start Property</h3>
+<p><strong>Property name:</strong> <em>s</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>A one-dimensional value that defines the initial point of the shape that should
+be drawn relative to the initial point of the original shape. It is expressed as
+a percentage of the initial value.</p>
+<h3 id="end-property">End Property</h3>
+<p><strong>Property name:</strong> <em>e</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>A one-dimensional value that defines the end point of the shape that should be
+drawn relative to the end point of the original shape. It is expressed as a
+percentage of the end value.</p>
+<h3 id="offset-property_1">Offset Property</h3>
+<p><strong>Property name:</strong> <em>o</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>A one-dimensional value that defines an offset by which the start and end points
+should be calculated. A whole cycle is expressed as a 360 offset.</p>
+<h3 id="trim-multiple-shapes-property">Trim Multiple Shapes Property</h3>
+<p><strong>Property name:</strong> <em>m</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p><strong>Required</strong></p>
+<p>This property accepts only two values:</p>
+<ul>
+<li>
+<p>1 for Simultaneous</p>
+</li>
+<li>
+<p>2 for Individual</p>
+</li>
+</ul>
+<p>Simultaneous means that all shapes should be trimmed applying the calculations
+separately. Individual means that a single trim effect should be applied to all
+of them by calculating the full length of all shapes together.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../solid/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Solid Layer Type" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Solid Layer Type
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../text/" class="md-footer__link md-footer__link--next" aria-label="Next: Text Layer Type" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Text Layer Type
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.b1047164.min.js"></script>
+      
+    
+  </body>
+</html>

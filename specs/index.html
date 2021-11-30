@@ -1,0 +1,2438 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+    
+    
+      
+        <title>Lottie Animation Format - Test Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.a57b2b03.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+          
+          
+          <meta name="theme-color" content="">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="#00ff00" data-md-color-accent="#00ff00">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#lottie-animation-format" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Test Docs" class="md-header__button md-logo" aria-label="Test Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Test Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lottie Animation Format
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Test Docs" class="md-nav__button md-logo" aria-label="Test Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Test Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../profiles/" class="md-nav__link">
+        Profiles
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Specs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Specs" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Specs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="animation/" class="md-nav__link">
+        Animation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          Properties
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Properties" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Properties
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/prop-types/" class="md-nav__link">
+        Property types
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/animatable-properties/" class="md-nav__link">
+        Animatable properties
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="chars/" class="md-nav__link">
+        Text Data
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="assets/" class="md-nav__link">
+        Assets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_5">
+          Layers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Layers" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Layers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="layers/common/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="layers/solid/" class="md-nav__link">
+        Solid Layer Type
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="layers/shapes/" class="md-nav__link">
+        Shape Layer Type
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="layers/text/" class="md-nav__link">
+        Text Layer Type
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="layers/image/" class="md-nav__link">
+        Image Layer Type
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="layers/null/" class="md-nav__link">
+        Null Layer Type
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="layers/precomp/" class="md-nav__link">
+        Precomp Layer Type
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#version-100" class="md-nav__link">
+    Version 1.0.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#status-draft" class="md-nav__link">
+    Status Draft
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="lottie-animation-format">Lottie Animation Format</h1>
+<h3 id="version-100">Version 1.0.0</h3>
+<h3 id="status-draft">Status Draft</h3>
+<h1 id="contents">Contents</h1>
+<p><a href="#abstract">Abstract</a></p>
+<p><a href="#rendering-model">Rendering Model</a></p>
+<p><a href="#animation">Animation</a></p>
+<p><a href="#property-types">Property Types</a></p>
+<p><a href="#animatable-properties">Animatable properties</a></p>
+<p><a href="#assets">Assets</a></p>
+<p><a href="#text-data">Text Data</a></p>
+<p><a href="#layers">Layers</a></p>
+<h1 id="abstract">Abstract</h1>
+<p>The Lottie Animation Format is a vector format focused on animation,
+interaction, real-time updates and multi-platform support. This document
+describes the specifications of the format and its extensibility. It will also
+describe how to specify supported layer types and properties.</p>
+<p>Given its objective of being a global animation vector format, the Lottie
+Animation Format does not focus on performance improvements for a single
+platform. Instead it tries to be as simple and extendable as possible.</p>
+<p>The format is influenced by the Adobe After Effects Render Model, from which it
+draws the layer, keyframes, and properties structure.</p>
+<p>This specification defines a model for drawing and animating a set of layers on
+a canvas.</p>
+<h1 id="rendering-model">Rendering Model</h1>
+<p>TBD</p>
+<h1 id="animation">Animation</h1>
+<h2 id="general-considerations">General Considerations</h2>
+<h3 id="floating-point-coordinates">Floating-point coordinates</h3>
+<p>All values (both time and spatial) are defined as floating point numbers unless
+otherwise specified. Values do not have units to accommodate for different
+programming language capabilities, format preferences, and varying pixel density
+devices.</p>
+<h3 id="required-properties">Required properties</h3>
+<p>It is recommended that any required property that is not defined in the format
+should throw an exception and the animation should refuse to play. Although in
+some cases a default value could fill the missing property, or an element could
+be ejected from the animation, to preserve consistency and fidelity to the
+original animation it is better to reject the animation altogether.</p>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Definition</th>
+<th align="center">Name</th>
+<th align="center">Type</th>
+<th align="center">Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#width-and-height">Width</a></td>
+<td align="center">w</td>
+<td align="center">Number</td>
+<td align="center">✅</td>
+</tr>
+<tr>
+<td><a href="#width-and-height">Height</a></td>
+<td align="center">h</td>
+<td align="center">Number</td>
+<td align="center">✅</td>
+</tr>
+<tr>
+<td><a href="#in-point">In Point</a></td>
+<td align="center">ip</td>
+<td align="center">Number</td>
+<td align="center">✅</td>
+</tr>
+<tr>
+<td><a href="#out-point">Out Point</a></td>
+<td align="center">op</td>
+<td align="center">Number</td>
+<td align="center">✅</td>
+</tr>
+<tr>
+<td><a href="#frame-rate">Frame Rate</a></td>
+<td align="center">fr</td>
+<td align="center">Number</td>
+<td align="center">✅</td>
+</tr>
+</tbody>
+</table>
+<h2 id="width-and-height">Width and Height</h2>
+<p><strong>Property names:</strong> <em>w / h</em></p>
+<p><strong>Property type:</strong> Number</p>
+<p><strong>Required</strong></p>
+<p>An animation has a defined width and height. These two values will define the
+visible drawing area. The (0,0) coordinate is positioned at the top, left corner
+of the resulting rectangle.</p>
+<p>All coordinates both positive and negative are valid. The width and height will
+work as a visible frame of all the drawn scene.</p>
+<h2 id="duration">Duration</h2>
+<p>An animation must have a duration set in the number of frames. Its value is
+expressed as a pair of properties: In point and Out point.</p>
+<p>By definition the Out point should be larger or equal to the In point.</p>
+<p>If this condition is not met, the player should refuse to play and throw an
+exception.</p>
+<p>Since these properties indicate a segment of an implicit timeline that goes from
+<em>-Infinity</em> to <em>Infinity</em>, any keyframe that is out of bounds won’t be rendered
+and only the parts that are within the segment will. Segments can nonetheless
+have keyframes defined outside the time segment; but only the overlapping part
+of the segment with the animation time boundaries will be rendered.</p>
+<p>Exposing an API to adjust the segment at runtime could be helpful, for example
+to animate various states responding to an interaction, or simply to allow for
+multiple animations to be in a single file.</p>
+<h3 id="in-point">In point</h3>
+<p><strong>Property name:</strong> <em>ip</em></p>
+<p><strong>Property type:</strong> Number</p>
+<p><strong>Required</strong></p>
+<p>The In point can be any number, positive or negative, and indicates the initial
+frame of the animation that should be rendered.</p>
+<h3 id="out-point">Out point</h3>
+<p><strong>Property name:</strong> <em>op</em></p>
+<p><strong>Property type:</strong> Number</p>
+<p>The Out point can be any number, positive or negative, and indicates the final
+frame (not included) of the animation that should be rendered.</p>
+<h2 id="frame-rate">Frame Rate</h2>
+<p><strong>Property name:</strong> <em>fr</em></p>
+<p><strong>Property type:</strong> Number</p>
+<p><strong>Required</strong></p>
+<p>An animation has a defined framerate. It represents the number of frames per
+second that should be used to calculate time interpolations. Its value can range
+from 0 (not included) to any positive number.</p>
+<p>The larger the frame rate, the more time-based resolution the animation will
+have. This allows for more fine grained interpolations, specially useful for
+heavy based discrete effects.</p>
+<p>On the other hand, a large frame rate will need an equally large refresh rate,
+which will be covered in the next section.</p>
+<h2 id="refresh-rate">Refresh Rate</h2>
+<p>The refresh rate of an animation is not explicitly defined in the animation
+definition. It can depend on platform capabilities, engine preferences, and
+could change during the course of an animation. </p>
+<p>It describes the number of times per second the engine should compute new values
+and redraw the canvas. The larger its value, the smoother the animation will
+look, but it will also require more computational power to calculate values and
+redraw the result.</p>
+<p>In general, devices have a refresh rate of 60Hz or 120Hz which means that
+animations have a 16ms or 8ms budget, respectively, to redraw. A 60Hz default
+refresh rate should be enough to render a smooth looking animation.</p>
+<p>It is encouraged to develop an API to modify this value. This API can be used
+for different scenarios:</p>
+<ul>
+<li>
+<p>When performance issues can be detected and signaled, modifying the refresh
+  rate should reduce per frame calculations and hence free computing cycles for
+  other requirements.</p>
+</li>
+<li>
+<p>When the animation is not the most relevant element in the view, a lower
+  refresh rate should be enough and it can be modified when the animation is
+  front and center.</p>
+</li>
+<li>
+<p>When a user has reduced motion settings enabled.</p>
+</li>
+<li>
+<p>When a specific refresh rate reflects a particular design decision to convey a
+  message, effect or experience.</p>
+</li>
+</ul>
+<p>Note: If the refresh rate differs from the defined original frame rate, it can
+have unexpected values when interpolating between keyframes. Particularly when
+two keyframes are positioned on consecutive frames, with different values, and
+its easing expects an interpolation between them.</p>
+<p>Relying on how the animation looks in the authoring tool is not enough, since it
+can have a fixed refresh rate that doesn’t match the default one used inthe
+runtime environment.</p>
+<p>This issue can be solved in two ways. The first is to make sure that when
+designing the animation, frames that should not interpolate are correctly set to
+behave that way by using the hold type interpolation.</p>
+<p>The second is to match refresh rate and frame rate. This should guarantee parity
+between authoring tools and runtimes, but it can be a limitation to take
+advantage of the full display rate of the device. The animation might look
+degraded compared to other transitions. Nevertheless, this feature can be
+especially useful for testing purposes where one set of stills has to match
+another set.</p>
+<h2 id="playback-speed">Playback speed</h2>
+<p>Playback speed is a value that describes the ratio between the total duration of
+the original animation and the duration at which the animation is playing. </p>
+<p>This value is not part of the animation format but it should be an implicit or
+explicit value of the runtime engine. Default playback speed is 1 which means
+that the animation duration and playback duration are equal.</p>
+<p>Negative values are supported, and they describe an animation that is played in
+a reverse direction. (See direction as another option to reverse animation
+playback.)</p>
+<p>It is encouraged to expose an API to modify this value, but there is no
+specification on how that API should be implemented.</p>
+<p>This capability, combined with the previous refresh rate, allows for effects
+like slow motion or high rate animations.</p>
+<h2 id="direction">Direction</h2>
+<p>Playback direction describes the direction at which the animation is
+progressing. This value is not part of the animation format, but it is part of
+the runtime engine. Its value can be either 1 or -1. Implicitly it has a default
+value of 1, which means that the animation is running in its original direction.</p>
+<p>It is encouraged to expose an API to modify this value, but there is no
+specification on how that API should be implemented.</p>
+<h2 id="loop">Loop</h2>
+<p>Loop describes if the animation should restart once it reaches the end. This
+value is not part of the animation format, but it is part of the runtime engine.
+Its value can be either a boolean or a natural number including the 0 value. If
+the value is 1, the animation should loop one time after it reaches the end,
+totalling a number of 2 full cycles.</p>
+<p>The true value should mean infinite loops, and false should mean 0 loops.</p>
+<h1 id="property-types">Property types</h1>
+<p>Lottie has multiple properties depending on what type of layer, content and
+attribute they are targeting. Below is the list of different types.</p>
+<h2 id="number">Number</h2>
+<p><strong>Type</strong>: number</p>
+<p>A number property is a single floating point value. Depending on the attribute,
+they can have valid ranges that will be specified when necessary.</p>
+<h2 id="array">Array</h2>
+<p><strong>Type: </strong>array[Number]</p>
+<p>Some properties can have a single dimensional array containing the corresponding
+value.</p>
+<h2 id="string">String</h2>
+<p><strong>Type: </strong>string</p>
+<h2 id="boolean">Boolean</h2>
+<p><strong>Type: </strong>boolean</p>
+<h2 id="shape">Shape</h2>
+<p><strong>Type: </strong>object</p>
+<p>Shapes are defined by four properties that describe the collection of bezier
+curves that represent each path segment of the shape.</p>
+<h3 id="vertices">Vertices</h3>
+<p><strong>Property Name</strong>: <em>v</em></p>
+<p><strong>Property Type</strong>: Array of Tuples of length 2 and type Number</p>
+<p><strong>Required</strong></p>
+<p>Vertices describe the collection of vertices needed to draw the bezier curves.</p>
+<h3 id="in-points">In Points</h3>
+<p><strong>Property Name</strong>: <em>i</em></p>
+<p><strong>Property Type</strong>: Array of Tuples of length 2 and type Number</p>
+<p><strong>Required</strong></p>
+<p>In Points describe the collection of incoming control points needed to draw the
+bezier curve. The number of in points should match the number of vertices of the
+shape.</p>
+<h3 id="out-points">Out Points</h3>
+<p><strong>Property Name</strong>: <em>o</em></p>
+<p><strong>Property Type</strong>: Array of Tuples of length 2 and type Number</p>
+<p><strong>Required</strong></p>
+<p>Out Points describe the collection of outgoing control points needed to draw the
+bezier curve.  The number of out points should match the number of vertices of
+the shape.</p>
+<h3 id="is-closed">Is Closed</h3>
+<p><strong>Property Name</strong>: <em>c</em></p>
+<p><strong>Property Type</strong>: Boolean</p>
+<p>If true, the last vertex should connect to the first vertex of the list using
+the out points of the last vertex and in points of the first  to draw a bezier
+curve that closes the shape.</p>
+<p>If false, the shape stroke between the first and last vertex should not be drawn
+and the shape fill should describe a straight line between them.</p>
+<h2 id="color">Color</h2>
+<p><strong>Type: </strong>Tuples of length 3 and type Number</p>
+<p>A Color is expressed as a 3-dimensional tuple where the first index is the red
+component, the second is blue, and the third is green. All three values range
+from 0 to 1.</p>
+<p>Color is a special case of an Array.</p>
+<h2 id="gradient">Gradient</h2>
+<p><strong>Type: </strong>object</p>
+<p>In order to express gradients in a concise way, gradients are described by two
+properties.</p>
+<h3 id="points">Points</h3>
+<p><strong>Property Name</strong>: <em>p</em></p>
+<p><strong>Property Type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>Points describe the number of stops the gradient has.</p>
+<h3 id="colors">Colors</h3>
+<p><strong>Required</strong></p>
+<p><strong>Property Name</strong>: <em>k</em></p>
+<p><strong>Property Type</strong>: Array[Number]</p>
+<p>Each color stop has 4 values (color stop location, red, green, blue), and they
+are all appended to the same array sequentially.</p>
+<p>If the gradient has opacity, since opacity stops can differ from color stops,
+they will be appended to the same array. All opacity values will be grouped at
+the end of the array expressed as a pair of floating point numbers (opacity
+color stop, opacity value).</p>
+<p>Although opacity can have different color stop values, the total number of
+opacity stops should be equal to the number of color stops.</p>
+<p>In order to identify whether the array is representing only color values or also
+opacity values, the Points property must be used.</p>
+<h2 id="text-document">Text Document</h2>
+<h3 id="font-family">Font Family</h3>
+<p><strong>Property name:</strong> <em>f</em></p>
+<p><strong>Property type</strong>: string</p>
+<p><strong>Required</strong></p>
+<p>The font family of the rendered text</p>
+<h3 id="font-size">Font Size</h3>
+<p><strong>Property name:</strong> <em>s</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>The font size of the text</p>
+<h3 id="font-caps">Font Caps</h3>
+<p><strong>Property name:</strong> <em>ca</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>Caps accepts 3 values. </p>
+<ul>
+<li>
+<p>0 for regular, </p>
+</li>
+<li>
+<p>1 for All Caps, </p>
+</li>
+<li>
+<p>2 for Small Caps</p>
+</li>
+</ul>
+<h3 id="paragraph-justification">Paragraph Justification</h3>
+<p><strong>Property name:</strong> <em>j</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>Justification accepts 6 values.</p>
+<ul>
+<li>
+<p>0 for left justification</p>
+</li>
+<li>
+<p>1 for right justification</p>
+</li>
+<li>
+<p>2 for center justification</p>
+</li>
+<li>
+<p>3 for full justification with last line aligned left</p>
+</li>
+<li>
+<p>4 for full justification with last line aligned right</p>
+</li>
+<li>
+<p>5 for full justification with last line aligned center</p>
+</li>
+<li>
+<p>6 for full justification</p>
+</li>
+</ul>
+<h3 id="text-tracking">Text Tracking</h3>
+<p><strong>Property name:</strong> <em>tr</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>Tracking of the text</p>
+<h3 id="paragraph-line-height">Paragraph Line Height</h3>
+<p><strong>Property name:</strong> <em>lh</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>Line height of each text line</p>
+<h3 id="baseline-shift">Baseline Shift</h3>
+<p><strong>Property name:</strong> <em>ls</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>Distance from the text to its baseline. It can be a positive or negative value.</p>
+<h3 id="fill-color">Fill Color</h3>
+<p><strong>Property name:</strong> <em>fc</em></p>
+<p><strong>Property type</strong>: Color</p>
+<p><strong>Optional</strong></p>
+<p>Fill color of the text</p>
+<h3 id="stroke-color">Stroke Color</h3>
+<p><strong>Property name:</strong> <em>sc</em></p>
+<p><strong>Property type</strong>: Color</p>
+<p><strong>Optional</strong></p>
+<p>Stroke color of the text</p>
+<h3 id="stroke-width">Stroke Width</h3>
+<p><strong>Property name:</strong> <em>sw</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Optional</strong></p>
+<p>Stroke width of the text</p>
+<h3 id="box-size">Box size</h3>
+<p><strong>Property name:</strong> <em>sz</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Optional</strong></p>
+<p>Text layers can have a text box that defines the boundaries of the container
+where text would be rendered. Text lines should wrap around the box. If text
+exceeds the box, it should clip it.</p>
+<h3 id="box-position">Box position</h3>
+<p><strong>Property name:</strong> <em>ps</em></p>
+<p><strong>Property type</strong>: Coordinate</p>
+<p><strong>Optional</strong></p>
+<p>If the text layer has a box size defined, this property defines the position of
+the box relative to the layer.</p>
+<h1 id="animatable-properties">Animatable properties</h1>
+<p>Lottie supports animating different types of properties. Some of them are
+multidimensional, some are unidimensional, and some have a spatial component.
+Depending on the type of property, some attributes may vary. When these
+properties are not animated, their signature will be different.</p>
+<h2 id="easing-types">Easing types</h2>
+<p>Lottie has different easing types depending on the type of property that is
+being interpolated.</p>
+<h3 id="one-dimensional-easing">One Dimensional Easing</h3>
+<p>Properties with this easing type have a single easing function for all parts of
+the interpolating object. For example, shape vertices, outpoint and inpoints
+share a single easing function.</p>
+<h4 id="out-point_1">Out Point</h4>
+<p><strong>Property Name</strong>: <em>o</em></p>
+<p><strong>Property Type</strong>: object</p>
+<p><strong>Required</strong></p>
+<p>The outpoint is the outgoing bezier control point that describes the easing
+function.</p>
+<h4 id="coord-x">Coord x</h4>
+<p><strong>Property Name</strong>: <em>x</em></p>
+<p><strong>Property Type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>The x component of the control point</p>
+<h4 id="coord-y">Coord y</h4>
+<p><strong>Property Name</strong>: <em>y</em></p>
+<p><strong>Property Type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>The y component of the control point</p>
+<h4 id="in-point_1">In Point</h4>
+<p><strong>Property Name</strong>: <em>i</em></p>
+<p><strong>Property Type</strong>: object</p>
+<p><strong>Required</strong></p>
+<p>The outpoint is the outgoing bezier control point that describes the easing
+function.</p>
+<h4 id="coord-x_1">Coord x</h4>
+<p><strong>Property Name</strong>: <em>x</em></p>
+<p><strong>Property Type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>The x component of the control point</p>
+<h4 id="coord-y_1">Coord y</h4>
+<p><strong>Property Name</strong>: <em>y</em></p>
+<p><strong>Property Type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>The y component of the control point</p>
+<h3 id="multi-dimensional-easing">Multi Dimensional Easing</h3>
+<p>Properties with this easing type have a different easing function for each of
+their dimensions.</p>
+<h4 id="out-point_2">Out Point</h4>
+<p><strong>Property Name</strong>: <em>o</em></p>
+<p><strong>Property Type</strong>: object</p>
+<p><strong>Required</strong></p>
+<p>The outpoint is the outgoing bezier control point that describes the easing
+function.</p>
+<h5 id="coord-x_2">Coord x</h5>
+<p><strong>Property Name</strong>: <em>x</em></p>
+<p><strong>Property Type</strong>: Array[Number]</p>
+<p><strong>Required</strong></p>
+<p>The list of x components of the control point</p>
+<h5 id="coord-y_2">Coord y</h5>
+<p><strong>Property Name</strong>: <em>y</em></p>
+<p><strong>Property Type</strong>: Array[Number]</p>
+<p><strong>Required</strong></p>
+<p>The list of y components of the control point</p>
+<h4 id="in-point_2">In Point</h4>
+<p><strong>Property Name</strong>: <em>i</em></p>
+<p><strong>Property Type</strong>: object</p>
+<p><strong>Required</strong></p>
+<p>The outpoint is the outgoing bezier control point that describes the easing
+function.</p>
+<h5 id="coord-x_3">Coord x</h5>
+<p><strong>Property Type</strong>: Array[Number]</p>
+<p><strong>Required</strong></p>
+<p>The list of x components of the control point</p>
+<p>The x component of the control point</p>
+<h5 id="coord-y_3">Coord y</h5>
+<p><strong>Property Type</strong>: Array[Number]</p>
+<p><strong>Required</strong></p>
+<p>The list of y components of the control point</p>
+<p>The y component of the control point</p>
+<h2 id="non-animated">Non animated</h2>
+<p>When an animatable property is not animated, it will consist of a single prop
+called "k", and its value will depend on the type of property.</p>
+<h2 id="animated">Animated</h2>
+<p>Animation objects are mostly described by five attributes: time, easing in,
+easing out, hold and value</p>
+<h3 id="time">Time</h3>
+<p><strong>Property name</strong>: <em>t</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>Time describes, in frames, the time at which a new value is specified.</p>
+<h3 id="easing-out">Easing Out</h3>
+<p><strong>Property name</strong>: <em>o</em></p>
+<p><strong>Property type</strong>: One Dimensional Easing | Multi Dimensional Easing</p>
+<p><strong>Required</strong></p>
+<p>Easing out describes the outgoing interpolation values used to create the easing
+function between two keyframes.</p>
+<h3 id="easing-in">Easing In</h3>
+<p><strong>Property name</strong>: <em>i</em></p>
+<p><strong>Property type</strong>: One Dimensional Easing | Multi Dimensional Easing</p>
+<p><strong>Required</strong></p>
+<p>Easing in describes the incoming interpolation values used to create the easing
+function between two keyframes.</p>
+<h3 id="hold">Hold</h3>
+<p><strong>Property name</strong>: <em>h</em></p>
+<p><strong>Property type</strong>: Boolean</p>
+<p><strong>Optional</strong></p>
+<p>If true, the hold property indicates that the specific keyframe should not
+interpolate to the next value and instead should stay on its own value until it
+reaches the next keyframe.</p>
+<h3 id="value">Value</h3>
+<p><strong>Property name</strong>: <em>s</em></p>
+<p><strong>Property type</strong>: Number | One Dimensional Array | Multi Dimensional Array |
+Shape | Gradient | Text Document | Color</p>
+<p><strong>Required</strong></p>
+<p>The value of the property at the specific keyframe that should be rendered at
+time t</p>
+<h2 id="one-dimensional-animated-property">One Dimensional Animated Property</h2>
+<p>One Dimensional Animated Properties include the same properties as animated
+properties. Their easing type is One Dimensional Easing. </p>
+<p>Their value type is a Number or an Array.</p>
+<h2 id="multi-dimensional-animated-property">Multi Dimensional Animated Property</h2>
+<p>Multi Dimensional Animated Properties include the same properties as animated
+properties. Their easing type is Multi Dimensional Easing.</p>
+<p>Their value type is an Array.</p>
+<h2 id="shape-animated-property">Shape Animated Property</h2>
+<p>Shape Animated Properties include the same properties as animated properties.
+Their easing type is One Dimensional Easing and their value type is Shape.</p>
+<h2 id="gradient-animated-property">Gradient Animated Property</h2>
+<p>Shape Animated Properties include the same properties as animated properties.
+Their easing type is One Dimensional Easing and their value type is Gradient.</p>
+<h2 id="spatial-animated-property">Spatial Animated Property</h2>
+<p>Spatial properties include the same properties as animated properties but they
+add two extra properties that describe how the spatial interpolation should be
+applied. These two properties describe the bezier curve control points needed to
+draw the path between the spatial coordinates. Values are relative to the
+coordinates of each keyframe.</p>
+<p>Their easing type is One Dimensional Easing.</p>
+<h3 id="spatial-out">Spatial Out</h3>
+<p><strong>Property name</strong>: <em>to</em></p>
+<p><strong>Property type</strong>: Array[Number]</p>
+<p><strong>Required</strong></p>
+<p>The coordinates of the first control point of the bezier curve relative to the
+initial value of the interpolated segment</p>
+<h3 id="spatial-in">Spatial In</h3>
+<p><strong>Property name</strong>: <em>ti</em></p>
+<p><strong>Property type</strong>: Array[Number]</p>
+<p><strong>Required</strong></p>
+<p>The coordinates of the second control point of the bezier curve relative to the
+end value of the interpolated segment</p>
+<h2 id="text-document-animated-property">Text Document Animated Property</h2>
+<p>Text Document Animated Properties include the same properties as animated
+properties. They don’t have an easing value and their Hold property is set to
+true.</p>
+<h1 id="assets">Assets</h1>
+<p>Assets are a collection of source objects needed to fill layer information that
+could be shared between multiple layer instances.</p>
+<p>They range from preComps, audios, images, font binaries.</p>
+<p>These objects do not always have a specified type, when they don’t, content can
+be inferred from the requester.</p>
+<h2 id="precomps">Precomps</h2>
+<p>Precomps have three properties: id, name and layers.</p>
+<h3 id="precomp-id">Precomp id</h3>
+<p><strong>Property name:</strong> <em>id</em></p>
+<p><strong>Property type:</strong> Number</p>
+<p><strong>Required</strong></p>
+<p>The id of the precomp source</p>
+<h3 id="precomp-name">Precomp name</h3>
+<p><strong>Property name:</strong> <em>nm</em></p>
+<p><strong>Property type:</strong> string</p>
+<p><strong>Required</strong></p>
+<p>The name of the source of the comp. This property is useful for expressions that
+reference another composition.</p>
+<h3 id="precomp-layers">Precomp layers</h3>
+<p><strong>Property name:</strong> <em>layers</em></p>
+<p><strong>Property type:</strong> Array[Layers]</p>
+<p><strong>Required</strong></p>
+<p>The list of layers that compose a precomposition</p>
+<h2 id="images">Images</h2>
+<p>Images contain the information to obtain an image source. It can be expressed in
+different ways: inline or pointing to an external path.</p>
+<h3 id="asset-type">Asset type</h3>
+<p><strong>Property name:</strong> <em>t</em></p>
+<p><strong>Property type:</strong> Enum[Number]</p>
+<p><strong>Property value:</strong> 1</p>
+<p><strong>Optional</strong></p>
+<p>The type of the asset</p>
+<h3 id="image-id">Image id</h3>
+<p><strong>Property name:</strong> <em>id</em></p>
+<p><strong>Property type:</strong> Number</p>
+<p><strong>Required</strong></p>
+<p>The id of the image source</p>
+<h3 id="image-mode">Image mode</h3>
+<p><strong>Property name:</strong> <em>e</em></p>
+<p><strong>Property type:</strong> Enum[Number]</p>
+<p><strong>Required</strong></p>
+<p>The way information is stored to retrieve the asset. Its values are</p>
+<ul>
+<li>
+<p>0 when the asset is loaded externally</p>
+</li>
+<li>
+<p>1 when the asset is embedded inline in the json file</p>
+</li>
+</ul>
+<h3 id="image-width">Image width</h3>
+<p><strong>Property name:</strong> <em>w</em></p>
+<p><strong>Property type:</strong> Number</p>
+<p><strong>Required</strong></p>
+<p>The width of the image source</p>
+<h3 id="image-height">Image height</h3>
+<p><strong>Property name:</strong> <em>h</em></p>
+<p><strong>Property type:</strong> Number</p>
+<p><strong>Required</strong></p>
+<p>The height of the image source</p>
+<h3 id="image-path">Image path</h3>
+<p><strong>Property name:</strong> <em>u</em></p>
+<p><strong>Property type:</strong> String</p>
+<p><strong>Required</strong></p>
+<p>The path of the image excluding the file name</p>
+<h3 id="image-name">Image name</h3>
+<p><strong>Property name:</strong> <em>p</em></p>
+<p><strong>Property type:</strong> String</p>
+<p><strong>Required</strong></p>
+<p>If asset mode is 0, it indicates the file name of the image.</p>
+<p>If asset mode is 1, it contains the embedded image encoded as base 64.</p>
+<h2 id="audio">Audio</h2>
+<p>Audio contains the information to obtain an audio source. It can be expressed in
+different ways: inline or pointing to an external path.</p>
+<h3 id="asset-type_1">Asset type</h3>
+<p><strong>Property name:</strong> <em>t</em></p>
+<p><strong>Property type:</strong> Enum[Number]</p>
+<p><strong>Property value:</strong> 2</p>
+<p><strong>Required</strong></p>
+<p>The type of the asset</p>
+<h3 id="audio-id">Audio id</h3>
+<p><strong>Property name:</strong> <em>id</em></p>
+<p><strong>Property type:</strong> Number</p>
+<p><strong>Required</strong></p>
+<p>The id of the audio source</p>
+<h3 id="audio-mode">Audio mode</h3>
+<p><strong>Property name:</strong> <em>e</em></p>
+<p><strong>Property type:</strong> Enum[Number]</p>
+<p><strong>Required</strong></p>
+<p>The way information is stored to retrieve the asset. Its values are</p>
+<ul>
+<li>
+<p>0 when the asset is loaded externally</p>
+</li>
+<li>
+<p>1 when the asset is embedded inline in the json file</p>
+</li>
+</ul>
+<h3 id="audio-path">Audio path</h3>
+<p><strong>Property name:</strong> <em>u</em></p>
+<p><strong>Property type:</strong> String</p>
+<p><strong>Required</strong></p>
+<p>The path of the audio excluding the file name</p>
+<h3 id="audio-name">Audio name</h3>
+<p><strong>Property name:</strong> <em>p</em></p>
+<p><strong>Property type:</strong> String</p>
+<p><strong>Required</strong></p>
+<p>If asset mode is 0, it indicates the file name of the audio.</p>
+<p>If asset mode is 1, it contains the embedded audio encoded as base 64.</p>
+<h1 id="text-data">Text Data</h1>
+<p>In order to render text, two different solutions are provided by the format.
+Text can be exported as glyphs or as regular text data.</p>
+<h2 id="glyphs">Glyphs</h2>
+<p>Glyphs allows Lottie to detach itself from any external font file to render
+text. By including every character as a shape described by bezier curves, it can
+render text independently from the original font.</p>
+<h3 id="chars">Chars</h3>
+<p><strong>Property name:</strong> <em>chars</em></p>
+<p><strong>Property type:</strong> Array[Char]</p>
+<p>The chars array contains the list of all characters available to be rendered.</p>
+<h4 id="char-object">Char Object</h4>
+<p><strong>Property type:</strong> Object</p>
+<p>A character is described by a set of properties to identify its font family,
+shape and other necessary properties to be rendered.</p>
+<h5 id="character">Character</h5>
+<p><strong>Property name:</strong> <em>ch</em></p>
+<p><strong>Property type:</strong> String</p>
+<p><strong>Required</strong></p>
+<p>The character string. It should be used to map the character requested by a text
+layer.</p>
+<h5 id="style">Style</h5>
+<p><strong>Property name:</strong> <em>style</em></p>
+<p><strong>Property type:</strong> String</p>
+<p><strong>Required</strong></p>
+<p>The font style. It should be used to map the character requested by a text
+layer.</p>
+<h5 id="font-family_1">Font Family</h5>
+<p><strong>Property name:</strong> <em>fFamily</em></p>
+<p><strong>Property type:</strong> String</p>
+<p><strong>Required</strong></p>
+<p>The font family. It should be used to map the character requested by a text
+layer.</p>
+<h5 id="advance-width">Advance Width</h5>
+<p><strong>Property name:</strong> <em>w</em></p>
+<p><strong>Property type:</strong> Number</p>
+<p><strong>Required</strong></p>
+<p>The distance at which the following character should be drawn, expressed
+relative to a font size of 100px.</p>
+<h5 id="data">Data</h5>
+<p><strong>Property name:</strong> <em>data</em></p>
+<p><strong>Property type:</strong> object</p>
+<p><strong>Required</strong></p>
+<p>The data object contains a set of extra properties relative to the character.</p>
+<h6 id="shapes">Shapes</h6>
+<p><strong>Property name:</strong> <em>shapes</em></p>
+<p><strong>Property type:</strong> Array[Shape]</p>
+<p><strong>Required</strong></p>
+<p>The list of shapes that represent the character</p>
+<h2 id="fonts">Fonts</h2>
+<p><strong>Property name:</strong> <em>fonts</em></p>
+<p><strong>Property type:</strong> object</p>
+<p><strong>Required</strong></p>
+<p>Fonts contain a set of properties related to font information needed to render
+text layers.</p>
+<h3 id="fonts-list">Fonts List</h3>
+<p><strong>Property name:</strong> <em>list</em></p>
+<p><strong>Property type:</strong> Array[Font]</p>
+<p>The list property contains the array of fonts needed to render all text layers.</p>
+<h4 id="font">Font</h4>
+<p><strong>Property type:</strong> Object</p>
+<p>Each font describes the font information needed to render a specific text layer
+type.</p>
+<h5 id="font-origin">Font Origin</h5>
+<p><strong>Property name:</strong> <em>origin</em></p>
+<p><strong>Property type:</strong> Enum[Number]</p>
+<p><strong>Required</strong></p>
+<p>The font origin indicates how to interpret the other properties in order to load
+the font</p>
+<ul>
+<li>
+<p>0 for None</p>
+</li>
+<li>
+<p>1 for Google</p>
+</li>
+<li>
+<p>2 for Typekit</p>
+</li>
+<li>
+<p>3 for URL</p>
+</li>
+</ul>
+<h5 id="font-path">Font Path</h5>
+<p><strong>Property name:</strong> <em>fPath</em></p>
+<p><strong>Property type:</strong> String</p>
+<p><strong>Required</strong></p>
+<p>The path that should be used to load the font</p>
+<h5 id="font-class">Font Class</h5>
+<p><strong>Property name:</strong> <em>fClass</em></p>
+<p><strong>Property type:</strong> String</p>
+<p><strong>Optional</strong></p>
+<p>The class that should be assigned to the text element for it to get the font
+assigned via a css selector</p>
+<h5 id="font-name">Font Name</h5>
+<p><strong>Property name:</strong> <em>fName</em></p>
+<p><strong>Property type:</strong> String</p>
+<p><strong>Required</strong></p>
+<p>The name of the font to identify which font should be used to render the text</p>
+<h5 id="font-family_2">Font Family</h5>
+<p><strong>Property name:</strong> <em>fFamily</em></p>
+<p><strong>Property type:</strong> String</p>
+<p><strong>Required</strong></p>
+<p>The value of the font family</p>
+<h5 id="font-weight">Font Weight</h5>
+<p><strong>Property name:</strong> <em>fWeight</em></p>
+<p><strong>Property type:</strong> String</p>
+<p><strong>Required</strong></p>
+<p>The value of the font weight</p>
+<h5 id="font-style">Font Style</h5>
+<p><strong>Property name:</strong> <em>fStyle</em></p>
+<p><strong>Property type:</strong> String</p>
+<p><strong>Required</strong></p>
+<p>The value of the font style</p>
+<h5 id="ascent">Ascent</h5>
+<p><strong>Property name:</strong> <em>ascent</em></p>
+<p><strong>Property type:</strong> Number</p>
+<p><strong>Required</strong></p>
+<p>The value of the font ascent expressed relative to a font size of 100px. The
+ascent references the yOffset by which to draw the character.</p>
+<h1 id="layers">Layers</h1>
+<h2 id="introduction">Introduction</h2>
+<p>A collection of layers describes an animation or a composition (see compositions
+for more information). </p>
+<p>They are the building blocks of an animation. The order of layers represents (in
+most cases) the order in which they should be rendered. The first element in the
+list should be rendered above all the other elements on the stack.</p>
+<p>Some exceptions to this rule are camera layers that don’t have a visual
+representation on the canvas. Others, that are not yet part of the
+specification, are Light layers, and Adjustment layers.</p>
+<p>Layers are categorized by the type of content, and each should be rendered
+according to their unique specification.</p>
+<h2 id="layer-properties">Layer Properties</h2>
+<p>Layers have common properties and unique properties related to their content. In
+this section common properties will be covered. </p>
+<h3 id="transform">Transform</h3>
+<p><strong>Property names</strong>: *ks *</p>
+<p><strong>Property type</strong>: object</p>
+<p><strong>Required</strong></p>
+<p>The transform property is a container for a set of properties that are
+traditionally related to GPU operations on textures. They represent affine
+operations and opacity.</p>
+<h4 id="anchor-point">Anchor Point</h4>
+<p><strong>Property name</strong>: *a *</p>
+<p><strong>Property type</strong>: Non-Animated Array | Spatial Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The Anchor point is a two-dimensional (or three if layer is 3d) array that
+represents the origin from which other transformations should be applied.</p>
+<h4 id="position">Position</h4>
+<p><strong>Property name</strong>: <em>p</em></p>
+<p><strong>Property type</strong>: object | Non-Animated Array | Spatial Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The position can be expressed in two different ways, and it will be indicated by
+a property called "s". If s is true, dimensions are separate. If s is false, it
+behaves as an Array.</p>
+<h5 id="position-separate-dimensions">Position Separate Dimensions</h5>
+<p><strong>Property names</strong>: *x, y, z *</p>
+<p><strong>Property types</strong>: Non-Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>If dimensions are separate, the position will be a container for 2 (or 3 if the
+layer is 3d) one-dimensional independent properties. Those properties are "x",
+“y”, and “z” and they can be animated separately.</p>
+<h4 id="scale">Scale</h4>
+<p><strong>Property name</strong>: *s *</p>
+<p><strong>Property type</strong>: Non-Animated Array | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The scale is a two dimensional (or three if layer is 3d) array that represents
+the scaling percentage of the layer. If its value is 100%, no scaling is
+applied.</p>
+<h4 id="rotation-for-2d-layers">Rotation for 2d layers</h4>
+<p><strong>Property name</strong>: <em>r</em></p>
+<p><strong>Property type</strong>: Non-Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Conditional</strong></p>
+<p>This property is the rotation expressed in degrees applied to the layer.</p>
+<h4 id="x-rotation-for-3d-layers">X Rotation for 3d layers</h4>
+<p><strong>Property names</strong>: *rx *</p>
+<p><strong>Property type</strong>: Non-Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Conditional</strong></p>
+<p>This property is the x rotation expressed in degrees applied to the layer.</p>
+<h4 id="y-rotation-for-3d-layers">Y Rotation for 3d layers</h4>
+<p><strong>Property names</strong>: *ry *</p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Conditional</strong></p>
+<p>This property is the y rotation expressed in degrees applied to the layer.</p>
+<h4 id="z-rotation-for-3d-layers">Z Rotation for 3d layers</h4>
+<p><strong>Property names</strong>: *rz *</p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Conditional</strong></p>
+<p>This property is the z rotation expressed in degrees applied to the layer.</p>
+<h4 id="orientation-for-3d-layers">Orientation for 3d layers</h4>
+<p><strong>Property name</strong>: <em>or</em></p>
+<p><strong>Property type</strong>: Non Animated Array | Spatial Animated Property</p>
+<p><strong>Optional</strong></p>
+<p>3d layers have an extra property called orientation represented by an array of 3
+floating point values expressed in degrees. It indicates the pitch, roll and yaw
+of the layer.</p>
+<h4 id="opacity">Opacity</h4>
+<p><strong>Property name</strong>: <em>o</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>REquired</strong></p>
+<p>Opacity is a percentage based value. It defaults to 100 which means the layer is
+fully opaque. Value 0 means the layer is fully transparent.</p>
+<p>This property ranges from 0 to 100.</p>
+<h4 id="skew">Skew</h4>
+<p><strong>Property name</strong>: <em>sk</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p>Skew indicates the slant of the element.</p>
+<h4 id="skew-axis">Skew Axis</h4>
+<p><strong>Property name</strong>: <em>sa</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p>Skew axis specifies the axis along which the character is skewed.</p>
+<h3 id="index">Index</h3>
+<p><strong>Property name</strong>: <em>ind</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p>The index refers to a unique id that each layer has within a stack. It is used
+for parenting and also for certain expressions.</p>
+<h3 id="parenting">Parenting</h3>
+<p><strong>Property name</strong>: <em>parent</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Optional</strong></p>
+<p>If present, it points to the <em>ind</em> property of the target layer whose transform
+data should be included in the transform operations that affect the layer. When
+a layer has this attribute set, in order to draw the content, first all the
+parenting hierarchy needs to be looked up iteratively. Once the parenting chain
+is complete (the top layer doesn’t have a parent property set to look up),
+transforms have to be applied from the top layer down to the transforms of the
+current layer.</p>
+<p>Note: Parenting should never target the original layer as part of the chain or
+it would create an endless loop.</p>
+<h3 id="time-stretch">Time Stretch</h3>
+<p><strong>Property name</strong>: <em>sr</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Optional</strong></p>
+<p><strong>Default: 1</strong></p>
+<p>This is a factor by which time should be stretched on keyframe information. A
+value of 1 means that no stretching is needed.</p>
+<h2 id="masks">Masks</h2>
+<p><strong>Property name:</strong> <em>masksProperties</em></p>
+<p><strong>Property type</strong>: Array[Mask Elements]</p>
+<p>Masks define a list of bezier curve shapes that act as clipping paths or
+composite operations on layers. Multiple masks with different properties can be
+applied to the same layer where, depending on the mask mode, different rules of
+stacking apply.</p>
+<h3 id="matte-masks">Matte Masks</h3>
+<p>Matte masks are pairs of layers where one acts as a mask for the other. Those
+layers are indicated by a tt property on the masked layer and a td on the
+masking one. They are always stacked one after to the other on the stacking
+order.</p>
+<h4 id="masked-layer">Masked Layer</h4>
+<p><strong>Property name:</strong> <em>tt</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p><strong>Optional (Required if previous layer has a td property)</strong></p>
+<p>This property only accepts four values and describes the type of mask that
+should be applied.</p>
+<p>Its values are</p>
+<ul>
+<li>
+<p>1 for Alpha Mask</p>
+</li>
+<li>
+<p>2 for Inverted Alpha Mask</p>
+</li>
+<li>
+<p>3 for Luminance Mask</p>
+</li>
+<li>
+<p>4 for Inverted Luminance Mask</p>
+</li>
+</ul>
+<h4 id="masking-layer">Masking Layer</h4>
+<p><strong>Property name:</strong> <em>td</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Property value</strong>: 1</p>
+<p><strong>Optional (Required if next layer has a tt property)</strong> </p>
+<p>This property only accepts one value that indicates it should be used as a
+masking layer</p>
+<h3 id="mask-elements">Mask elements</h3>
+<p>A mask can be considered as a clipping shape or a composite operation depending
+on their specific properties and types.</p>
+<h4 id="mask-modes">Mask modes</h4>
+<p><strong>Property name:</strong> <em>mode</em></p>
+<p><strong>Property type</strong>: String</p>
+<p><strong>Required</strong></p>
+<p>Mask types describe how the shape should affect the underlying layer.</p>
+<ul>
+<li>
+<p><strong>None</strong>: Mask has no effect on the layer. This mode is solely used for
+  attaching shapes to a layer that can be used by other properties, effects or
+  expressions.</p>
+</li>
+<li>
+<p><strong>Add</strong>: This mode will always take the original layer as input and add the
+  opacity values to the final output.</p>
+</li>
+<li>
+<p><strong>Subtract: </strong>This mode will take the output of masks higher in the stack as
+  input. If there are no masks, it will take the layer as input. As output it
+  will subtract the opacity values from the input.</p>
+</li>
+<li>
+<p><strong>Intersect:</strong> This mode outputs the areas of opacity that overlap with masks
+  higher in the stack.</p>
+</li>
+<li>
+<p><strong>Difference:</strong> This mode outputs the subtracted areas of opacity that overlap
+  with masks higher in the stack.</p>
+</li>
+</ul>
+<h4 id="inverted-property">Inverted property</h4>
+<p><strong>Property name:</strong> <em>inv</em></p>
+<p><strong>Property type</strong>: Boolean</p>
+<p><strong>Required</strong></p>
+<p>The inverted property will take the opacity values of the output of the mask
+(with its corresponding higher stack of masks if it applies) and perform a
+boolean filter to invert the result.</p>
+<h4 id="path-property">Path property</h4>
+<p><strong>Property name:</strong> <em>pt</em></p>
+<p><strong>Property type</strong>: Non Animated Shape | Shape Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The path property describes the bezier path that the mask will use to apply the
+mask</p>
+<h4 id="opacity-property">Opacity property</h4>
+<p><strong>Property name:</strong> <em>o</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The opacity property defines how clipped pixels will transfer to the final
+output. When opacity is set to 0.5, the resulting output will multiply the
+alpha.</p>
+<h4 id="expansion-property">Expansion property</h4>
+<p><strong>Property name:</strong> <em>x</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>Expansion affects the path property of the mask by shrinking or growing it by
+the specified number of pixels. The path should be transformed by the center of
+the shape itself.</p>
+<p>Since offsetting bezier curves is not a trivial task, this effect might be hard
+to copy.</p>
+<p>Lottie-web makes use of the feMorphology filter and applies an erode operator to
+shrink the mask. For growing it, it adds a stroke to the mask which is used as
+part of the masking itself.</p>
+<h2 id="layer-types">Layer Types</h2>
+<p>Each layer has a type attribute (‘ty’) which indicates the type of content.</p>
+<h3 id="solid-layer-type">Solid Layer Type</h3>
+<p>A solid layer is the simplest type of drawable layer. It has three properties
+specific to the layer type (color, width, height) and others shared with other
+layer types (transform, masks, effects, layer styles).</p>
+<h4 id="type-property">Type Property</h4>
+<p><strong>Property name:</strong> <em>ty</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p><strong>Property value</strong>: 1</p>
+<h3 id="shape-layer-type">Shape Layer Type</h3>
+<p>Shape layers define a set of shapes and shape modifiers grouped together. It has
+a single specific property (shapes) and others shared with other layer types
+(transform, masks, effects, layer styles).</p>
+<h4 id="type-property_1">Type Property</h4>
+<p><strong>Property name:</strong> <em>ty</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p><strong>Property value</strong>: 2</p>
+<h4 id="shapes-property">Shapes Property</h4>
+<p><strong>Property name:</strong> <em>shapes</em></p>
+<p><strong>Property type</strong>: Array[Shape Properties]</p>
+<p>Shapes is a collection of paths and path modifiers like fills, colors, groups,
+trim paths. Each property has a type defined by the "ty" prop.</p>
+<h4 id="group-element">Group Element</h4>
+<p><strong>type</strong>: <em>gr</em></p>
+<p>A group contains a list of shape properties that are rendered as part of that
+group. Any modifiers defined within the group will only apply to the stack
+preceding the modifier but only scoped inside the group.</p>
+<h5 id="items-property">Items Property</h5>
+<p><strong>Property name:</strong> <em>it</em></p>
+<p><strong>Property type</strong>: Array[Shape Properties]</p>
+<p><strong>Required</strong></p>
+<p>The list of items defined within the group</p>
+<h4 id="transform-element">Transform Element</h4>
+<p><strong>Property name</strong>: <em>tr</em></p>
+<p><strong>Property type:</strong> Transform</p>
+<p><strong>Required</strong></p>
+<p>A transform property that is applied to the stack of elements preceding it</p>
+<h4 id="rectangle-element">Rectangle Element</h4>
+<p><strong>type</strong>: <em>rc</em></p>
+<p>A rectangle is a parametric shape defined by its size, position and roundness.</p>
+<h5 id="size-property">Size Property</h5>
+<p><strong>Property name:</strong> <em>s</em></p>
+<p><strong>Property type</strong>: Non Animated Array | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>Size is a two dimensional array that represents the width and height of the
+rectangle.</p>
+<h5 id="position-property">Position Property</h5>
+<p><strong>Property name:</strong> <em>p</em></p>
+<p><strong>Property type</strong>: Non Animated Array | Multi Dimensional Animated Property</p>
+<p>Position is a two-dimensional array that represents the coordinates of the
+rectangle relative to its containing group. </p>
+<h5 id="roundness-property">Roundness Property</h5>
+<p><strong>Property name:</strong> <em>r</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p>Roundness is a one-dimensional value that represents the roundness of the
+rectangle corners.</p>
+<h4 id="ellipse-element">Ellipse Element</h4>
+<p><strong>type</strong>: <em>el</em></p>
+<p>An ellipse is a parametric shape defined by its size and position</p>
+<h5 id="size-property_1">Size Property</h5>
+<p><strong>Property name:</strong> <em>s</em></p>
+<p><strong>Property type</strong>:Non Animated Array | Multi Dimensional Animated Property</p>
+<p>Size is a two-dimensional array that represents the width and height of the
+rectangle.</p>
+<h5 id="position-property_1">Position Property</h5>
+<p><strong>Property name:</strong> <em>p</em></p>
+<p><strong>Property type</strong>: Non Animated Array | Multi Dimensional Animated Property</p>
+<p>Position is a two-dimensional array that represents the coordinates of the
+rectangle relative to its containing group.</p>
+<h4 id="polystar-element">Polystar Element</h4>
+<p><strong>type</strong>: <em>sr</em></p>
+<p>This element has two different subtypes that define a Star or a Polygon.</p>
+<p>Its points, position, rotation, outer radius and outer roundness define a
+polygon.</p>
+<p>A star is defined by all the same properties as a polygon, and it includes an
+inner roundness and inner radius.</p>
+<h5 id="subtype-property">Subtype Property</h5>
+<p><strong>Property name:</strong> <em>sy</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<ul>
+<li>
+<p>1 for Star</p>
+</li>
+<li>
+<p>2 for Polygon</p>
+</li>
+</ul>
+<p><strong>Required</strong></p>
+<h5 id="points-property">Points Property</h5>
+<p><strong>Property name:</strong> <em>pt</em></p>
+<p><strong>Property type</strong>: Non Animated Shape | Shape Animated Property</p>
+<p><strong>Required</strong></p>
+<p>Points is a one-dimensional number that defines the number of outer corners the
+parametric shape has.</p>
+<p>For a polygon, it also equals the total number of corners.</p>
+<p>For a star, the number of corners is double, since every segment is subdivided
+by an outer circle and an inner circle.</p>
+<h5 id="position-property_2">Position Property</h5>
+<p><strong>Property name:</strong> <em>p</em></p>
+<p><strong>Property type</strong>: Non Animated Array | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>Position is a two-dimensional array that represents the coordinates of the
+rectangle relative to its containing group. </p>
+<h5 id="rotation-property">Rotation Property</h5>
+<p><strong>Property name:</strong> <em>r</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>Position is a one-dimensional number that represents the rotation angle in
+degrees of the shape.</p>
+<h5 id="outer-radius-property">Outer Radius Property</h5>
+<p><strong>Property name:</strong> <em>or</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>Outer radius is a one-dimensional number that represents the radius of a circle
+where the outer points of the shape should be inscribed.</p>
+<h5 id="outer-roundness-property">Outer Roundness Property</h5>
+<p><strong>Property name:</strong> <em>os</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>Outer roundness is a one-dimensional number that represents the length of the
+control points of a bezier curve by which the corners of the shape should be
+drawn. Those control points should be tangent to the circle defined by the outer
+radius property.</p>
+<h5 id="inner-radius-property">Inner Radius Property</h5>
+<p><strong>Property name:</strong> <em>ir</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Conditional</strong></p>
+<p>Inner radius is a one-dimensional number that represents the radius of a circle
+where the inner points of the star should be inscribed.</p>
+<h5 id="inner-roundness-property">Inner Roundness Property</h5>
+<p><strong>Property name:</strong> <em>is</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Conditional</strong></p>
+<p>Inner roundness is a one-dimensional number that represents the length of the
+control points of a bezier curve by which the corners of the inner points of the
+star should be drawn. Those control points should be tangent to the circle
+defined by the inner radius property.</p>
+<h4 id="shape-element">Shape Element</h4>
+<p><strong>type</strong>: <em>sh</em></p>
+<p>This element has a single property defining the path of the shape</p>
+<h5 id="path-property_1">Path Property</h5>
+<p><strong>Property name:</strong> <em>ks</em></p>
+<p><strong>Property type</strong>: Non Animated Shape | Shape Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The shape described by the collection of bezier curves.</p>
+<h4 id="fill-property">Fill Property</h4>
+<p><strong>type</strong>: <em>fl</em></p>
+<p><strong>Required</strong></p>
+<p>This property defines the fill color that should be applied to the stack of
+elements preceding it. It has two inner properties, color and opacity</p>
+<h5 id="color-property">Color Property</h5>
+<p><strong>Property name:</strong> <em>c</em></p>
+<p><strong>Property type</strong>: Color | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The color of the fill</p>
+<h5 id="opacity-property_1">Opacity Property</h5>
+<p><strong>Property name:</strong> <em>o</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The opacity of the fill</p>
+<h4 id="gradient-fill-property">Gradient Fill Property</h4>
+<p><strong>type</strong>: <em>gf</em></p>
+<p>This property defines the gradient fill color that should be applied to the
+stack of elements preceding it. It has seven properties: Type, Start Point, End
+Point, Highlight Angle, Highlight Length, Colors, Opacity.</p>
+<h5 id="type-property_2">Type Property</h5>
+<p><strong>Property name:</strong> <em>t</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p><strong>Required</strong></p>
+<p>This property only accepts two values and describes the type of gradient that
+should be applied.</p>
+<ul>
+<li>
+<p>1 for Linear</p>
+</li>
+<li>
+<p>2 for Radial</p>
+</li>
+</ul>
+<h5 id="start-point-property">Start Point Property</h5>
+<p><strong>Property name:</strong> <em>s</em></p>
+<p><strong>Property type</strong>: Non Animated Array | Spatial Animated Property</p>
+<p><strong>Required</strong></p>
+<p>A two-dimensional array that represents the coordinates of the starting point of
+the gradient interpolation.</p>
+<h5 id="end-point-property">End Point Property</h5>
+<p><strong>Property name:</strong> <em>e</em></p>
+<p><strong>Property type</strong>: Non Animated Array | Spatial Animated Property</p>
+<p><strong>Required</strong></p>
+<p>A two-dimensional array that represents the coordinates of the end point of the
+gradient interpolation.</p>
+<h5 id="highlight-length-property">Highlight Length Property</h5>
+<p><strong>Property name:</strong> <em>h</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Conditional</strong></p>
+<p>A value that offsets the starting point of the gradient.</p>
+<h5 id="highlight-angle-property">Highlight Angle Property</h5>
+<p><strong>Property name:</strong> <em>a</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Conditional</strong></p>
+<p>A value that defines the angle by which the starting point of the gradient will
+be offset.</p>
+<h5 id="color-property_1">Color Property</h5>
+<p><strong>Property name:</strong> <em>g</em></p>
+<p><strong>Property type</strong>: Gradient | Gradient Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The set of colors that define the gradient</p>
+<h5 id="opacity-property_2">Opacity Property</h5>
+<p><strong>Property name:</strong> <em>o</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The opacity of the gradient fill</p>
+<h4 id="stroke-property">Stroke Property</h4>
+<p><strong>type</strong>: <em>st</em></p>
+<p>This property defines the stroke color and width that should be applied to the
+stack of elements preceding it. It has six inner properties, color, opacity,
+stroke width, line cap, line join, miter limit.</p>
+<h5 id="color-property_2">Color Property</h5>
+<p><strong>Property name:</strong> <em>c</em></p>
+<p><strong>Property type</strong>: Color | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The color of the fill</p>
+<h5 id="opacity-property_3">Opacity Property</h5>
+<p><strong>Property name:</strong> <em>o</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The opacity of the fill</p>
+<h5 id="stroke-width-property">Stroke Width Property</h5>
+<p><strong>Property name:</strong> <em>w</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The width of the stroke applied to the shapes. It does not accept negative
+numbers.</p>
+<h5 id="line-cap-property">Line Cap Property</h5>
+<p><strong>Property name:</strong> <em>lc</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p><strong>Required</strong></p>
+<p>The line cap of the stroke</p>
+<p>Its values are </p>
+<ul>
+<li>
+<p>1 for Butt Cap</p>
+</li>
+<li>
+<p>2 for Round Cap</p>
+</li>
+<li>
+<p>3 for Projecting Cap</p>
+</li>
+</ul>
+<h5 id="line-join-property">Line Join Property</h5>
+<p><strong>Property name:</strong> <em>lj</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p><strong>Required</strong></p>
+<p>The line join of the stroke</p>
+<p>Its values are </p>
+<ul>
+<li>
+<p>1 for Miter Join</p>
+</li>
+<li>
+<p>2 for Round Join</p>
+</li>
+<li>
+<p>3 for Bevel Join</p>
+</li>
+</ul>
+<h5 id="miter-limit-property">Miter Limit Property</h5>
+<p><strong>Property name:</strong> <em>ml</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p>The miter limit is a one-dimensional value that applies only if the line join
+value of the stroke is Miter Join.</p>
+<h4 id="gradient-stroke-property">Gradient Stroke Property</h4>
+<p><strong>type</strong>: <em>st</em></p>
+<p>Defines the gradient stroke color and width that should be applied to the stack
+of elements preceding it. It has eleven inner properties, color, opacity, stroke
+width, line cap, line join, miter limit.</p>
+<h5 id="color-property_3">Color Property</h5>
+<p><strong>Property name:</strong> <em>g</em></p>
+<p><strong>Property type</strong>: Gradient | Gradient Animated Property </p>
+<p><strong>Required</strong></p>
+<p>Describes the set of colors that define the gradient</p>
+<h5 id="opacity-property_4">Opacity Property</h5>
+<p><strong>Property name:</strong> <em>o</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The opacity of the fill</p>
+<h5 id="stroke-width-property_1">Stroke Width Property</h5>
+<p><strong>Property name:</strong> <em>w</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The width of the stroke applied to the shapes</p>
+<h5 id="line-cap-property_1">Line Cap Property</h5>
+<p><strong>Property name:</strong> <em>lc</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>The line cap of the stroke</p>
+<p>Its values are </p>
+<ul>
+<li>
+<p>1 for Butt Cap</p>
+</li>
+<li>
+<p>2 for Round Cap</p>
+</li>
+<li>
+<p>3 for Projecting Cap</p>
+</li>
+</ul>
+<h5 id="line-join-property_1">Line Join Property</h5>
+<p><strong>Property name:</strong> <em>lj</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>The line join of the stroke</p>
+<p>Its values are </p>
+<ul>
+<li>
+<p>1 for Miter Join</p>
+</li>
+<li>
+<p>2 for Round Join</p>
+</li>
+<li>
+<p>3 for Bevel Join</p>
+</li>
+</ul>
+<h5 id="miter-limit-property_1">Miter Limit Property</h5>
+<p><strong>Property name:</strong> <em>ml</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>The miter limit is a value that applies only if the line join value of the
+stroke is Miter Join.</p>
+<h5 id="type-property_3">Type Property</h5>
+<p><strong>Property name:</strong> <em>t</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p><strong>Required</strong></p>
+<p>This property only accepts two values and describes the type of gradient that
+should be applied.</p>
+<p>Its values are</p>
+<ul>
+<li>
+<p>1 for Linear</p>
+</li>
+<li>
+<p>2 for Radial</p>
+</li>
+</ul>
+<h5 id="start-point-property_1">Start Point Property</h5>
+<p><strong>Property name:</strong> <em>s</em></p>
+<p><strong>Property type</strong>: Non Animated Array | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>A two dimensional array that represents the coordinates of the starting point of
+the gradient interpolation.</p>
+<h5 id="end-point-property_1">End Point Property</h5>
+<p><strong>Property name:</strong> <em>e</em></p>
+<p><strong>Property type</strong>: Non Animated Array | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>A two-dimensional array that represents the coordinates of the end point of the
+gradient interpolation.</p>
+<h5 id="highlight-length-property_1">Highlight Length Property</h5>
+<p><strong>Property name:</strong> <em>h</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<h5 id="highlight-angle-property_1">Highlight Angle Property</h5>
+<p><strong>Property name:</strong> <em>a</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<h4 id="merge-paths-property">Merge Paths Property</h4>
+<p><strong>type</strong>: <em>mm</em></p>
+<p>A merge path acts as a shape boolean operation applied to the set of shapes
+preceding it. It contains a single property, the merge mode.</p>
+<h5 id="merge-mode-property">Merge Mode Property</h5>
+<p><strong>Property name:</strong> <em>mm</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p><strong>Required</strong></p>
+<p>The merge mode defines the type of operation that should be applied to shapes.</p>
+<p>Its values are:</p>
+<ul>
+<li>
+<p>1 for Merge</p>
+</li>
+<li>
+<p>2 for Add</p>
+</li>
+<li>
+<p>3 for Subtract</p>
+</li>
+<li>
+<p>4 for Intersect</p>
+</li>
+<li>
+<p>5 for Exclude Intersections</p>
+</li>
+</ul>
+<h4 id="offset-paths-property">Offset Paths Property</h4>
+<p><strong>type</strong>: <em>op</em></p>
+<p>The offset path modifier should grow or shrink the set of shapes preceding it.
+It is defined by three properties: amount, line join and miter limit.</p>
+<h5 id="amount-property">Amount Property</h5>
+<p><strong>Property name:</strong> <em>a</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p>A one-dimensional value that defines how much the shape should grow or shrink</p>
+<h5 id="line-join-property_2">Line Join Property</h5>
+<p><strong>Property name:</strong> <em>lj</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p>The line join of the stroke</p>
+<p>Its Values are </p>
+<ul>
+<li>
+<p>1 for Miter Join</p>
+</li>
+<li>
+<p>2 for Round Join</p>
+</li>
+<li>
+<p>3 for Bevel Join</p>
+</li>
+</ul>
+<h5 id="miter-limit-property_2">Miter Limit Property</h5>
+<p><strong>Property name:</strong> <em>ml</em></p>
+<p><strong>Property type</strong>: object</p>
+<p>A one-dimensional value that applies only if the line join value of the stroke
+is Miter Join</p>
+<h4 id="repeater-property">Repeater Property</h4>
+<p><strong>type</strong>: <em>rp</em></p>
+<p>The repeater modifier creates copies of the set of shapes preceding it. It is
+defined by three properties: copies, offset, transform.</p>
+<h5 id="copies-property">Copies Property</h5>
+<p><strong>Property name:</strong> <em>c</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>A one-dimensional value that defines how many copies (including the original
+shape) of the shapes should be drawn </p>
+<h5 id="offset-property">Offset Property</h5>
+<p><strong>Property name:</strong> <em>o</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>A one-dimensional value that defines how many copies should be skipped before
+starting the count of shapes to be drawn.</p>
+<p>This value should be accounted for in order to calculate the following
+<em>transform</em> property.</p>
+<h5 id="transform-property">Transform Property</h5>
+<p><strong>Property name:</strong> <em>tr</em></p>
+<p><strong>Property type</strong>: Transform</p>
+<p><strong>Required</strong></p>
+<p>For each copy of a repeater, this transform operation is applied before the
+drawing operation is applied. This allows to generate copies of the original
+drawing with a combination of regular transform operations between them.</p>
+<p>When the offset property is different from 0, these transform operations should
+accumulate by the amount that the offset value defines before being applied to
+the first copy.</p>
+<h4 id="round-corners-property">Round Corners Property</h4>
+<p><strong>type</strong>: <em>rd</em></p>
+<p>This modifier affects any vertex of a shape whose bezier control points are 0.
+It has a single property that defines the radius of the effect.</p>
+<h5 id="copies-property_1">Copies Property</h5>
+<p><strong>Property name:</strong> <em>r</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p>A one-dimensional value that defines the length of the control points of the
+bezier curve that should be applied to the vertex. The direction of the control
+point should be tangent to the vertex itself.</p>
+<h4 id="trim-paths-property">Trim Paths Property</h4>
+<p><strong>type</strong>: <em>tm</em></p>
+<p>This modifier changes the shape of the set of elements preceding it. Although in
+general, trim paths are expected to only affect the stroke of a shape, this
+modifier should affect both how strokes and fills are applied.</p>
+<p>The way the new shape is calculated should measure the full perimeter of the
+shape individually (or the full set of shapes if Trim Multiple Shapes property
+is set to Individually) and regenerate the new set of paths as a percentage of
+the original set.</p>
+<p>It is defined by four properties: Start, End, Offset and Trim Multiple Shapes.</p>
+<h5 id="start-property">Start Property</h5>
+<p><strong>Property name:</strong> <em>s</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>A one-dimensional value that defines the initial point of the shape that should
+be drawn relative to the initial point of the original shape. It is expressed as
+a percentage of the initial value.</p>
+<h5 id="end-property">End Property</h5>
+<p><strong>Property name:</strong> <em>e</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>A one-dimensional value that defines the end point of the shape that should be
+drawn relative to the end point of the original shape. It is expressed as a
+percentage of the end value.</p>
+<h5 id="offset-property_1">Offset Property</h5>
+<p><strong>Property name:</strong> <em>o</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>A one-dimensional value that defines an offset by which the start and end points
+should be calculated. A whole cycle is expressed as a 360 offset.</p>
+<h5 id="trim-multiple-shapes-property">Trim Multiple Shapes Property</h5>
+<p><strong>Property name:</strong> <em>m</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p><strong>Required</strong></p>
+<p>This property accepts only two values:</p>
+<ul>
+<li>
+<p>1 for Simultaneous</p>
+</li>
+<li>
+<p>2 for Individual</p>
+</li>
+</ul>
+<p>Simultaneous means that all shapes should be trimmed applying the calculations
+separately. Individual means that a single trim effect should be applied to all
+of them by calculating the full length of all shapes together.</p>
+<h3 id="text-layer-type">Text Layer Type</h3>
+<p>A text layer defines a container for text data. It has a single specific
+property (text) and others shared with other layer types (transform, masks,
+effects, layer styles).</p>
+<h4 id="type-property_4">Type Property</h4>
+<p><strong>Property name:</strong> <em>ty</em></p>
+<p><strong>Property type</strong>: Enum (Number)</p>
+<p><strong>Property value</strong>: 5</p>
+<h4 id="text">Text</h4>
+<p><strong>Property name:</strong> <em>t</em></p>
+<p><strong>Property type</strong>: object</p>
+<p><strong>Required</strong></p>
+<p>A text object is composed of four different objects: document data, animators,
+text path, more options.</p>
+<h4 id="document-data">Document Data</h4>
+<p><strong>Property name:</strong> <em>d</em></p>
+<p><strong>Property type</strong>: Text Document | Text Document Animated Property</p>
+<p><strong>Required</strong></p>
+<p>This property contains a single animatable property, k, that is a set of all the
+paragraph data of the text.</p>
+<h4 id="text-path-data">Text Path Data</h4>
+<p><strong>Property name:</strong> <em>p</em></p>
+<p><strong>Property type</strong>: object</p>
+<p><strong>Required</strong></p>
+<p>When enabled, a text layer will use a mask defined on the layer to describe an
+irregular baseline that the text should follow when being rendered. If the text
+has multiple lines, each line will use the same path described by the mask
+offsetted by the line height of the text.</p>
+<p>If a line of text exceeds the path described by the mask, both ends of the mask
+should be extended infinitely, parallel to the the first and last vertex of the
+path.</p>
+<h5 id="mask">Mask</h5>
+<p><strong>Property name:</strong> <em>m</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Optional</strong></p>
+<p>The index of the mask defined in the <em>masksProperties </em>attribute of the layer
+that will be used as baseline of the text.</p>
+<h5 id="first-margin">First Margin</h5>
+<p><strong>Property name:</strong> <em>f</em></p>
+<p><strong>Property type</strong>: Non-Animated Number | Multi Dimensional Animated Property</p>
+<p>A margin to offset the drawing of the text from the first vertex of the shape</p>
+<h5 id="last-margin">Last Margin</h5>
+<p><strong>Property name:</strong> <em>l</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>A margin to offset the drawing of the text from the last vertex of the shape</p>
+<h5 id="force-alignment">Force Alignment</h5>
+<p><strong>Property name:</strong> <em>a</em></p>
+<p><strong>Property type</strong>: Boolean</p>
+<p><strong>Required</strong></p>
+<p>If active, each line of text should be rendered contained within the shape
+defined by the mask by adjusting the tracking.</p>
+<h5 id="perpendicular-to-path">Perpendicular to Path</h5>
+<p><strong>Property name:</strong> <em>p</em></p>
+<p><strong>Property type</strong>: Boolean</p>
+<p><strong>Required</strong></p>
+<p>If active, text should be rendered perpendicular to the direction of the
+baseline.</p>
+<h5 id="reversed">Reversed</h5>
+<p><strong>Property name:</strong> <em>r</em></p>
+<p><strong>Property type</strong>: Boolean</p>
+<p><strong>Required</strong></p>
+<p>If active, text should be rendered starting from the last vertex of the mask.</p>
+<h4 id="other-options">Other Options</h4>
+<p><strong>Property name:</strong> <em>m</em></p>
+<p><strong>Property type</strong>: object</p>
+<p><strong>Required</strong></p>
+<p>This object contains other properties affecting the rendering of the text.</p>
+<h5 id="anchor-point-grouping">Anchor Point Grouping</h5>
+<p><strong>Property name:</strong> <em>g</em></p>
+<p><strong>Property type</strong>: Enum(Number)</p>
+<p><strong>Required</strong></p>
+<p>This property defines how each character anchor point should be grouped relative
+to the defined value to apply animators and drawing along a path.</p>
+<p>Its values are:</p>
+<ul>
+<li>
+<p>1 aligned to character</p>
+</li>
+<li>
+<p>2 aligned to word</p>
+</li>
+<li>
+<p>3 aligned to line</p>
+</li>
+<li>
+<p>4 aligned to all textbox</p>
+</li>
+</ul>
+<h5 id="grouping-alignment">Grouping Alignment</h5>
+<p><strong>Property name:</strong> <em>a</em></p>
+<p><strong>Property type</strong>: Non Animated Array | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>Controls the alignment of the anchor point relative to the anchor point group.
+The tuple defines a pair of coordinates based on a percentage of the group
+anchor point.</p>
+<h4 id="animators">Animators</h4>
+<p><strong>Property name:</strong> <em>a</em></p>
+<p><strong>Property type</strong>: list</p>
+<p><strong>Required</strong></p>
+<p>Animators are a collection of transformations that can be applied to a text
+layer. They consist of a range selector and a set of optional properties.</p>
+<h5 id="range-selector">Range Selector</h5>
+<p><strong>Property name:</strong> <em>s</em></p>
+<p><strong>Property type</strong>: object</p>
+<p><strong>Required</strong></p>
+<p>The range selector property has a set of properties that define how
+transformations are applied to the text. This range allows for animations on
+more granular parts of the text, like characters, words, lines and the text box.</p>
+<h6 id="type">Type</h6>
+<p><strong>Property name:</strong> <em>t</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p><strong>Required</strong></p>
+<p>It specifies the type of selector, it can be expression based or parametric.</p>
+<ul>
+<li>
+<p>0 for parametric</p>
+</li>
+<li>
+<p>1 for expression</p>
+</li>
+</ul>
+<h6 id="range-units">Range Units</h6>
+<p><strong>Property name:</strong> <em>r</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p><strong>Required</strong></p>
+<p>It specifies the units that are used to calculate ranges.</p>
+<ul>
+<li>
+<p>1 for percentage based</p>
+</li>
+<li>
+<p>2 for index based</p>
+</li>
+</ul>
+<h6 id="range-start">Range Start</h6>
+<p><strong>Property name:</strong> <em>s</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>It specifies the start of the range that transformations will be applied to. If
+range units are percentage based, the values range from 0 to 100, if they are
+index based, valid values are any positive number.</p>
+<h6 id="range-end">Range End</h6>
+<p><strong>Property name:</strong> <em>e</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>It specifies the end of the range that transformations will be applied to. If
+range units are percentage based, the values range from 0 to 100. If they are
+index based, valid values are any positive number.</p>
+<h6 id="range-offset">Range Offset</h6>
+<p><strong>Property name:</strong> <em>o</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>It specifies an offset of the range that transformations will be applied to. If
+range units are percentage based, the values range from -100 to 100. If they are
+index based, valid values are any positive number.</p>
+<h6 id="range-base-mode">Range Base Mode</h6>
+<p><strong>Property name:</strong> <em>b</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p><strong>Required</strong></p>
+<p>Specifies how ranges should affect text. It has four values: Characters,
+Characters excluding Spaces, Words and Lines. Depending on this option, all the
+other properties will operate on the block specified by it.</p>
+<ul>
+<li>
+<p>1 for Characters</p>
+</li>
+<li>
+<p>2 for Characters excluding Spaces</p>
+</li>
+<li>
+<p>3 for Words</p>
+</li>
+<li>
+<p>4 for Lines</p>
+</li>
+</ul>
+<h6 id="range-shape">Range Shape</h6>
+<p><strong>Property name:</strong> <em>sh</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p><strong>Required</strong></p>
+<p>The shape indicates how the range will operate over the selected blocks within
+the range. The default value is square. You can think of this property as a
+factor that should be multiplied to all transformations before applying the
+final value.</p>
+<ul>
+<li>
+<p>1 for Square. All blocks within the range will have their transformations
+  applied equally. Factor is always 1.</p>
+</li>
+<li>
+<p>2 for Ramp Up. Transformations will be applied linearly increasing within the
+  range. Factor grows from 0 to 1.</p>
+</li>
+<li>
+<p>3 for Ramp Down. Transformations will be applied linearly decreasing within
+  the range. Factor grows from 1 to 0.</p>
+</li>
+<li>
+<p>4 for Triangle. Transformations will be applied linearly up to the middle of
+  the range. First half increasingly, second half decreasing. Factor grows
+  linearly from 0 to 1 and then from 1 to 0.</p>
+</li>
+<li>
+<p>4 for Round. Similar to Triangle but instead of progressing linearly, it
+  progresses describing half a circle.</p>
+</li>
+<li>
+<p>5 for Smooth. Similar to Triangle but it describes two segments with easing
+  values to progress from 0 to 1 and 1 to 0.</p>
+</li>
+</ul>
+<h6 id="amount">Amount</h6>
+<p><strong>Property name:</strong> <em>a</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>A multiplier expressed in percentage applied to the result of the factor of
+transformation</p>
+<h6 id="max-ease">Max Ease</h6>
+<p><strong>Property name:</strong> <em>xe</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>An easing value that affects the speed of change as selection values change from
+fully included (high) to fully excluded (low)</p>
+<h6 id="min-ease">Min Ease</h6>
+<p><strong>Property name:</strong> <em>ne</em></p>
+<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>An easing value that affects the speed of change as selection values change from
+fully included (high) to fully excluded (low)</p>
+<h6 id="random">Random</h6>
+<p><strong>Property name:</strong> <em>rn</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p><strong>Required</strong></p>
+<p>If active, transformations should be applied randomly to each selected block.
+Random seed is not enforced.</p>
+<h6 id="transform-properties">Transform Properties</h6>
+<p>This is the list of all supported properties that can modify a text within the
+ranges described above:</p>
+<ul>
+<li>
+<p>Anchor Point (<strong>a</strong>)</p>
+</li>
+<li>
+<p>Position (<strong>p</strong>)</p>
+</li>
+<li>
+<p>Scale (<strong>s</strong>)</p>
+</li>
+<li>
+<p>Rotation (<strong>r</strong>)</p>
+</li>
+<li>
+<p>Rotation X (<strong>rx</strong>)</p>
+</li>
+<li>
+<p>Rotation Y (<strong>ry</strong>)</p>
+</li>
+<li>
+<p>Opacity (<strong>o</strong>)</p>
+</li>
+<li>
+<p>Fill Color (<strong>fc</strong>)</p>
+</li>
+<li>
+<p>Fill Hue (<strong>fh</strong>)</p>
+</li>
+<li>
+<p>Fill Saturation (<strong>fs</strong>)</p>
+</li>
+<li>
+<p>Fill Brightness (<strong>fb</strong>)</p>
+</li>
+<li>
+<p>Fill Opacity (<strong>fo</strong>)</p>
+</li>
+<li>
+<p>Stroke Color (<strong>sc</strong>)</p>
+</li>
+<li>
+<p>Stroke Hue (<strong>sh</strong>)</p>
+</li>
+<li>
+<p>Stroke Saturation (<strong>ss</strong>)</p>
+</li>
+<li>
+<p>Stroke Brightness (<strong>sb</strong>)</p>
+</li>
+<li>
+<p>Stroke Width (<strong>sw</strong>)</p>
+</li>
+<li>
+<p>Stroke Opacity (<strong>so</strong>)</p>
+</li>
+<li>
+<p>Tracking (<strong>t</strong>)</p>
+</li>
+<li>
+<p>Text Skew (<strong>sk</strong>)</p>
+</li>
+<li>
+<p>Text Skew Axis (<strong>sa</strong>)</p>
+</li>
+<li>
+<p>Text Blur (<strong>bl</strong>)</p>
+</li>
+<li>
+<p>Text Line Spacing (<strong>ls</strong>)</p>
+</li>
+</ul>
+<p>All properties are animatable and optional.</p>
+<h3 id="image-layer-type">Image Layer Type</h3>
+<p>Image layers are a container for an image.</p>
+<h4 id="type-property_5">Type Property</h4>
+<p><strong>Property name:</strong> <em>ty</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p><strong>Property value</strong>: 2</p>
+<h4 id="reference-property">Reference Property</h4>
+<p><strong>Property name:</strong> refId</p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>A reference to the asset id that should be painted within the container. The
+asset information is located in the assets property and can be retrieved in
+different ways.</p>
+<h3 id="null-layer-type">Null Layer Type</h3>
+<p>Null layers don’t have a visual representation. But they share the same
+transform properties as any other drawable layer.</p>
+<p>Null layers are often used to parent other layers to them so they can be used as
+a detached hierarchy of transformations. Parenting can be recursive and null
+layers can be parented to other null layers as well.</p>
+<p>Another usage of null layers is for holding expressions properties that don’t
+belong to a specific layer but can be shared among multiple ones.</p>
+<p>They don’t have any specific properties but they share others with other layer
+types (transform, masks, effects, layer styles).</p>
+<h4 id="type-property_6">Type Property</h4>
+<p><strong>Property name:</strong> <em>ty</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p><strong>Property value</strong>: 3</p>
+<h3 id="precomp-layer-type">Precomp Layer Type</h3>
+<p>A Precomps is a container for a set of layers that are grouped and are adjusted
+by the properties that govern the precomp. It has four properties specific to
+the layer type (width, height, time remap, refId) and others shared with other
+layer types (transform, masks, effects, layer styles).</p>
+<h4 id="type-property_7">Type Property</h4>
+<p><strong>Property name:</strong> <em>ty</em></p>
+<p><strong>Property type</strong>: Enum[Number]</p>
+<p><strong>Property value</strong>: 0</p>
+<h4 id="width">Width</h4>
+<p><strong>Property name:</strong> <em>w</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>Width defines the width of the surface that has to be rendered from the precomp.
+Whatever is outside that area won’t be visible even if it is within the visible
+area of the precomp container. It basically works as the width of a clipping
+mask of the inner layers.</p>
+<h4 id="height">Height</h4>
+<p><strong>Property name:</strong> <em>h</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Required</strong></p>
+<p>Height defines the height of the surface that has to be rendered from the
+precomp. Whatever is outside that area will not be visible even if it is within
+the visible area of the precomp container. It basically works as the height of a
+clipping mask of the inner layers.</p>
+<h4 id="time-remap">Time Remap</h4>
+<p><strong>Property name:</strong> <em>tm</em></p>
+<p><strong>Property type:</strong> Multi Dimensional Animated Property</p>
+<p><strong>Required</strong></p>
+<p>Time remap allows control of the timeline of a precomp independently from the
+main timeline. It is expressed in seconds and since it is animatable, it can
+support any amount of keyframes, easing and expressions.</p>
+<h4 id="asset-reference">Asset Reference</h4>
+<p><strong>Property name:</strong> <em>refId</em></p>
+<p><strong>Property type:</strong> Number</p>
+<p><strong>Required</strong></p>
+<p>The refId property points to an object on the assets list that completes the
+composition information.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.b1047164.min.js"></script>
+      
+    
+  </body>
+</html>
