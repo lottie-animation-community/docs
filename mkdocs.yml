@@ -1,0 +1,38 @@
+site_name: Test Docs
+nav:
+- Home: index.md
+- Profiles: profiles/index.md
+- Specs:
+  - specs/animation.md
+  - Properties:
+    - specs/properties/prop-types.md
+    - specs/properties/animatable-properties.md
+  - specs/chars.md
+  - specs/assets.md
+  - Layers:
+    - specs/layers/common.md
+    - specs/layers/solid.md
+    - specs/layers/shapes.md
+    - specs/layers/text.md
+    - specs/layers/image.md
+    - specs/layers/null.md
+    - specs/layers/precomp.md
+markdown_extensions:
+  - pymdownx.keys
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.superfences
+  - tables
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - markdown_include.include:
+      base_path: docs
+theme:
+  name: material
+  palette:
+    primary: '#00ff00'
+    accent: '#00ff00'
