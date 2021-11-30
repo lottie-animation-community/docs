@@ -1,3 +1,7 @@
+# TOC
 
-{!profiles/layers/shapes.md!}
-{!profiles/layers/solids.md!}
+##[Layers](./layers)
+
+##[Expressions](./properties/expressions)
+
+##[Fonts](./properties/fonts)

@@ -16,7 +16,9 @@ nav:
     - specs/layers/image.md
     - specs/layers/null.md
     - specs/layers/precomp.md
-- Profiles: profiles/index.md
+- Profiles:
+  - profiles/index.md
+  - Layers: profiles/layers/index.md
 markdown_extensions:
   - pymdownx.keys
   - pymdownx.critic
@@ -32,6 +34,10 @@ markdown_extensions:
       alternate_style: true 
   - markdown_include.include:
       base_path: docs
+plugins:
+  - tooltips
+extra_css:
+  - css/hint.min.css
 theme:
   name: material
   palette:
