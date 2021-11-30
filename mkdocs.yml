@@ -1,7 +1,6 @@
-site_name: Test Docs
+site_name: Lottie Animation Docs
 nav:
 - Home: index.md
-- Profiles: profiles/index.md
 - Specs:
   - specs/animation.md
   - Properties:
@@ -17,6 +16,7 @@ nav:
     - specs/layers/image.md
     - specs/layers/null.md
     - specs/layers/precomp.md
+- Profiles: profiles/index.md
 markdown_extensions:
   - pymdownx.keys
   - pymdownx.critic
@@ -27,6 +27,7 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - tables
+  - admonition
   - pymdownx.tabbed:
       alternate_style: true 
   - markdown_include.include:

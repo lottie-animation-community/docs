@@ -1,59 +1,23 @@
-??? note
-    {!profiles/shapes.md!}
+# Abstract
 
-=== "C"
-    asdasd
+The Lottie Animation Format is a vector format focused on animation,
+interaction, real-time updates and multi-platform support. This document
+describes the specifications of the format and its extensibility. It will also
+describe how to specify supported layer types and properties.
 
-=== "C++"
+Given its objective of being a global animation vector format, the Lottie
+Animation Format does not focus on performance improvements for a single
+platform. Instead it tries to be as simple and extendable as possible.
 
-    ``` c++
-    #include <iostream>
+The format is influenced by the Adobe After Effects Render Model, from which it
+draws the layer, keyframes, and properties structure.
 
-    int main(void) {
-      std::cout << "Hello world!" << std::endl;
-      return 0;
-    }
-    ```
+This specification defines a model for drawing and animating a set of layers on
+a canvas.
 
+# Rendering Model
 
-{!profiles/shapes.md!}
-{!specs/properties/layer-types.md!}
+TBD
 
-{!test.md!}
-# Welcome to MkDocs
-
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exitssss.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
-
-##  Link tst
-[test](/specs/)
-
-First Header | Second Header | Third Header
------------- | ------------- | ------------
-Content Cell | Content Cell  | Content Cell
-Content Cell | Content Cell  | Content Cell
-
-
-| First Header | Second Header | Third Header |
-| ------------ | ------------- | ------------ |
-| Content Cell | Content Cell  | Content Cell |
-| Content Cell | Content Cell  | Content Cell |
-
-<iframe src="./specs/"></iframe>
-
-{!test.md!}
-
-++ctrl+alt+del++
+## [Specs](./specs/animation)
+## [Profiles](./profiles/)
