@@ -85,7 +85,7 @@ that will be used as baseline of the text.
 ??? Details
     **Property name:** *f*
 
-    **Property type**: Non-Animated Number | [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property)
+    **Property type**: Non-Animated Number | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
 
 A margin to offset the drawing of the text from the first vertex of the shape
 
@@ -94,7 +94,7 @@ A margin to offset the drawing of the text from the first vertex of the shape
 ??? Details
     **Property name:** *l*
 
-    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property)
+    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
 
     **Required**
 
@@ -173,7 +173,7 @@ Its values are:
 ??? Details
     **Property name:** *a*
 
-    **Property type**: Non Animated Array | [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property)
+    **Property type**: Non Animated Array | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
 
     **Required**
 
@@ -241,7 +241,7 @@ It specifies the units that are used to calculate ranges.
 ??? Details
     **Property name:** *s*
 
-    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property)
+    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
 
     **Required**
 
@@ -254,7 +254,7 @@ index based, valid values are any positive number.
 ??? Details
     **Property name:** *e*
 
-    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property)
+    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
 
     **Required**
 
@@ -267,7 +267,7 @@ index based, valid values are any positive number.
 ??? Details
     **Property name:** *o*
 
-    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property)
+    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
 
     **Required**
 
@@ -334,7 +334,7 @@ final value.
 ??? Details
     **Property name:** *a*
 
-    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property)
+    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
 
     **Required**
 
@@ -346,7 +346,7 @@ transformation
 ??? Details
     **Property name:** *xe*
 
-    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property)
+    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
 
     **Required**
 
@@ -358,7 +358,7 @@ fully included (high) to fully excluded (low)
 ??? Details
     **Property name:** *ne*
 
-    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property)
+    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
 
     **Required**
 

@@ -3,4 +3,4 @@
     Property | lottie-web | Skottie | Android | iOS | Embedded
     --| -- | -- | -- | -- | --
     {!profiles/layers/common.md!} 
-    [Text](/specs/layers/text/#text) | [🔗](/profiles/properties/text/) | [🔗](/profiles/properties/text/)  | [🔗](/profiles/properties/text/)  | ❌ | ❔ 
+    [Text](../../specs/layers/text/#text) | [🔗](../properties/text/) | [🔗](../properties/text/)  | [🔗](../properties/text/)  | ❌ | ❔ 
