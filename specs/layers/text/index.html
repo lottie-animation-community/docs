@@ -1035,16 +1035,92 @@ effects, layer styles).</p>
 <td align="center">✅</td>
 <td align="center"></td>
 </tr>
+<tr>
+<td><a href="#transform">Transform</a></td>
+<td align="center">ks</td>
+<td align="center">Object</td>
+<td align="center">✅</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td><a href="#index">Index</a></td>
+<td align="center">ind</td>
+<td align="center">Number</td>
+<td align="center">✅</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td><a href="#parenting">Parent</a></td>
+<td align="center">parent</td>
+<td align="center">Number</td>
+<td align="center">➖</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td><a href="#in-point">In Point</a></td>
+<td align="center">ip</td>
+<td align="center">Number</td>
+<td align="center">➖</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td><a href="#out-point">Out Point</a></td>
+<td align="center">op</td>
+<td align="center">Number</td>
+<td align="center">➖</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td><a href="#start-point">Start Point</a></td>
+<td align="center">st</td>
+<td align="center">Number</td>
+<td align="center">➖</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td><a href="#time-stretch">Time stretch</a></td>
+<td align="center">sr</td>
+<td align="center">Number</td>
+<td align="center">➖</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td><a href="#clipping-masks">Masks</a></td>
+<td align="center">masksProperties</td>
+<td align="center">Array[<a href="#mask-elements">Mask Elements</a>]</td>
+<td align="center">➖</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td><a href="#masked-layer">Track Matte Masked Layer</a></td>
+<td align="center">tt</td>
+<td align="center">Enum[Number]</td>
+<td align="center">➖</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td><a href="#masking-layer">Track Matte Masking Layer</a></td>
+<td align="center">td</td>
+<td align="center">Enum[Number]</td>
+<td align="center">➖</td>
+<td align="center"></td>
+</tr>
 </tbody>
 </table>
 <h2 id="type-property">Type Property</h2>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>ty</em></p>
 <p><strong>Property type</strong>: Enum (Number)</p>
 <p><strong>Property value</strong>: 5</p>
+</details>
 <h2 id="text">Text</h2>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>t</em></p>
 <p><strong>Property type</strong>: object</p>
 <p><strong>Required</strong></p>
+</details>
 <p>A text object is composed of four different objects: document data, animators,
 text path, more options.</p>
 <table>
@@ -1089,15 +1165,21 @@ text path, more options.</p>
 </tbody>
 </table>
 <h3 id="document-data">Document Data</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>d</em></p>
 <p><strong>Property type</strong>: Text Document | Text Document Animated Property</p>
 <p><strong>Required</strong></p>
+</details>
 <p>This property contains a single animatable property, k, that is a set of all the
 paragraph data of the text.</p>
 <h3 id="text-path-data">Text Path Data</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>p</em></p>
 <p><strong>Property type</strong>: object</p>
 <p><strong>Required</strong></p>
+</details>
 <p>When enabled, a text layer will use a mask defined on the layer to describe an
 irregular baseline that the text should follow when being rendered. If the text
 has multiple lines, each line will use the same path described by the mask
@@ -1106,46 +1188,70 @@ offsetted by the line height of the text.</p>
 should be extended infinitely, parallel to the the first and last vertex of the
 path.</p>
 <h4 id="mask">Mask</h4>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>m</em></p>
 <p><strong>Property type</strong>: Number</p>
 <p><strong>Optional</strong></p>
+</details>
 <p>The index of the mask defined in the <em>masksProperties </em>attribute of the layer
 that will be used as baseline of the text.</p>
 <h4 id="first-margin">First Margin</h4>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>f</em></p>
-<p><strong>Property type</strong>: Non-Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Property type</strong>: Non-Animated Number | <a href="/specs/properties/animatable-properties/#multi-dimensional-animated-property">Multi Dimensional Animated Property</a></p>
+</details>
 <p>A margin to offset the drawing of the text from the first vertex of the shape</p>
 <h4 id="last-margin">Last Margin</h4>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>l</em></p>
-<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Property type</strong>: Non Animated Number | <a href="/specs/properties/animatable-properties/#multi-dimensional-animated-property">Multi Dimensional Animated Property</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>A margin to offset the drawing of the text from the last vertex of the shape</p>
 <h4 id="force-alignment">Force Alignment</h4>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>a</em></p>
 <p><strong>Property type</strong>: Boolean</p>
 <p><strong>Required</strong></p>
+</details>
 <p>If active, each line of text should be rendered contained within the shape
 defined by the mask by adjusting the tracking.</p>
 <h4 id="perpendicular-to-path">Perpendicular to Path</h4>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>p</em></p>
 <p><strong>Property type</strong>: Boolean</p>
 <p><strong>Required</strong></p>
+</details>
 <p>If active, text should be rendered perpendicular to the direction of the
 baseline.</p>
 <h4 id="reversed">Reversed</h4>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>r</em></p>
 <p><strong>Property type</strong>: Boolean</p>
 <p><strong>Required</strong></p>
+</details>
 <p>If active, text should be rendered starting from the last vertex of the mask.</p>
 <h3 id="other-options">Other Options</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>m</em></p>
 <p><strong>Property type</strong>: object</p>
 <p><strong>Required</strong></p>
+</details>
 <p>This object contains other properties affecting the rendering of the text.</p>
 <h4 id="anchor-point-grouping">Anchor Point Grouping</h4>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>g</em></p>
 <p><strong>Property type</strong>: Enum(Number)</p>
 <p><strong>Required</strong></p>
+</details>
 <p>This property defines how each character anchor point should be grouped relative
 to the defined value to apply animators and drawing along a path.</p>
 <p>Its values are:</p>
@@ -1164,29 +1270,41 @@ to the defined value to apply animators and drawing along a path.</p>
 </li>
 </ul>
 <h4 id="grouping-alignment">Grouping Alignment</h4>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>a</em></p>
-<p><strong>Property type</strong>: Non Animated Array | Multi Dimensional Animated Property</p>
+<p><strong>Property type</strong>: Non Animated Array | <a href="/specs/properties/animatable-properties/#multi-dimensional-animated-property">Multi Dimensional Animated Property</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>Controls the alignment of the anchor point relative to the anchor point group.
 The tuple defines a pair of coordinates based on a percentage of the group
 anchor point.</p>
 <h3 id="animators">Animators</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>a</em></p>
 <p><strong>Property type</strong>: list</p>
 <p><strong>Required</strong></p>
+</details>
 <p>Animators are a collection of transformations that can be applied to a text
 layer. They consist of a range selector and a set of optional properties.</p>
 <h4 id="range-selector">Range Selector</h4>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>s</em></p>
 <p><strong>Property type</strong>: object</p>
 <p><strong>Required</strong></p>
+</details>
 <p>The range selector property has a set of properties that define how
 transformations are applied to the text. This range allows for animations on
 more granular parts of the text, like characters, words, lines and the text box.</p>
 <h5 id="type">Type</h5>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>t</em></p>
 <p><strong>Property type</strong>: Enum[Number]</p>
 <p><strong>Required</strong></p>
+</details>
 <p>It specifies the type of selector, it can be expression based or parametric.</p>
 <ul>
 <li>
@@ -1197,9 +1315,12 @@ more granular parts of the text, like characters, words, lines and the text box.
 </li>
 </ul>
 <h5 id="range-units">Range Units</h5>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>r</em></p>
 <p><strong>Property type</strong>: Enum[Number]</p>
 <p><strong>Required</strong></p>
+</details>
 <p>It specifies the units that are used to calculate ranges.</p>
 <ul>
 <li>
@@ -1210,30 +1331,42 @@ more granular parts of the text, like characters, words, lines and the text box.
 </li>
 </ul>
 <h5 id="range-start">Range Start</h5>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>s</em></p>
-<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Property type</strong>: Non Animated Number | <a href="/specs/properties/animatable-properties/#multi-dimensional-animated-property">Multi Dimensional Animated Property</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>It specifies the start of the range that transformations will be applied to. If
 range units are percentage based, the values range from 0 to 100, if they are
 index based, valid values are any positive number.</p>
 <h5 id="range-end">Range End</h5>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>e</em></p>
-<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Property type</strong>: Non Animated Number | <a href="/specs/properties/animatable-properties/#multi-dimensional-animated-property">Multi Dimensional Animated Property</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>It specifies the end of the range that transformations will be applied to. If
 range units are percentage based, the values range from 0 to 100. If they are
 index based, valid values are any positive number.</p>
 <h5 id="range-offset">Range Offset</h5>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>o</em></p>
-<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Property type</strong>: Non Animated Number | <a href="/specs/properties/animatable-properties/#multi-dimensional-animated-property">Multi Dimensional Animated Property</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>It specifies an offset of the range that transformations will be applied to. If
 range units are percentage based, the values range from -100 to 100. If they are
 index based, valid values are any positive number.</p>
 <h5 id="range-base-mode">Range Base Mode</h5>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>b</em></p>
 <p><strong>Property type</strong>: Enum[Number]</p>
 <p><strong>Required</strong></p>
+</details>
 <p>Specifies how ranges should affect text. It has four values: Characters,
 Characters excluding Spaces, Words and Lines. Depending on this option, all the
 other properties will operate on the block specified by it.</p>
@@ -1252,9 +1385,12 @@ other properties will operate on the block specified by it.</p>
 </li>
 </ul>
 <h5 id="range-shape">Range Shape</h5>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>sh</em></p>
 <p><strong>Property type</strong>: Enum[Number]</p>
 <p><strong>Required</strong></p>
+</details>
 <p>The shape indicates how the range will operate over the selected blocks within
 the range. The default value is square. You can think of this property as a
 factor that should be multiplied to all transformations before applying the
@@ -1287,27 +1423,39 @@ final value.</p>
 </li>
 </ul>
 <h5 id="amount">Amount</h5>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>a</em></p>
-<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Property type</strong>: Non Animated Number | <a href="/specs/properties/animatable-properties/#multi-dimensional-animated-property">Multi Dimensional Animated Property</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>A multiplier expressed in percentage applied to the result of the factor of
 transformation</p>
 <h5 id="max-ease">Max Ease</h5>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>xe</em></p>
-<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Property type</strong>: Non Animated Number | <a href="/specs/properties/animatable-properties/#multi-dimensional-animated-property">Multi Dimensional Animated Property</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>An easing value that affects the speed of change as selection values change from
 fully included (high) to fully excluded (low)</p>
 <h5 id="min-ease">Min Ease</h5>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>ne</em></p>
-<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Property type</strong>: Non Animated Number | <a href="/specs/properties/animatable-properties/#multi-dimensional-animated-property">Multi Dimensional Animated Property</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>An easing value that affects the speed of change as selection values change from
 fully included (high) to fully excluded (low)</p>
 <h5 id="random">Random</h5>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>rn</em></p>
 <p><strong>Property type</strong>: Enum[Number]</p>
 <p><strong>Required</strong></p>
+</details>
 <p>If active, transformations should be applied randomly to each selected block.
 Random seed is not enforced.</p>
 <h5 id="transform-properties">Transform Properties</h5>
