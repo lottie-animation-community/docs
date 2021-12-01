@@ -20,16 +20,7 @@ according to their unique specification.
 
 Definition | Name | Type | Required | Default
 -- | :--: | :--: | :--: | :--:
-[Transform](#transform) | ks | Object | ✅ 
-[Index](#index) | ind | Number | ✅
-[Parent](#parenting) | parent | Number | ➖
-[In Point](#in-point) | ip | Number | ➖
-[Out Point](#out-point) | op | Number | ➖
-[Start Point](#start-point) | st | Number | ➖
-[Time stretch](#time-stretch) | sr | Number | ➖ | 1
-[Masks](#clipping-masks) | masksProperties | Array[[Mask Elements](#mask-elements)] | ➖
-[Track Matte Masked Layer](#masked-layer) | tt | Enum[Number] | ➖
-[Track Matte Masking Layer](#masking-layer) | td | Enum[Number] | ➖
+{!specs/layers/common-properties.md!}
 
 Layers have common properties and unique properties related to their content. In
 this section common properties will be covered. 
@@ -50,15 +41,15 @@ Definition | Name | Type | Required | Default
 -- | :--: | :--: | :--: | :--:
 [Anchor Point](#anchor-point) | a | [Array](../../properties/prop-types/#array) \| [Spatial Animated Property](../../properties/animatable-properties/#spatial-animated-property) | ✅ 
 [Position](#position) | p | [Array](../../properties/prop-types/#array) \| [Spatial Animated Property](../../properties/animatable-properties/#spatial-animated-property) | ✅ 
-[Scale](#scale) | s | [Array](../../properties/prop-types/#array) \| [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property) | ✅ 
-[2d Rotation](#rotation-for-2d-layers) | r | [Number](../../properties/prop-types/#number) \| [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property) | ➖ 
-[3d X Rotation](#x-rotation-for-3d-layers) | rx | [Number](../../properties/prop-types/#number) \| [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property) | ➖ 
-[3d Y Rotation](#y-rotation-for-3d-layers) | ry | [Number](../../properties/prop-types/#number) \| [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property) | ➖ 
-[3d Z Rotation](#z-rotation-for-3d-layers) | rz | [Number](../../properties/prop-types/#number) \| [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property) | ➖ 
+[Scale](#scale) | s | [Array](../../properties/prop-types/#array) \| [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property) | ✅ 
+[2d Rotation](#rotation-for-2d-layers) | r | [Number](../../properties/prop-types/#number) \| [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property) | ➖ 
+[3d X Rotation](#x-rotation-for-3d-layers) | rx | [Number](../../properties/prop-types/#number) \| [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property) | ➖ 
+[3d Y Rotation](#y-rotation-for-3d-layers) | ry | [Number](../../properties/prop-types/#number) \| [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property) | ➖ 
+[3d Z Rotation](#z-rotation-for-3d-layers) | rz | [Number](../../properties/prop-types/#number) \| [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property) | ➖ 
 [3d Orientation](#orientation-for-3d-layers) | or | [Array](../../properties/prop-types/#array) \|  [Spatial Animated Property](../../properties/animatable-properties/#spatial-animated-property) | ➖ 
-[Opacity](#opacity) | o | [Number](../../properties/prop-types/#number) \| [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property) | ✅ 
-[Skew](#skew) | sk | [Number](../../properties/prop-types/#number) \| [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property) | ➖ 
-[Skew Axis](#skew-axis) | sa | [Number](../../properties/prop-types/#number) \| [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property) | ➖ 
+[Opacity](#opacity) | o | [Number](../../properties/prop-types/#number) \| [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property) | ✅ 
+[Skew](#skew) | sk | [Number](../../properties/prop-types/#number) \| [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property) | ➖ 
+[Skew Axis](#skew-axis) | sa | [Number](../../properties/prop-types/#number) \| [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property) | ➖ 
 
 ### Anchor Point
 

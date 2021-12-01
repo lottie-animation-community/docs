@@ -16,6 +16,7 @@ types (transform, masks, effects, layer styles).
 Definition | Name | Type | Required | Default
 -- | :--: | :--: | :--: | :--:
 [Type](#type-property) | ty | [Layer Types](../../properties/layer-types) | ✅ | 3
+{!specs/layers/common-properties.md!}
 
 ## Type Property
 

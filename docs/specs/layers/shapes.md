@@ -8,6 +8,7 @@ Definition | Name | Type | Required | Default
 -- | :--: | :--: | :--: | :--:
 [Type](#type-property) | ty | [Layer Types](../../properties/layer-types) | ✅ | 4
 [Shapes](#shapes-property) | shapes | Array[[Shape Properties](#shapes-property)] | ✅
+{!specs/layers/common-properties.md!}
 
 ## Type Property
 

@@ -10,6 +10,7 @@ Definition | Name | Type | Required | Default
 [Solid Width](#solid-width-property) | sw | Number | ✅
 [Solid Height](#solid-height-property) | sh | Number | ✅
 [Solid Color](#solid-color-property) | sc | String | ✅
+{!specs/layers/common-properties.md!}
 
 ## Type Property
 

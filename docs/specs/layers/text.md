@@ -8,22 +8,25 @@ Definition | Name | Type | Required | Default
 -- | :--: | :--: | :--: | :--:
 [Type](#type-property) | ty | [Layer Types](../../properties/layer-types) | ✅ | 5
 [Text](#text) | t | Object | ✅
+{!specs/layers/common-properties.md!}
 
 ## Type Property
 
-**Property name:** *ty*
+??? Details
+    **Property name:** *ty*
 
-**Property type**: Enum (Number)
+    **Property type**: Enum (Number)
 
-**Property value**: 5
+    **Property value**: 5
 
 ## Text
 
-**Property name:** *t*
+??? Details
+    **Property name:** *t*
 
-**Property type**: object
+    **Property type**: object
 
-**Required**
+    **Required**
 
 A text object is composed of four different objects: document data, animators,
 text path, more options.
@@ -37,22 +40,24 @@ Definition | Name | Type | Required | Default
 
 ### Document Data
 
-**Property name:** *d*
+??? Details
+    **Property name:** *d*
 
-**Property type**: Text Document | Text Document Animated Property
+    **Property type**: Text Document | Text Document Animated Property
 
-**Required**
+    **Required**
 
 This property contains a single animatable property, k, that is a set of all the
 paragraph data of the text.
 
 ### Text Path Data
 
-**Property name:** *p*
+??? Details
+    **Property name:** *p*
 
-**Property type**: object
+    **Property type**: object
 
-**Required**
+    **Required**
 
 When enabled, a text layer will use a mask defined on the layer to describe an
 irregular baseline that the text should follow when being rendered. If the text
@@ -65,82 +70,90 @@ path.
 
 #### Mask
 
-**Property name:** *m*
+??? Details
+    **Property name:** *m*
 
-**Property type**: Number
+    **Property type**: Number
 
-**Optional**
+    **Optional**
 
 The index of the mask defined in the *masksProperties *attribute of the layer
 that will be used as baseline of the text.
 
 #### First Margin
 
-**Property name:** *f*
+??? Details
+    **Property name:** *f*
 
-**Property type**: Non-Animated Number | Multi Dimensional Animated Property
+    **Property type**: Non-Animated Number | [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property)
 
 A margin to offset the drawing of the text from the first vertex of the shape
 
 #### Last Margin
 
-**Property name:** *l*
+??? Details
+    **Property name:** *l*
 
-**Property type**: Non Animated Number | Multi Dimensional Animated Property
+    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property)
 
-**Required**
+    **Required**
 
 A margin to offset the drawing of the text from the last vertex of the shape
 
 #### Force Alignment
 
-**Property name:** *a*
+??? Details
+    **Property name:** *a*
 
-**Property type**: Boolean
+    **Property type**: Boolean
 
-**Required**
+    **Required**
 
 If active, each line of text should be rendered contained within the shape
 defined by the mask by adjusting the tracking.
 
 #### Perpendicular to Path
 
-**Property name:** *p*
+??? Details
+    **Property name:** *p*
 
-**Property type**: Boolean
+    **Property type**: Boolean
 
-**Required**
+    **Required**
 
 If active, text should be rendered perpendicular to the direction of the
 baseline.
 
 #### Reversed
 
-**Property name:** *r*
+??? Details
+    **Property name:** *r*
 
-**Property type**: Boolean
+    **Property type**: Boolean
 
-**Required**
+    **Required**
 
 If active, text should be rendered starting from the last vertex of the mask.
 
 ### Other Options
 
-**Property name:** *m*
+??? Details
+    **Property name:** *m*
 
-**Property type**: object
+    **Property type**: object
 
-**Required**
+    **Required**
 
 This object contains other properties affecting the rendering of the text.
 
 #### Anchor Point Grouping
 
-**Property name:** *g*
+??? Details
+    **Property name:** *g*
 
-**Property type**: Enum(Number)
+    **Property type**: Enum(Number)
 
-**Required**
+    **Required**
 
 This property defines how each character anchor point should be grouped relative
 to the defined value to apply animators and drawing along a path.
@@ -157,11 +170,12 @@ Its values are:
 
 #### Grouping Alignment
 
-**Property name:** *a*
+??? Details
+    **Property name:** *a*
 
-**Property type**: Non Animated Array | Multi Dimensional Animated Property
+    **Property type**: Non Animated Array | [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property)
 
-**Required**
+    **Required**
 
 Controls the alignment of the anchor point relative to the anchor point group.
 The tuple defines a pair of coordinates based on a percentage of the group
@@ -169,22 +183,24 @@ anchor point.
 
 ### Animators
 
-**Property name:** *a*
+??? Details
+    **Property name:** *a*
 
-**Property type**: list
+    **Property type**: list
 
-**Required**
+    **Required**
 
 Animators are a collection of transformations that can be applied to a text
 layer. They consist of a range selector and a set of optional properties.
 
 #### Range Selector
 
-**Property name:** *s*
+??? Details
+    **Property name:** *s*
 
-**Property type**: object
+    **Property type**: object
 
-**Required**
+    **Required**
 
 The range selector property has a set of properties that define how
 transformations are applied to the text. This range allows for animations on
@@ -192,11 +208,12 @@ more granular parts of the text, like characters, words, lines and the text box.
 
 ##### Type
 
-**Property name:** *t*
+??? Details
+    **Property name:** *t*
 
-**Property type**: Enum[Number]
+    **Property type**: Enum[Number]
 
-**Required**
+    **Required**
 
 It specifies the type of selector, it can be expression based or parametric.
 
@@ -206,11 +223,12 @@ It specifies the type of selector, it can be expression based or parametric.
 
 ##### Range Units
 
-**Property name:** *r*
+??? Details
+    **Property name:** *r*
 
-**Property type**: Enum[Number]
+    **Property type**: Enum[Number]
 
-**Required**
+    **Required**
 
 It specifies the units that are used to calculate ranges.
 
@@ -220,11 +238,12 @@ It specifies the units that are used to calculate ranges.
 
 ##### Range Start
 
-**Property name:** *s*
+??? Details
+    **Property name:** *s*
 
-**Property type**: Non Animated Number | Multi Dimensional Animated Property
+    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property)
 
-**Required**
+    **Required**
 
 It specifies the start of the range that transformations will be applied to. If
 range units are percentage based, the values range from 0 to 100, if they are
@@ -232,11 +251,12 @@ index based, valid values are any positive number.
 
 ##### Range End
 
-**Property name:** *e*
+??? Details
+    **Property name:** *e*
 
-**Property type**: Non Animated Number | Multi Dimensional Animated Property
+    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property)
 
-**Required**
+    **Required**
 
 It specifies the end of the range that transformations will be applied to. If
 range units are percentage based, the values range from 0 to 100. If they are
@@ -244,11 +264,12 @@ index based, valid values are any positive number.
 
 ##### Range Offset
 
-**Property name:** *o*
+??? Details
+    **Property name:** *o*
 
-**Property type**: Non Animated Number | Multi Dimensional Animated Property
+    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property)
 
-**Required**
+    **Required**
 
 It specifies an offset of the range that transformations will be applied to. If
 range units are percentage based, the values range from -100 to 100. If they are
@@ -256,11 +277,12 @@ index based, valid values are any positive number.
 
 ##### Range Base Mode
 
-**Property name:** *b*
+??? Details
+    **Property name:** *b*
 
-**Property type**: Enum[Number]
+    **Property type**: Enum[Number]
 
-**Required**
+    **Required**
 
 Specifies how ranges should affect text. It has four values: Characters,
 Characters excluding Spaces, Words and Lines. Depending on this option, all the
@@ -276,11 +298,12 @@ other properties will operate on the block specified by it.
 
 ##### Range Shape
 
-**Property name:** *sh*
+??? Details
+    **Property name:** *sh*
 
-**Property type**: Enum[Number]
+    **Property type**: Enum[Number]
 
-**Required**
+    **Required**
 
 The shape indicates how the range will operate over the selected blocks within
 the range. The default value is square. You can think of this property as a
@@ -308,44 +331,48 @@ final value.
 
 ##### Amount
 
-**Property name:** *a*
+??? Details
+    **Property name:** *a*
 
-**Property type**: Non Animated Number | Multi Dimensional Animated Property
+    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property)
 
-**Required**
+    **Required**
 
 A multiplier expressed in percentage applied to the result of the factor of
 transformation
 
 ##### Max Ease
 
-**Property name:** *xe*
+??? Details
+    **Property name:** *xe*
 
-**Property type**: Non Animated Number | Multi Dimensional Animated Property
+    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property)
 
-**Required**
+    **Required**
 
 An easing value that affects the speed of change as selection values change from
 fully included (high) to fully excluded (low)
 
 ##### Min Ease
 
-**Property name:** *ne*
+??? Details
+    **Property name:** *ne*
 
-**Property type**: Non Animated Number | Multi Dimensional Animated Property
+    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property)
 
-**Required**
+    **Required**
 
 An easing value that affects the speed of change as selection values change from
 fully included (high) to fully excluded (low)
 
 ##### Random
 
-**Property name:** *rn*
+??? Details
+    **Property name:** *rn*
 
-**Property type**: Enum[Number]
+    **Property type**: Enum[Number]
 
-**Required**
+    **Required**
 
 If active, transformations should be applied randomly to each selected block.
 Random seed is not enforced.

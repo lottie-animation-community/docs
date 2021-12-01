@@ -23,11 +23,11 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.critic
   - pymdownx.caret
-  - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.snippets
   - tables
   - admonition
   - pymdownx.tabbed:

@@ -6,6 +6,7 @@ Definition | Name | Type | Required | Default
 -- | :--: | :--: | :--: | :--:
 [Type](#type-property) | ty | [Layer Types](../../properties/layer-types) | ✅ | 2
 [Reference Property](#reference-property) | refId | String | ✅
+{!specs/layers/common-properties.md!}
 
 ## Type Property
 

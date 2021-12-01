@@ -10,8 +10,9 @@ Definition | Name | Type | Required | Default
 [Type](#type-property) | ty | [Layer Types](../../properties/layer-types) | ✅ | 0
 [Width](#width) | w | Number | ✅
 [Height](#height) | h | Number | ✅
-[Time Remap](#time-remap) | tm | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property) | ✅
+[Time Remap](#time-remap) | tm | [Multi Dimensional Animated Property](/specs/properties/animatable-properties/#multi-dimensional-animated-property) | ✅
 [Asset Reference](#asset-reference) | refId | String | ✅
+{!specs/layers/common-properties.md!}
 
 ## Type Property
 
