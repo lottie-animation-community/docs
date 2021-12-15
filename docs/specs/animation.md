@@ -21,19 +21,20 @@ original animation it is better to reject the animation altogether.
 
 Definition | Name | Type | Required
 -- | :--: | :--: | :--:
-[Width](#width-and-height) | w | Number | ✅ 
-[Height](#width-and-height) | h | Number | ✅ 
-[In Point](#in-point) | ip | Number | ✅ 
-[Out Point](#out-point) | op | Number | ✅ 
-[Frame Rate](#frame-rate) | fr | Number | ✅ 
+[Width](#width-and-height) | w | [Number](../properties/prop-types/#number) | ✅ 
+[Height](#width-and-height) | h | [Number](../properties/prop-types/#number) | ✅ 
+[In Point](#in-point) | ip | [Number](../properties/prop-types/#number) | ✅ 
+[Out Point](#out-point) | op | [Number](../properties/prop-types/#number) | ✅ 
+[Frame Rate](#frame-rate) | fr | [Number](../properties/prop-types/#number) | ✅ 
 
 ## Width and Height
 
-**Property names:** *w / h*
+??? Details
+    **Property names:** *w / h*
 
-**Property type:** Number
+    **Property type:** [Number](../properties/prop-types/#number)
 
-**Required**
+    **Required**
 
 An animation has a defined width and height. These two values will define the
 visible drawing area. The (0,0) coordinate is positioned at the top, left corner
@@ -64,31 +65,34 @@ multiple animations to be in a single file.
 
 ### In point
 
-**Property name:** *ip*
+??? Details
+    **Property name:** *ip*
 
-**Property type:** Number
+    **Property type:** [Number](../properties/prop-types/#number)
 
-**Required**
+    **Required**
 
 The In point can be any number, positive or negative, and indicates the initial
 frame of the animation that should be rendered.
 
 ### Out point
 
-**Property name:** *op*
+??? Details
+    **Property name:** *op*
 
-**Property type:** Number
+    **Property type:** [Number](../properties/prop-types/#number)
 
 The Out point can be any number, positive or negative, and indicates the final
 frame (not included) of the animation that should be rendered.
 
 ## Frame Rate
 
-**Property name:** *fr*
+??? Details
+    **Property name:** *fr*
 
-**Property type:** Number
+    **Property type:** [Number](../properties/prop-types/#number)
 
-**Required**
+    **Required**
 
 An animation has a defined framerate. It represents the number of frames per
 second that should be used to calculate time interpolations. Its value can range
