@@ -73,7 +73,7 @@ path.
 ??? Details
     **Property name:** *m*
 
-    **Property type**: Number
+    **Property type**: [Number](../../properties/prop-types/#number)
 
     **Optional**
 
@@ -85,7 +85,7 @@ that will be used as baseline of the text.
 ??? Details
     **Property name:** *f*
 
-    **Property type**: Non-Animated Number | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
+    **Property type**: [Number](../../properties/prop-types/#number) | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
 
 A margin to offset the drawing of the text from the first vertex of the shape
 
@@ -94,7 +94,7 @@ A margin to offset the drawing of the text from the first vertex of the shape
 ??? Details
     **Property name:** *l*
 
-    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
+    **Property type**: [Number](../../properties/prop-types/#number) | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
 
     **Required**
 
@@ -105,7 +105,7 @@ A margin to offset the drawing of the text from the last vertex of the shape
 ??? Details
     **Property name:** *a*
 
-    **Property type**: Boolean
+    **Property type**: [Boolean](../../properties/prop-types/#boolean)
 
     **Required**
 
@@ -117,7 +117,7 @@ defined by the mask by adjusting the tracking.
 ??? Details
     **Property name:** *p*
 
-    **Property type**: Boolean
+    **Property type**: [Boolean](../../properties/prop-types/#boolean)
 
     **Required**
 
@@ -129,7 +129,7 @@ baseline.
 ??? Details
     **Property name:** *r*
 
-    **Property type**: Boolean
+    **Property type**: [Boolean](../../properties/prop-types/#boolean)
 
     **Required**
 
@@ -151,29 +151,19 @@ This object contains other properties affecting the rendering of the text.
 ??? Details
     **Property name:** *g*
 
-    **Property type**: Enum(Number)
+    **Property type**: [Anchor Point Grouping types](../../properties/anchor-point-grouping-types)
 
     **Required**
 
 This property defines how each character anchor point should be grouped relative
 to the defined value to apply animators and drawing along a path.
 
-Its values are:
-
-* 1 aligned to character
-
-* 2 aligned to word
-
-* 3 aligned to line
-
-* 4 aligned to all textbox
-
 #### Grouping Alignment
 
 ??? Details
     **Property name:** *a*
 
-    **Property type**: Non Animated Array | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
+    **Property type**: [Array](../../properties/prop-types/#array) | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
 
     **Required**
 
@@ -211,37 +201,29 @@ more granular parts of the text, like characters, words, lines and the text box.
 ??? Details
     **Property name:** *t*
 
-    **Property type**: Enum[Number]
+    **Property type**: [Text Selector types](../../properties/text-selector-types)
 
     **Required**
 
 It specifies the type of selector, it can be expression based or parametric.
-
-* 0 for parametric
-
-* 1 for expression
 
 ##### Range Units
 
 ??? Details
     **Property name:** *r*
 
-    **Property type**: Enum[Number]
+    **Property type**: [Range Unit types](../../properties/range-unit-types)
 
     **Required**
 
 It specifies the units that are used to calculate ranges.
-
-* 1 for percentage based
-
-* 2 for index based
 
 ##### Range Start
 
 ??? Details
     **Property name:** *s*
 
-    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
+    **Property type**: [Number](../../properties/prop-types/#number) | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
 
     **Required**
 
@@ -254,7 +236,7 @@ index based, valid values are any positive number.
 ??? Details
     **Property name:** *e*
 
-    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
+    **Property type**: [Number](../../properties/prop-types/#number) | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
 
     **Required**
 
@@ -267,7 +249,7 @@ index based, valid values are any positive number.
 ??? Details
     **Property name:** *o*
 
-    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
+    **Property type**: [Number](../../properties/prop-types/#number) | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
 
     **Required**
 
@@ -275,12 +257,12 @@ It specifies an offset of the range that transformations will be applied to. If
 range units are percentage based, the values range from -100 to 100. If they are
 index based, valid values are any positive number.
 
-##### Range Base Mode
+##### range base mode
 
 ??? Details
     **Property name:** *b*
 
-    **Property type**: Enum[Number]
+    **Property type**: [Range Base Mode types](../../properties/range-base-mode-types)
 
     **Required**
 
@@ -288,20 +270,12 @@ Specifies how ranges should affect text. It has four values: Characters,
 Characters excluding Spaces, Words and Lines. Depending on this option, all the
 other properties will operate on the block specified by it.
 
-* 1 for Characters
-
-* 2 for Characters excluding Spaces
-
-* 3 for Words
-
-* 4 for Lines
-
 ##### Range Shape
 
 ??? Details
     **Property name:** *sh*
 
-    **Property type**: Enum[Number]
+    **Property type**: [Range Shape types](../../properties/range-shape-types)
 
     **Required**
 
@@ -310,31 +284,12 @@ the range. The default value is square. You can think of this property as a
 factor that should be multiplied to all transformations before applying the
 final value.
 
-* 1 for Square. All blocks within the range will have their transformations
-  applied equally. Factor is always 1.
-
-* 2 for Ramp Up. Transformations will be applied linearly increasing within the
-  range. Factor grows from 0 to 1.
-
-* 3 for Ramp Down. Transformations will be applied linearly decreasing within
-  the range. Factor grows from 1 to 0.
-
-* 4 for Triangle. Transformations will be applied linearly up to the middle of
-  the range. First half increasingly, second half decreasing. Factor grows
-  linearly from 0 to 1 and then from 1 to 0.
-
-* 4 for Round. Similar to Triangle but instead of progressing linearly, it
-  progresses describing half a circle.
-
-* 5 for Smooth. Similar to Triangle but it describes two segments with easing
-  values to progress from 0 to 1 and 1 to 0.
-
 ##### Amount
 
 ??? Details
     **Property name:** *a*
 
-    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
+    **Property type**: [Number](../../properties/prop-types/#number) | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
 
     **Required**
 
@@ -346,7 +301,7 @@ transformation
 ??? Details
     **Property name:** *xe*
 
-    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
+    **Property type**: [Number](../../properties/prop-types/#number) | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
 
     **Required**
 
@@ -358,7 +313,7 @@ fully included (high) to fully excluded (low)
 ??? Details
     **Property name:** *ne*
 
-    **Property type**: Non Animated Number | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
+    **Property type**: [Number](../../properties/prop-types/#number) | [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
 
     **Required**
 
@@ -370,7 +325,7 @@ fully included (high) to fully excluded (low)
 ??? Details
     **Property name:** *rn*
 
-    **Property type**: Enum[Number]
+    **Property type**: [Text Random types](../../properties/text-random-types)
 
     **Required**
 

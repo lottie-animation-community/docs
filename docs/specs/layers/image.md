@@ -10,19 +10,21 @@ Definition | Name | Type | Required | Default
 
 ## Type Property
 
-**Property name:** *ty*
+??? Details
+    **Property name:** *ty*
 
-**Property type**: Enum[Number]
+    **Property type**: [Layer Types](../../properties/layer-types)
 
-**Property value**: 2
+    **Property value**: 2
 
 ## Reference Property
 
-**Property name:** refId
+??? Details
+    **Property name:** refId
 
-**Property type**: String
+    **Property type**: String
 
-**Required**
+    **Required**
 
 A reference to the asset id that should be painted within the container. The
 asset information is located in the assets property and can be retrieved in

@@ -20,8 +20,9 @@ Definition | Name | Type | Required | Default
 
 ## Type Property
 
-**Property name:** *ty*
+??? Details
+    **Property name:** *ty*
 
-**Property type**: Enum[Number]
+    **Property type**: [Layer Types](../../properties/layer-types)
 
-**Property value**: 3
+    **Property value**: 3

@@ -16,19 +16,21 @@ Definition | Name | Type | Required | Default
 
 ## Type Property
 
-**Property name:** *ty*
+??? Details
+    **Property name:** *ty*
 
-**Property type**: Enum[Number]
+    **Property type**: [Layer Types](../../properties/layer-types)
 
-**Property value**: 0
+    **Property value**: 0
 
 ## Width
 
-**Property name:** *w*
+??? Details
+    **Property name:** *w*
 
-**Property type**: Number
+    **Property type**: [Number](../../properties/prop-types/#number)
 
-**Required**
+    **Required**
 
 Width defines the width of the surface that has to be rendered from the precomp.
 Whatever is outside that area won’t be visible even if it is within the visible
@@ -37,11 +39,12 @@ mask of the inner layers.
 
 ## Height
 
-**Property name:** *h*
+??? Details
+    **Property name:** *h*
 
-**Property type**: Number
+    **Property type**: [Number](../../properties/prop-types/#number)
 
-**Required**
+    **Required**
 
 Height defines the height of the surface that has to be rendered from the
 precomp. Whatever is outside that area will not be visible even if it is within
@@ -50,11 +53,12 @@ clipping mask of the inner layers.
 
 ## Time Remap
 
-**Property name:** *tm*
+??? Details
+    **Property name:** *tm*
 
-**Property type:** Multi Dimensional Animated Property
+    **Property type:** [Multi Dimensional Animated Property](../../properties/animatable-properties/#multi-dimensional-animated-property)
 
-**Required**
+    **Required**
 
 Time remap allows control of the timeline of a precomp independently from the
 main timeline. It is expressed in seconds and since it is animatable, it can
@@ -62,11 +66,12 @@ support any amount of keyframes, easing and expressions.
 
 ## Asset Reference
 
-**Property name:** *refId*
+??? Details
+    **Property name:** *refId*
 
-**Property type:** String
+    **Property type:** [String](../../properties/prop-types/#string)
 
-**Required**
+    **Required**
 
 The refId property points to an object on the assets list that completes the
 composition information.
