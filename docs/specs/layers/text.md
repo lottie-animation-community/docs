@@ -15,7 +15,7 @@ Definition | Name | Type | Required | Default
 ??? Details
     **Property name:** *ty*
 
-    **Property type**: Enum (Number)
+    **Property type**: [Layer Types](../../properties/layer-types)
 
     **Property value**: 5
 
@@ -43,7 +43,7 @@ Definition | Name | Type | Required | Default
 ??? Details
     **Property name:** *d*
 
-    **Property type**: Text Document | Text Document Animated Property
+    **Property type**: [Text Document](../../properties/prop-types/#text-document) | [Text Document Animated Property](../../properties/animatable-properties#text-document-animated-property)       
 
     **Required**
 

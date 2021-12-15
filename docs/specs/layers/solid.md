@@ -14,33 +14,37 @@ Definition | Name | Type | Required | Default
 
 ## Type Property
 
-**Property name:** *ty*
+??? Details
+    **Property name:** *ty*
 
-**Property type**: Enum[Number]
+    **Property type**: [Layer Types](../../properties/layer-types)
 
-**Property value**: 1
+    **Property value**: 1
 
 ## Solid Width Property
 
-**Property name:** *sw*
+??? Details
+    **Property name:** *sw*
 
-**Property type**: Number
+    **Property type**: Number
 
 The width of the solid
 
 ## Solid Height Property
 
-**Property name:** *sh*
+??? Details
+    **Property name:** *sh*
 
-**Property type**: Number
+    **Property type**: Number
 
 The height of the solid
 
 ## Solid Color Property
 
-**Property name:** *sc*
+??? Details
+    **Property name:** *sc*
 
-**Property type**: String
+    **Property type**: String
 
 An hexadecimal RGB color
 
