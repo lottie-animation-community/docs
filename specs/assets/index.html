@@ -863,105 +863,134 @@ be inferred from the requester.</p>
 <h2 id="precomps">Precomps</h2>
 <p>Precomps have three properties: id, name and layers.</p>
 <h3 id="precomp-id">Precomp id</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>id</em></p>
-<p><strong>Property type:</strong> Number</p>
+<p><strong>Property type:</strong> <a href="../properties/prop-types/#number">Number</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>The id of the precomp source</p>
 <h3 id="precomp-name">Precomp name</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>nm</em></p>
 <p><strong>Property type:</strong> string</p>
 <p><strong>Required</strong></p>
+</details>
 <p>The name of the source of the comp. This property is useful for expressions that
 reference another composition.</p>
 <h3 id="precomp-layers">Precomp layers</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>layers</em></p>
-<p><strong>Property type:</strong> Array[Layers]</p>
+<p><strong>Property type:</strong> Array{<a href="../properties/layer-types/">Layer Types</a>}</p>
 <p><strong>Required</strong></p>
+</details>
 <p>The list of layers that compose a precomposition</p>
 <h2 id="images">Images</h2>
 <p>Images contain the information to obtain an image source. It can be expressed in
 different ways: inline or pointing to an external path.</p>
 <h3 id="asset-type">Asset type</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>t</em></p>
-<p><strong>Property type:</strong> Enum[Number]</p>
+<p><strong>Property type:</strong> <a href="../properties/asset-types">Asset Types</a></p>
 <p><strong>Property value:</strong> 1</p>
 <p><strong>Optional</strong></p>
+</details>
 <p>The type of the asset</p>
 <h3 id="image-id">Image id</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>id</em></p>
-<p><strong>Property type:</strong> Number</p>
+<p><strong>Property type:</strong> <a href="../properties/prop-types/#number">Number</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>The id of the image source</p>
 <h3 id="image-mode">Image mode</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>e</em></p>
-<p><strong>Property type:</strong> Enum[Number]</p>
+<p><strong>Property type:</strong> <a href="../properties/load-modes">Load modes</a></p>
 <p><strong>Required</strong></p>
-<p>The way information is stored to retrieve the asset. Its values are</p>
-<ul>
-<li>
-<p>0 when the asset is loaded externally</p>
-</li>
-<li>
-<p>1 when the asset is embedded inline in the json file</p>
-</li>
-</ul>
+</details>
+<p>The way information is stored to retrieve the asset.</p>
 <h3 id="image-width">Image width</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>w</em></p>
-<p><strong>Property type:</strong> Number</p>
+<p><strong>Property type:</strong> <a href="../properties/prop-types/#number">Number</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>The width of the image source</p>
 <h3 id="image-height">Image height</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>h</em></p>
-<p><strong>Property type:</strong> Number</p>
+<p><strong>Property type:</strong> <a href="../properties/prop-types/#number">Number</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>The height of the image source</p>
 <h3 id="image-path">Image path</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>u</em></p>
-<p><strong>Property type:</strong> String</p>
+<p><strong>Property type:</strong> <a href="../properties/prop-types/#string">String</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>The path of the image excluding the file name</p>
 <h3 id="image-name">Image name</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>p</em></p>
-<p><strong>Property type:</strong> String</p>
+<p><strong>Property type:</strong> <a href="../properties/prop-types/#string">String</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>If asset mode is 0, it indicates the file name of the image.</p>
 <p>If asset mode is 1, it contains the embedded image encoded as base 64.</p>
 <h2 id="audio">Audio</h2>
 <p>Audio contains the information to obtain an audio source. It can be expressed in
 different ways: inline or pointing to an external path.</p>
 <h3 id="asset-type_1">Asset type</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>t</em></p>
-<p><strong>Property type:</strong> Enum[Number]</p>
+<p><strong>Property type:</strong> <a href="../properties/asset-types">Asset Types</a></p>
 <p><strong>Property value:</strong> 2</p>
 <p><strong>Required</strong></p>
+</details>
 <p>The type of the asset</p>
 <h3 id="audio-id">Audio id</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>id</em></p>
-<p><strong>Property type:</strong> Number</p>
+<p><strong>Property type:</strong> <a href="../properties/prop-types/#number">Number</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>The id of the audio source</p>
 <h3 id="audio-mode">Audio mode</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>e</em></p>
-<p><strong>Property type:</strong> Enum[Number]</p>
+<p><strong>Property type:</strong> <a href="../properties/load-modes">Load modes</a></p>
 <p><strong>Required</strong></p>
-<p>The way information is stored to retrieve the asset. Its values are</p>
-<ul>
-<li>
-<p>0 when the asset is loaded externally</p>
-</li>
-<li>
-<p>1 when the asset is embedded inline in the json file</p>
-</li>
-</ul>
+</details>
+<p>The way information is stored to retrieve the asset.</p>
 <h3 id="audio-path">Audio path</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>u</em></p>
-<p><strong>Property type:</strong> String</p>
+<p><strong>Property type:</strong> <a href="../properties/prop-types/#string">String</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>The path of the audio excluding the file name</p>
 <h3 id="audio-name">Audio name</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>p</em></p>
-<p><strong>Property type:</strong> String</p>
+<p><strong>Property type:</strong> <a href="../properties/prop-types/#string">String</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>If asset mode is 0, it indicates the file name of the audio.</p>
 <p>If asset mode is 1, it contains the embedded audio encoded as base 64.</p>
                 

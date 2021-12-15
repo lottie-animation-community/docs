@@ -938,116 +938,159 @@ Text can be exported as glyphs or as regular text data.</p>
 text. By including every character as a shape described by bezier curves, it can
 render text independently from the original font.</p>
 <h3 id="chars">Chars</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>chars</em></p>
-<p><strong>Property type:</strong> Array[Char]</p>
+<p><strong>Property type:</strong> Array{<a href="#char-object">Char</a>}</p>
+</details>
 <p>The chars array contains the list of all characters available to be rendered.</p>
 <h4 id="char-object">Char Object</h4>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property type:</strong> Object</p>
+</details>
 <p>A character is described by a set of properties to identify its font family,
 shape and other necessary properties to be rendered.</p>
 <h5 id="character">Character</h5>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>ch</em></p>
-<p><strong>Property type:</strong> String</p>
+<p><strong>Property type:</strong> <a href="../properties/prop-types/#string">String</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>The character string. It should be used to map the character requested by a text
 layer.</p>
 <h5 id="style">Style</h5>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>style</em></p>
-<p><strong>Property type:</strong> String</p>
+<p><strong>Property type:</strong> <a href="../properties/prop-types/#string">String</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>The font style. It should be used to map the character requested by a text
 layer.</p>
 <h5 id="font-family">Font Family</h5>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>fFamily</em></p>
-<p><strong>Property type:</strong> String</p>
+<p><strong>Property type:</strong> <a href="../properties/prop-types/#string">String</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>The font family. It should be used to map the character requested by a text
 layer.</p>
 <h5 id="advance-width">Advance Width</h5>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>w</em></p>
-<p><strong>Property type:</strong> Number</p>
+<p><strong>Property type:</strong> <a href="../properties/prop-types/#number">Number</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>The distance at which the following character should be drawn, expressed
 relative to a font size of 100px.</p>
 <h5 id="data">Data</h5>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>data</em></p>
 <p><strong>Property type:</strong> object</p>
 <p><strong>Required</strong></p>
+</details>
 <p>The data object contains a set of extra properties relative to the character.</p>
 <h6 id="shapes">Shapes</h6>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>shapes</em></p>
-<p><strong>Property type:</strong> Array[Shape]</p>
+<p><strong>Property type:</strong> Array{<a href="../properties/prop-types/#shape">Shape</a>}</p>
 <p><strong>Required</strong></p>
+</details>
 <p>The list of shapes that represent the character</p>
 <h2 id="fonts">Fonts</h2>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>fonts</em></p>
 <p><strong>Property type:</strong> object</p>
 <p><strong>Required</strong></p>
+</details>
 <p>Fonts contain a set of properties related to font information needed to render
 text layers.</p>
 <h3 id="fonts-list">Fonts List</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>list</em></p>
-<p><strong>Property type:</strong> Array[Font]</p>
+<p><strong>Property type:</strong> Array{<a href="#font">Font</a>}</p>
+</details>
 <p>The list property contains the array of fonts needed to render all text layers.</p>
 <h4 id="font">Font</h4>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property type:</strong> Object</p>
+</details>
 <p>Each font describes the font information needed to render a specific text layer
 type.</p>
 <h5 id="font-origin">Font Origin</h5>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>origin</em></p>
-<p><strong>Property type:</strong> Enum[Number]</p>
+<p><strong>Property type:</strong> <a href="../properties/font-origin-types">Font Origin types</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>The font origin indicates how to interpret the other properties in order to load
 the font</p>
-<ul>
-<li>
-<p>0 for None</p>
-</li>
-<li>
-<p>1 for Google</p>
-</li>
-<li>
-<p>2 for Typekit</p>
-</li>
-<li>
-<p>3 for URL</p>
-</li>
-</ul>
 <h5 id="font-path">Font Path</h5>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>fPath</em></p>
-<p><strong>Property type:</strong> String</p>
+<p><strong>Property type:</strong> <a href="../properties/prop-types/#string">String</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>The path that should be used to load the font</p>
 <h5 id="font-class">Font Class</h5>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>fClass</em></p>
-<p><strong>Property type:</strong> String</p>
+<p><strong>Property type:</strong> <a href="../properties/prop-types/#string">String</a></p>
 <p><strong>Optional</strong></p>
+</details>
 <p>The class that should be assigned to the text element for it to get the font
 assigned via a css selector</p>
 <h5 id="font-name">Font Name</h5>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>fName</em></p>
-<p><strong>Property type:</strong> String</p>
+<p><strong>Property type:</strong> <a href="../properties/prop-types/#string">String</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>The name of the font to identify which font should be used to render the text</p>
 <h5 id="font-family_1">Font Family</h5>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>fFamily</em></p>
-<p><strong>Property type:</strong> String</p>
+<p><strong>Property type:</strong> <a href="../properties/prop-types/#string">String</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>The value of the font family</p>
 <h5 id="font-weight">Font Weight</h5>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>fWeight</em></p>
-<p><strong>Property type:</strong> String</p>
+<p><strong>Property type:</strong> <a href="../properties/prop-types/#string">String</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>The value of the font weight</p>
 <h5 id="font-style">Font Style</h5>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>fStyle</em></p>
-<p><strong>Property type:</strong> String</p>
+<p><strong>Property type:</strong> <a href="../properties/prop-types/#string">String</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>The value of the font style</p>
 <h5 id="ascent">Ascent</h5>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>ascent</em></p>
-<p><strong>Property type:</strong> Number</p>
+<p><strong>Property type:</strong> <a href="../properties/prop-types/#number">Number</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>The value of the font ascent expressed relative to a font size of 100px. The
 ascent references the yOffset by which to draw the character.</p>
                 

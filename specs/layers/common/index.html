@@ -652,14 +652,14 @@ according to their unique specification.</p>
 <tr>
 <td><a href="../common#masked-layer">Track Matte Masked Layer</a></td>
 <td align="center">tt</td>
-<td align="center">Enum[Number]</td>
+<td align="center"><a href="../../properties/matte-mask-types">Matte Mask types</a></td>
 <td align="center">➖</td>
 <td align="center"></td>
 </tr>
 <tr>
 <td><a href="../common#masking-layer">Track Matte Masking Layer</a></td>
 <td align="center">td</td>
-<td align="center">Enum[Number]</td>
+<td align="center">Number</td>
 <td align="center">➖</td>
 <td align="center"></td>
 </tr>
@@ -668,9 +668,12 @@ according to their unique specification.</p>
 <p>Layers have common properties and unique properties related to their content. In
 this section common properties will be covered. </p>
 <h2 id="transform">Transform</h2>
-<p><strong>Property names</strong>: *ks *</p>
+<details class="details">
+<summary>Details</summary>
+<p><strong>Property names</strong>: <em>ks</em></p>
 <p><strong>Property type</strong>: object</p>
 <p><strong>Required</strong></p>
+</details>
 <p>The transform property is a container for a set of properties that are
 traditionally related to GPU operations on textures. They represent affine
 operations and opacity.</p>
@@ -765,82 +768,124 @@ operations and opacity.</p>
 </tbody>
 </table>
 <h3 id="anchor-point">Anchor Point</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name</strong>: <em>a</em></p>
-<p><strong>Property type</strong>: Non-Animated Array | Spatial Animated Property</p>
+<p><strong>Property type</strong>: <a href="../../properties/prop-types/#array">Array</a> | <a href="../../properties/animatable-properties/#spatial-animated-property">Spatial Animated Property</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>The Anchor point is a two-dimensional (or three if layer is 3d) array that
 represents the origin from which other transformations should be applied.</p>
 <h3 id="position">Position</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name</strong>: <em>p</em></p>
-<p><strong>Property type</strong>: object | Non-Animated Array | Spatial Animated Property</p>
+<p><strong>Property type</strong>: object | <a href="../../properties/prop-types/#array">Array</a> | <a href="../../properties/animatable-properties/#spatial-animated-property">Spatial Animated Property</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>The position can be expressed in two different ways, and it will be indicated by
 a property called "s". If s is true, dimensions are separate. If s is false, it
 behaves as an Array.</p>
 <h4 id="position-separate-dimensions">Position Separate Dimensions</h4>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property names</strong>: *x, y, z *</p>
 <p><strong>Property types</strong>: Non-Animated Number | Multi Dimensional Animated Property</p>
 <p><strong>Required</strong></p>
+</details>
 <p>If dimensions are separate, the position will be a container for 2 (or 3 if the
 layer is 3d) one-dimensional independent properties. Those properties are "x",
 “y”, and “z” and they can be animated separately.</p>
 <h3 id="scale">Scale</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name</strong>: <em>s</em></p>
-<p><strong>Property type</strong>: Non-Animated Array | Multi Dimensional Animated Property</p>
+<p><strong>Property type</strong>: <a href="../../properties/prop-types/#array">Array</a> | <a href="../../properties/animatable-properties/#multi-dimensional-animated-property">Multi Dimensional Animated Property</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>The scale is a two dimensional (or three if layer is 3d) array that represents
 the scaling percentage of the layer. If its value is 100%, no scaling is
 applied.</p>
 <h3 id="rotation-for-2d-layers">Rotation for 2d layers</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name</strong>: <em>r</em></p>
-<p><strong>Property type</strong>: Non-Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Property type</strong>:<a href="../../properties/prop-types/#number">Number</a> | <a href="../../properties/animatable-properties/#multi-dimensional-animated-property">Multi Dimensional Animated Property</a></p>
 <p><strong>Conditional</strong></p>
+</details>
 <p>This property is the rotation expressed in degrees applied to the layer.</p>
 <h3 id="x-rotation-for-3d-layers">X Rotation for 3d layers</h3>
-<p><strong>Property names</strong>: *rx *</p>
-<p><strong>Property type</strong>: Non-Animated Number | Multi Dimensional Animated Property</p>
+<details class="details">
+<summary>Details</summary>
+<p><strong>Property names</strong>: <em>rx</em></p>
+<p><strong>Property type</strong>: <a href="../../properties/prop-types/#number">Number</a> | <a href="../../properties/animatable-properties/#multi-dimensional-animated-property">Multi Dimensional Animated Property</a></p>
 <p><strong>Conditional</strong></p>
+</details>
 <p>This property is the x rotation expressed in degrees applied to the layer.</p>
 <h3 id="y-rotation-for-3d-layers">Y Rotation for 3d layers</h3>
-<p><strong>Property names</strong>: *ry *</p>
-<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<details class="details">
+<summary>Details</summary>
+<p><strong>Property names</strong>: <em>ry</em></p>
+<p><strong>Property type</strong>: <a href="../../properties/prop-types/#number">Number</a> | <a href="../../properties/animatable-properties/#multi-dimensional-animated-property">Multi Dimensional Animated Property</a></p>
 <p><strong>Conditional</strong></p>
+</details>
 <p>This property is the y rotation expressed in degrees applied to the layer.</p>
 <h3 id="z-rotation-for-3d-layers">Z Rotation for 3d layers</h3>
-<p><strong>Property names</strong>: *rz *</p>
-<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<details class="details">
+<summary>Details</summary>
+<p><strong>Property names</strong>: <em>rz</em></p>
+<p><strong>Property type</strong>: <a href="../../properties/prop-types/#number">Number</a> | <a href="../../properties/animatable-properties/#multi-dimensional-animated-property">Multi Dimensional Animated Property</a></p>
 <p><strong>Conditional</strong></p>
+</details>
 <p>This property is the z rotation expressed in degrees applied to the layer.</p>
 <h3 id="orientation-for-3d-layers">Orientation for 3d layers</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name</strong>: <em>or</em></p>
-<p><strong>Property type</strong>: Non Animated Array | Spatial Animated Property</p>
+<p><strong>Property type</strong>: <a href="../../properties/prop-types/#array">Array</a> | <a href="../../properties/animatable-properties/#spatial-animated-property">Spatial Animated Property</a></p>
 <p><strong>Optional</strong></p>
+</details>
 <p>3d layers have an extra property called orientation represented by an array of 3
 floating point values expressed in degrees. It indicates the pitch, roll and yaw
 of the layer.</p>
 <h3 id="opacity">Opacity</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name</strong>: <em>o</em></p>
-<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Property type</strong>: <a href="../../properties/prop-types/#number">Number</a> | <a href="../../properties/animatable-properties/#multi-dimensional-animated-property">Multi Dimensional Animated Property</a></p>
 <p><strong>REquired</strong></p>
+</details>
 <p>Opacity is a percentage based value. It defaults to 100 which means the layer is
 fully opaque. Value 0 means the layer is fully transparent.</p>
 <p>This property ranges from 0 to 100.</p>
 <h3 id="skew">Skew</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name</strong>: <em>sk</em></p>
-<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Property type</strong>: <a href="../../properties/prop-types/#number">Number</a> | <a href="../../properties/animatable-properties/#multi-dimensional-animated-property">Multi Dimensional Animated Property</a></p>
+</details>
 <p>Skew indicates the slant of the element.</p>
 <h3 id="skew-axis">Skew Axis</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name</strong>: <em>sa</em></p>
-<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Property type</strong>: <a href="../../properties/prop-types/#number">Number</a> | <a href="../../properties/animatable-properties/#multi-dimensional-animated-property">Multi Dimensional Animated Property</a></p>
+</details>
 <p>Skew axis specifies the axis along which the character is skewed.</p>
 <h2 id="index">Index</h2>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name</strong>: <em>ind</em></p>
-<p><strong>Property type</strong>: Number</p>
+<p><strong>Property type</strong>: <a href="../../properties/prop-types/#number">Number</a></p>
+</details>
 <p>The index refers to a unique id that each layer has within a stack. It is used
 for parenting and also for certain expressions.</p>
 <h2 id="parenting">Parenting</h2>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name</strong>: <em>parent</em></p>
-<p><strong>Property type</strong>: Number</p>
+<p><strong>Property type</strong>: <a href="../../properties/prop-types/#number">Number</a></p>
+</details>
 <p><strong>Optional</strong></p>
 <p>If present, it points to the <em>ind</em> property of the target layer whose transform
 data should be included in the transform operations that affect the layer. When
@@ -852,31 +897,46 @@ current layer.</p>
 <p>Note: Parenting should never target the original layer as part of the chain or
 it would create an endless loop.</p>
 <h2 id="in-point">In Point</h2>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name</strong>: <em>ip</em></p>
-<p><strong>Property type</strong>: Number</p>
+<p><strong>Property type</strong>: <a href="../../properties/prop-types/#number">Number</a></p>
+</details>
 <p>The in point is a frame based Number that indicates the inital frame of the
 layer</p>
 <h2 id="out-point">Out Point</h2>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name</strong>: <em>op</em></p>
-<p><strong>Property type</strong>: Number</p>
+<p><strong>Property type</strong>: <a href="../../properties/prop-types/#number">Number</a></p>
+</details>
 <p>The out point is a frame based Number that indicates the final frame of the
 layer</p>
 <h2 id="start-point">Start Point</h2>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name</strong>: <em>st</em></p>
-<p><strong>Property type</strong>: Number</p>
+<p><strong>Property type</strong>: <a href="../../properties/prop-types/#number">Number</a></p>
+</details>
 <p>The start point is a frame based Number that indicates when the layer should be
 visible on screen</p>
 <h2 id="time-stretch">Time Stretch</h2>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name</strong>: <em>sr</em></p>
-<p><strong>Property type</strong>: Number</p>
+<p><strong>Property type</strong>: <a href="../../properties/prop-types/#number">Number</a></p>
 <p><strong>Optional</strong></p>
 <p><strong>Default: 1</strong></p>
+</details>
 <p>This is a factor by which time should be stretched on keyframe information. A
 value of 1 means that no stretching is needed.</p>
 <h1 id="masks">Masks</h1>
+<details class="details">
+<summary>Details</summary>
 <h2 id="clipping-masks">Clipping Masks</h2>
 <p><strong>Property name:</strong> <em>masksProperties</em></p>
-<p><strong>Property type</strong>: Array[Mask Elements]</p>
+<p><strong>Property type</strong>: Array[<a href="#mask-elements">Mask Elements</a>]</p>
+</details>
 <p>Masks define a list of bezier curve shapes that act as clipping paths or
 composite operations on layers. Multiple masks with different properties can be
 applied to the same layer where, depending on the mask mode, different rules of
@@ -885,58 +945,49 @@ stacking apply.</p>
 <p>A mask can be considered as a clipping shape or a composite operation depending
 on their specific properties and types.</p>
 <h3 id="mask-modes">Mask modes</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>mode</em></p>
-<p><strong>Property type</strong>: String</p>
+<p><strong>Property type</strong>: <a href="../../properties/mask-mode-types">Mask Mode types</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>Mask types describe how the shape should affect the underlying layer.</p>
-<ul>
-<li>
-<p><strong>None</strong>: Mask has no effect on the layer. This mode is solely used for
-  attaching shapes to a layer that can be used by other properties, effects or
-  expressions.</p>
-</li>
-<li>
-<p><strong>Add</strong>: This mode will always take the original layer as input and add the
-  opacity values to the final output.</p>
-</li>
-<li>
-<p><strong>Subtract: </strong>This mode will take the output of masks higher in the stack as
-  input. If there are no masks, it will take the layer as input. As output it
-  will subtract the opacity values from the input.</p>
-</li>
-<li>
-<p><strong>Intersect:</strong> This mode outputs the areas of opacity that overlap with masks
-  higher in the stack.</p>
-</li>
-<li>
-<p><strong>Difference:</strong> This mode outputs the subtracted areas of opacity that overlap
-  with masks higher in the stack.</p>
-</li>
-</ul>
 <h3 id="inverted-property">Inverted property</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>inv</em></p>
-<p><strong>Property type</strong>: Boolean</p>
+<p><strong>Property type</strong>: <a href="../../properties/prop-types/#boolean">Boolean</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>The inverted property will take the opacity values of the output of the mask
 (with its corresponding higher stack of masks if it applies) and perform a
 boolean filter to invert the result.</p>
 <h3 id="path-property">Path property</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>pt</em></p>
-<p><strong>Property type</strong>: Non Animated Shape | Shape Animated Property</p>
+<p><strong>Property type</strong>: <a href="../../properties/prop-types/#shape">Shape</a> | <a href="../../properties/animatable-properties/#shape-animated-property">Shape Animated Property</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>The path property describes the bezier path that the mask will use to apply the
 mask</p>
 <h3 id="opacity-property">Opacity property</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>o</em></p>
-<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Property type</strong>: <a href="../../properties/prop-types/#number">Number</a> | <a href="../../properties/animatable-properties/#multi-dimensional-animated-property">Multi Dimensional Animated Property</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>The opacity property defines how clipped pixels will transfer to the final
 output. When opacity is set to 0.5, the resulting output will multiply the
 alpha.</p>
 <h3 id="expansion-property">Expansion property</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>x</em></p>
-<p><strong>Property type</strong>: Non Animated Number | Multi Dimensional Animated Property</p>
+<p><strong>Property type</strong>: <a href="../../properties/prop-types/#number">Number</a> | <a href="../../properties/animatable-properties/#multi-dimensional-animated-property">Multi Dimensional Animated Property</a></p>
 <p><strong>Required</strong></p>
+</details>
 <p>Expansion affects the path property of the mask by shrinking or growing it by
 the specified number of pixels. The path should be transformed by the center of
 the shape itself.</p>
@@ -951,31 +1002,22 @@ layers are indicated by a tt property on the masked layer and a td on the
 masking one. They are always stacked one after to the other on the stacking
 order.</p>
 <h3 id="masked-layer">Masked Layer</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>tt</em></p>
-<p><strong>Property type</strong>: Enum[Number]</p>
+<p><strong>Property type</strong>: <a href="../../properties/matte-mask-types">Matte Mask types</a></p>
 <p><strong>Optional (Required if previous layer has a td property)</strong></p>
+</details>
 <p>This property only accepts four values and describes the type of mask that
 should be applied.</p>
-<p>Its values are</p>
-<ul>
-<li>
-<p>1 for Alpha Mask</p>
-</li>
-<li>
-<p>2 for Inverted Alpha Mask</p>
-</li>
-<li>
-<p>3 for Luminance Mask</p>
-</li>
-<li>
-<p>4 for Inverted Luminance Mask</p>
-</li>
-</ul>
 <h3 id="masking-layer">Masking Layer</h3>
+<details class="details">
+<summary>Details</summary>
 <p><strong>Property name:</strong> <em>td</em></p>
 <p><strong>Property type</strong>: Number</p>
 <p><strong>Property value</strong>: 1</p>
 <p><strong>Optional (Required if next layer has a tt property)</strong> </p>
+</details>
 <p>This property only accepts one value that indicates it should be used as a
 masking layer</p>
                 
