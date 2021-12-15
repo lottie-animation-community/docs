@@ -14,32 +14,35 @@ Precomps have three properties: id, name and layers.
 
 ### Precomp id
 
-**Property name:** *id*
+??? Details
+    **Property name:** *id*
 
-**Property type:** Number
+    **Property type:** [Number](../properties/prop-types/#number)
 
-**Required**
+    **Required**
 
 The id of the precomp source
 
 ### Precomp name
 
-**Property name:** *nm*
+??? Details
+    **Property name:** *nm*
 
-**Property type:** string
+    **Property type:** string
 
-**Required**
+    **Required**
 
 The name of the source of the comp. This property is useful for expressions that
 reference another composition.
 
 ### Precomp layers
 
-**Property name:** *layers*
+??? Details
+    **Property name:** *layers*
 
-**Property type:** Array[Layers]
+    **Property type:** Array{[Layer Types](../properties/layer-types/)}
 
-**Required**
+    **Required**
 
 The list of layers that compose a precomposition
 
@@ -50,77 +53,80 @@ different ways: inline or pointing to an external path.
 
 ### Asset type
 
-**Property name:** *t*
+??? Details
+    **Property name:** *t*
 
-**Property type:** Enum[Number]
+    **Property type:** [Asset Types](../properties/asset-types)
 
-**Property value:** 1
+    **Property value:** 1
 
-**Optional**
+    **Optional**
 
 The type of the asset
 
 ### Image id
 
-**Property name:** *id*
+??? Details
+    **Property name:** *id*
 
-**Property type:** Number
+    **Property type:** [Number](../properties/prop-types/#number)
 
-**Required**
+    **Required**
 
 The id of the image source
 
 ### Image mode
 
-**Property name:** *e*
+??? Details
+    **Property name:** *e*
 
-**Property type:** Enum[Number]
+    **Property type:** [Load modes](../properties/load-modes)
 
-**Required**
+    **Required**
 
-The way information is stored to retrieve the asset. Its values are
-
-* 0 when the asset is loaded externally
-
-* 1 when the asset is embedded inline in the json file
+The way information is stored to retrieve the asset.
 
 ### Image width
 
-**Property name:** *w*
+??? Details
+    **Property name:** *w*
 
-**Property type:** Number
+    **Property type:** [Number](../properties/prop-types/#number)
 
-**Required**
+    **Required**
 
 The width of the image source
 
 ### Image height
 
-**Property name:** *h*
+??? Details
+    **Property name:** *h*
 
-**Property type:** Number
+    **Property type:** [Number](../properties/prop-types/#number)
 
-**Required**
+    **Required**
 
 The height of the image source
 
 ### Image path
 
-**Property name:** *u*
+??? Details
+    **Property name:** *u*
 
-**Property type:** String
+    **Property type:** [String](../properties/prop-types/#string)
 
-**Required**
+    **Required**
 
 The path of the image excluding the file name
 
 ### Image name
 
-**Property name:** *p*
+??? Details
+    **Property name:** *p*
 
-**Property type:** String
+    **Property type:** [String](../properties/prop-types/#string)
 
-**Required**
+    **Required**
 
 If asset mode is 0, it indicates the file name of the image.
 
@@ -133,57 +139,58 @@ different ways: inline or pointing to an external path.
 
 ### Asset type
 
-**Property name:** *t*
+??? Details
+    **Property name:** *t*
 
-**Property type:** Enum[Number]
+    **Property type:** [Asset Types](../properties/asset-types)
 
-**Property value:** 2
+    **Property value:** 2
 
-**Required**
+    **Required**
 
 The type of the asset
 
 ### Audio id
 
-**Property name:** *id*
+??? Details
+    **Property name:** *id*
 
-**Property type:** Number
+    **Property type:** [Number](../properties/prop-types/#number)
 
-**Required**
+    **Required**
 
 The id of the audio source
 
 ### Audio mode
 
-**Property name:** *e*
+??? Details
+    **Property name:** *e*
 
-**Property type:** Enum[Number]
+    **Property type:** [Load modes](../properties/load-modes)
 
-**Required**
+    **Required**
 
-The way information is stored to retrieve the asset. Its values are
-
-* 0 when the asset is loaded externally
-
-* 1 when the asset is embedded inline in the json file
+The way information is stored to retrieve the asset.
 
 ### Audio path
 
-**Property name:** *u*
+??? Details
+    **Property name:** *u*
 
-**Property type:** String
+    **Property type:** [String](../properties/prop-types/#string)
 
-**Required**
+    **Required**
 
 The path of the audio excluding the file name
 
 ### Audio name
 
-**Property name:** *p*
+??? Details
+    **Property name:** *p*
 
-**Property type:** String
+    **Property type:** [String](../properties/prop-types/#string)
 
-**Required**
+    **Required**
 
 If asset mode is 0, it indicates the file name of the audio.
 

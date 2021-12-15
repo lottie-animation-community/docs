@@ -311,11 +311,11 @@ This element has a single property defining the path of the shape
 ### Path Property
 
 ??? Details
-  **Property name:** *ks*
+    **Property name:** *ks*
 
-  **Property type**: [Shape](../properties/prop-types/#shape) | [Shape Animated Property](../../properties/animatable-properties/#shape-animated-property)
+    **Property type**: [Shape](../../properties/prop-types/#shape) | [Shape Animated Property](../../properties/animatable-properties/#shape-animated-property)
 
-  **Required**
+    **Required**
 
 The shape described by the collection of bezier curves.
 

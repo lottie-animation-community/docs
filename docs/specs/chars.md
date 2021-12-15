@@ -11,196 +11,207 @@ render text independently from the original font.
 
 ### Chars
 
-**Property name:** *chars*
+??? Details
+    **Property name:** *chars*
 
-**Property type:** Array[Char]
+    **Property type:** Array{[Char](#char-object)}
 
 The chars array contains the list of all characters available to be rendered.
 
 #### Char Object
 
-**Property type:** Object
+??? Details
+    **Property type:** Object
 
 A character is described by a set of properties to identify its font family,
 shape and other necessary properties to be rendered.
 
 ##### Character
 
-**Property name:** *ch*
+??? Details
+    **Property name:** *ch*
 
-**Property type:** String
+    **Property type:** [String](../properties/prop-types/#string)
 
-**Required**
+    **Required**
 
 The character string. It should be used to map the character requested by a text
 layer.
 
 ##### Style
 
-**Property name:** *style*
+??? Details
+    **Property name:** *style*
 
-**Property type:** String
+    **Property type:** [String](../properties/prop-types/#string)
 
-**Required**
+    **Required**
 
 The font style. It should be used to map the character requested by a text
 layer.
 
 ##### Font Family
 
-**Property name:** *fFamily*
+??? Details
+    **Property name:** *fFamily*
 
-**Property type:** String
+    **Property type:** [String](../properties/prop-types/#string)
 
-**Required**
+    **Required**
 
 The font family. It should be used to map the character requested by a text
 layer.
 
 ##### Advance Width
 
-**Property name:** *w*
+??? Details
+    **Property name:** *w*
 
-**Property type:** Number
+    **Property type:** [Number](../properties/prop-types/#number)
 
-**Required**
+    **Required**
 
 The distance at which the following character should be drawn, expressed
 relative to a font size of 100px.
 
 ##### Data
 
-**Property name:** *data*
+??? Details
+    **Property name:** *data*
 
-**Property type:** object
+    **Property type:** object
 
-**Required**
+    **Required**
 
 The data object contains a set of extra properties relative to the character.
 
 ###### Shapes
 
-**Property name:** *shapes*
+??? Details
+    **Property name:** *shapes*
 
-**Property type:** Array[Shape]
+    **Property type:** Array{[Shape](../properties/prop-types/#shape)}
 
-**Required**
+    **Required**
 
 The list of shapes that represent the character
 
 ## Fonts
 
-**Property name:** *fonts*
+??? Details
+    **Property name:** *fonts*
 
-**Property type:** object
+    **Property type:** object
 
-**Required**
+    **Required**
 
 Fonts contain a set of properties related to font information needed to render
 text layers.
 
 ### Fonts List
 
-**Property name:** *list*
+??? Details
+    **Property name:** *list*
 
-**Property type:** Array[Font]
+    **Property type:** Array{[Font](#font)}
 
 The list property contains the array of fonts needed to render all text layers.
 
 #### Font
 
-**Property type:** Object
+??? Details
+    **Property type:** Object
 
 Each font describes the font information needed to render a specific text layer
 type.
 
 ##### Font Origin
 
-**Property name:** *origin*
+??? Details
+    **Property name:** *origin*
 
-**Property type:** Enum[Number]
+    **Property type:** [Font Origin types](../properties/font-origin-types)
 
-**Required**
+    **Required**
 
 The font origin indicates how to interpret the other properties in order to load
 the font
 
-* 0 for None
-
-* 1 for Google
-
-* 2 for Typekit
-
-* 3 for URL
-
 ##### Font Path
 
-**Property name:** *fPath*
+??? Details
+    **Property name:** *fPath*
 
-**Property type:** String
+    **Property type:** [String](../properties/prop-types/#string)
 
-**Required**
+    **Required**
 
 The path that should be used to load the font
 
 ##### Font Class
 
-**Property name:** *fClass*
+??? Details
+    **Property name:** *fClass*
 
-**Property type:** String
+    **Property type:** [String](../properties/prop-types/#string)
 
-**Optional**
+    **Optional**
 
 The class that should be assigned to the text element for it to get the font
 assigned via a css selector
 
 ##### Font Name
 
-**Property name:** *fName*
+??? Details
+    **Property name:** *fName*
 
-**Property type:** String
+    **Property type:** [String](../properties/prop-types/#string)
 
-**Required**
+    **Required**
 
 The name of the font to identify which font should be used to render the text
 
 ##### Font Family
 
-**Property name:** *fFamily*
+??? Details
+    **Property name:** *fFamily*
 
-**Property type:** String
+    **Property type:** [String](../properties/prop-types/#string)
 
-**Required**
+    **Required**
 
 The value of the font family
 
 ##### Font Weight
 
-**Property name:** *fWeight*
+??? Details
+    **Property name:** *fWeight*
 
-**Property type:** String
+    **Property type:** [String](../properties/prop-types/#string)
 
-**Required**
+    **Required**
 
 The value of the font weight
 
 ##### Font Style
 
-**Property name:** *fStyle*
+??? Details
+    **Property name:** *fStyle*
 
-**Property type:** String
+    **Property type:** [String](../properties/prop-types/#string)
 
-**Required**
+    **Required**
 
 The value of the font style
 
 ##### Ascent
 
-**Property name:** *ascent*
+??? Details
+    **Property name:** *ascent*
 
-**Property type:** Number
+    **Property type:** [Number](../properties/prop-types/#number)
 
-**Required**
+    **Required**
 
 The value of the font ascent expressed relative to a font size of 100px. The
 ascent references the yOffset by which to draw the character.
