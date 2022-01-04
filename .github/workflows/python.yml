@@ -18,5 +18,7 @@ jobs:
         run: pip install mkdocs
       - name: Install mkdocs-material
         run: pip install mkdocs-material
+      - name: Install mkdocs-tooltips
+        run: pip install mkdocs-tooltips
       - name: Publish docs
         run: mkdocs gh-deploy
