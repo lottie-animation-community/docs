@@ -2,12 +2,7 @@ name: Documentation
 
 on:
   push:
-    branches:
-      - [ main, docs_and_profiles ]
-    # paths:
-    #   - "**.md"
-    #   - "mkdocs.yml"
-  workflow_dispatch:
+    branches: [ main, docs_and_profiles ]
   
 jobs:
   docs:
