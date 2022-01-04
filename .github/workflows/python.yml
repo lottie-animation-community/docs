@@ -15,6 +15,8 @@ jobs:
       - run: pip install --upgrade pip && pip install mkdocs mkdocs-gen-files
       - run: git config user.name 'github-actions[bot]' && git config user.email 'github-actions[bot]@users.noreply.github.com'
       - name: Install mkdocs
+      - name: Install markdown-include
+        run: pip install markdown-include
         run: pip install mkdocs
       - name: Install mkdocs-material
         run: pip install mkdocs-material
