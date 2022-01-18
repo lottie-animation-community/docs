@@ -1,0 +1,26 @@
+name: Documentation
+
+on:
+  push:
+    branches: [ main, docs_and_profiles ]
+  
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v2
+      - run: pip install --upgrade pip && pip install mkdocs mkdocs-gen-files
+      - run: git config user.name 'github-actions[bot]' && git config user.email 'github-actions[bot]@users.noreply.github.com'
+      - name: Install markdown-include
+        run: pip install markdown-include
+      - name: Install mkdocs
+        run: pip install mkdocs
+      - name: Install mkdocs-material
+        run: pip install mkdocs-material
+      - name: Install mkdocs-tooltips
+        run: pip install mkdocs-tooltips
+      - name: Publish docs
+        run: mkdocs gh-deploy
