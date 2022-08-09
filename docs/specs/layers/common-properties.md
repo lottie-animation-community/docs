@@ -8,3 +8,4 @@
 [Masks](../common#clipping-masks) | masksProperties | Array[[Mask Elements](#mask-elements)] | ➖
 [Track Matte Masked Layer](../common#masked-layer) | tt | [Matte Mask types](../../properties/matte-mask-types) | ➖
 [Track Matte Masking Layer](../common#masking-layer) | td | Number | ➖
+[Blend Mode](../common#blend-mode) | bm | Number | ➖

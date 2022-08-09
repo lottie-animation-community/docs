@@ -390,3 +390,14 @@ should be applied.
 
 This property only accepts one value that indicates it should be used as a
 masking layer
+
+### Blend Mode
+
+??? Details
+    **Property name:** *bm*
+
+    **Property type**: [Blend Mode types](../../properties/blend-mode-types)
+
+    **Optional** 
+
+Supported blend modes.
