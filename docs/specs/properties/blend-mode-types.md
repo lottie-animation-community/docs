@@ -1,6 +1,7 @@
 # Blend Mode Types
+
 Name | Value
--- | |--|
+-- | :--:
 Normal | 0
 Multiply | 1
 Screen | 2
