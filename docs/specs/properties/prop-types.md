@@ -254,7 +254,7 @@ Stroke width of the text
 
 **Property name:** *sz*
 
-**Property type**: Number
+**Property type**: Coordinate
 
 **Optional**
 
@@ -272,3 +272,13 @@ exceeds the box, it should clip it.
 
 If the text layer has a box size defined, this property defines the position of
 the box relative to the layer.
+
+### Stroke over fill
+
+**Property name:** *of*
+
+**Property type**: Boolean
+
+**Required**
+
+Whether the stroke should be painted over the fill or under it.
