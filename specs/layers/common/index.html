@@ -667,6 +667,13 @@ according to their unique specification.</p>
 <td align="center"></td>
 </tr>
 <tr>
+<td><a href="../common#masking-layer-index">Track Matte Masking Layer Index</a></td>
+<td align="center">tp</td>
+<td align="center">Number</td>
+<td align="center">➖</td>
+<td align="center"></td>
+</tr>
+<tr>
 <td><a href="../common#blend-mode">Blend Mode</a></td>
 <td align="center">bm</td>
 <td align="center"><a href="../../properties/blend-mode-types">Blend Mode types</a></td>
@@ -1019,17 +1026,29 @@ order.</p>
 <p><strong>Optional (Required if previous layer has a td property)</strong></p>
 </details>
 <p>This property only accepts four values and describes the type of mask that
-should be applied.</p>
+should be applied. If "tp" is not defined, the masking layer should be the 
+layer immediately before it in the layer stack.</p>
 <h3 id="masking-layer">Masking Layer</h3>
 <details class="details">
 <summary>Details</summary>
 <p><strong>Property name:</strong> <em>td</em></p>
 <p><strong>Property type</strong>: Number</p>
 <p><strong>Property value</strong>: 1</p>
-<p><strong>Optional (Required if next layer has a tt property)</strong> </p>
+<p><strong>Optional</strong> </p>
 </details>
 <p>This property only accepts one value that indicates it should be used as a
 masking layer</p>
+<h3 id="masking-layer-index">Masking Layer Index</h3>
+<details class="details">
+<summary>Details</summary>
+<p><strong>Property name:</strong> <em>tp</em></p>
+<p><strong>Property type</strong>: Number</p>
+<p><strong>Optional</strong> </p>
+</details>
+<p>If present, it points to the <em>ind</em> property of the target layer that should be 
+used as the masking layer. If not present, but the "tt" property is present, the
+layer immediately before it in the layer stack should be used as the masking 
+layer.</p>
 <h3 id="blend-mode">Blend Mode</h3>
 <details class="details">
 <summary>Details</summary>
