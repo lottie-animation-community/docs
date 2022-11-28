@@ -375,7 +375,8 @@ order.
     **Optional (Required if previous layer has a td property)**
 
 This property only accepts four values and describes the type of mask that
-should be applied.
+should be applied. If "tp" is not defined, the masking layer should be the 
+layer immediately before it in the layer stack.
 
 ### Masking Layer
 
@@ -386,10 +387,24 @@ should be applied.
 
     **Property value**: 1
 
-    **Optional (Required if next layer has a tt property)** 
+    **Optional** 
 
 This property only accepts one value that indicates it should be used as a
 masking layer
+
+### Masking Layer Index
+
+??? Details
+    **Property name:** *tp*
+
+    **Property type**: Number
+
+    **Optional** 
+
+If present, it points to the *ind* property of the target layer that should be 
+used as the masking layer. If not present, but the "tt" property is present, the
+layer immediately before it in the layer stack should be used as the masking 
+layer.
 
 ### Blend Mode
 
