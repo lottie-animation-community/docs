@@ -101,3 +101,13 @@ Licensee's name: Aidos Sabit
 Authorized individual and system identifier: aidosmf@gmail.com
 
 Specification version: 1.0
+
+---
+
+Licensee's name: Alistair Thomson
+
+Authorized individual and system identifier: alistair@lottielab.io
+
+Specification version: 1.0
+
+---
