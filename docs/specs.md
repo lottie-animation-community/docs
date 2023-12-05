@@ -62,6 +62,16 @@ some cases a default value could fill the missing property, or an element could
 be ejected from the animation, to preserve consistency and fidelity to the
 original animation it is better to reject the animation altogether.
 
+## Properties  
+
+Definition | Name | Type | Required
+-- | :--: | :--: | :--:
+[Width](#width-and-height) | w | Number | ✅ 
+[Height](#width-and-height) | h | Number | ✅ 
+[In Point](#in-point) | ip | Number | ✅ 
+[Out Point](#out-point) | op | Number | ✅ 
+[Frame Rate](#frame-rate) | fr | Number | ✅ 
+
 ## Width and Height
 
 **Property names:** *w / h*
